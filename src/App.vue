@@ -1,26 +1,32 @@
 <template>
-  <div>
-    <p>Hello</p>
-   <!-- Page content -->
+   <!-- The skip nav component -->
+    <the-skip-nav />
+
+    <!-- The header component -->
+    <the-header />
+
+    <!-- Page content -->
     <main>
       <router-view />
     </main>
-  </div>
+
+    <!-- The footer component -->
+    <the-footer />
 </template>
 
 <script>
+import TheSkipNav from './components/TheSkipNav.vue';
+import TheHeader from './components/TheHeader.vue';
+import TheFooter from './components/TheFooter.vue';
 
-// This starter template is using Vue 3 experimental <script setup> SFCs
-// Check out https://github.com/vuejs/rfcs/blob/script-setup-2/active-rfcs/0000-script-setup.md
-</script>
+export default {
+  components: {
+    TheHeader,
+    TheSkipNav,
+    TheFooter,
+  },
+  setup() {
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  }
 }
-</style>
+</script>
