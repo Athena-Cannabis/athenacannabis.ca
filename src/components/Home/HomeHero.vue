@@ -1,17 +1,17 @@
 <template>
   <div class="bg-white">
     <div class="container">
-      <div class="my-10">
+      <div class="my-32 lg:pl-20">
 
         <div>
           <div class="inline-flex space-x-4">
             <span class="rounded bg-brand-blue-50 px-2.5 py-1 text-xs font-semibold text-brand-blue-700 tracking-wide uppercase">
-              Opening soon!
+              Coming soon!
             </span>
           </div>
         </div>
-        <div class="mt-6 ">
-          <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-6xl lg:text-8xl">
+        <div class="mt-6 xl:w-4/5 ">
+          <h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-6xl lg:text-7xl">
             An inviting, legal and judgement-free cannabis retail experience in Kanata South
           </h1>
           <!--
