@@ -1,10 +1,10 @@
 <template>
   <div class="w-full md:min-h-screen flex justify-center items-center
-              bg-white md:bg-gray-50">
+              bg-white md:bg-brand-blue-700 xl:bg-gray-50">
     <div class=" sm:w-3/4 md:w-3/5 lg:w-1/2 2xl:w-2/5 bg-white
                 pt-20 px-8 md:p-12
                 flex flex-col justify-center items-center
-                md:border md:border-brand-blue-700 md:rounded-3xl shadosw-2xl">
+                md:border md:border-gray-500 md:rounded-3xl">
 
       <div class="pb-5">
         <svg class="h-36" viewBox="0 0 130 108" fill="none" xmlns="http://www.w3.org/2000/svg">
