@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section>
+    <header>
       <h2 class="sr-only">Athena Cannabis Site Header</h2>
       <div class="pl-20 pr-10 py-10 flex justify-start
                 bg-gray-50 border-b border-gray-300">
@@ -28,7 +28,7 @@
             <span class="sr-only">Athena Cannabis Logo:</span>
         </div>
       </div>
-    </section>
+    </header>
   </div>
   <div v-if="false">
     <section>
