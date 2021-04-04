@@ -10,9 +10,14 @@
               Let’s take the next step
             </h2>
 
-            <p class="mt-4 max-w-lg text-xl text-gray-500 sm:mt-4 not-italic">
-              Lorem ipsum dollar
+            <p class="mt-4 text-xl text-gray-500 sm:mt-4 not-italic">
+              Have a question, comment, or concern? Would you like to learn more about the store? Want us to carry a specific product or brand? Excited about an idea we haven't thought of?
             </p>
+
+            <p class="mt-4 text-xl text-gray-500 sm:mt-4 not-italic">
+              Reach out to us using the form below. We're pretty busy setting up the store so it may take us up to 48 hours to reply back.
+            </p>
+
 
             <form action="#" method="POST" class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
               <div>
