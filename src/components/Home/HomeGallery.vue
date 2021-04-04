@@ -2,7 +2,7 @@
   <div>
     <section>
       <div class="bg-gray-50">
-        <div class="pl-20 pr-10 pt-20 pb-32  bg-gray-50">
+        <div class="px-5 lg:px-20 pt-20 pb-32  bg-gray-50">
           <div class="w-full">
 
             <!-- Text section -->

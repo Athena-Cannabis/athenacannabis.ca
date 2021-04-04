@@ -2,7 +2,7 @@
   <div>
     <header>
       <h2 class="sr-only">Athena Cannabis Site Header</h2>
-      <div class="pl-20 pr-10 py-10 flex justify-start
+      <div class="px-5 lg:px-20  py-10 flex justify-start
                 bg-gray-50 border-b border-gray-300">
         <div>
           <span class="sr-only"></span>

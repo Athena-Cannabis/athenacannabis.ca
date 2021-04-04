@@ -2,7 +2,7 @@
   <div>
     <section>
       <h2 class="sr-only">Athena Cannabis Main Hero Section</h2>
-      <div class="pl-20 pr-10  py-10 bg-gray-50">
+      <div class="px-5 lg:px-20  py-10 bg-gray-50">
         <div class="my-10 flex flex-col md:flex-row">
           <div class="w-full lg:w-2/5 pb-52">
             <!--
