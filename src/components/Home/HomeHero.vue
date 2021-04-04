@@ -2,7 +2,7 @@
   <div>
     <section>
       <h2 class="sr-only">Athena Cannabis Main Hero Section</h2>
-      <div class="px-10 py-10 bg-gray-50">
+      <div class="pl-20 pr-10  py-10 bg-gray-50">
         <div class="my-10 flex flex-col md:flex-row">
           <div class="w-full lg:w-2/5 pb-52">
             <!--
@@ -14,9 +14,9 @@
               </div>
             </div>
             -->
-            <h3 class="text-4xl font-bold text-gray-900 tracking-tight sm:text-6xl">
-              <span class="block">Cannabis </span>
-              <span class="block">Uncomplicated</span>
+            <h3 class="text-4xl font-bold text-gray-900 tracking-tight sm:text-6xl lg:text-7xl">
+              <span class="block">Opening </span>
+              <span class="block">mid April</span>
             </h3>
             <p class="mt-5 text-5xl text-gray-500 w-3/4">
               An inviting, legal and judgement-free cannabis retail experience coming soon to
