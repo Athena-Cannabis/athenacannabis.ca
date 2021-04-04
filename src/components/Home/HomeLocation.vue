@@ -9,11 +9,19 @@
             <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
               Find us here
             </h2>
-            <p class="mt-4 max-w-lg text-xl text-gray-500 sm:mt-4">
-              782 Eagleson Road, Unit D4<br />
-              Ottawa, Canada<br />
-              K2M&nbsp;0N2
+
+            <p class="mt-4 max-w-lg text-xl text-gray-500 sm:mt-4 not-italic">
+              Our store is located in Kanata South, close to the Metro off Eagleson.
             </p>
+
+            <address>
+              <p class="mt-4 max-w-lg text-xl text-gray-500 sm:mt-4 not-italic">
+                <span class="sr-only">Store address:</span>
+                782 Eagleson Road, Unit D4<br />
+                Ottawa, Canada<br />
+                K2M&nbsp;0N2
+              </p>
+            </address>
 
             <p class="mt-4">
               <a
