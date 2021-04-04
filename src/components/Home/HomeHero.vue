@@ -27,7 +27,7 @@
             </div>
             <div class="w-full md:w-3/5 flex items-center">
             <img
-              class="object-cover object-left objecst-right-top h-full rounded-3xl shadow-l"
+              class="object-cover object-left objecst-right-top h-full rounded-lg shadow-xl"
               src="/images/home/hero.jpg" alt="">
             </div>
           </div>
