@@ -21,28 +21,28 @@
 
             <form action="#" method="POST" class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
               <div>
-                <label for="first_name" class="block text-sm font-medium text-gray-700">First name</label>
+                <label for="first_name" class="block text-md font-medium text-gray-500">First name</label>
                 <div class="mt-1">
                   <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
                 </div>
               </div>
               <div>
-                <label for="last_name" class="block text-sm font-medium text-gray-700">Last name</label>
+                <div class="flex justify-between">
+                  <label for="last_name" class="block text-md font-medium text-gray-500">Last name</label>
+                  <span id="how_can_we_help_description" class="text-sm text-gray-400">Optional</span>
+                </div>
                 <div class="mt-1">
                   <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
                 </div>
               </div>
               <div class="sm:col-span-2">
-                <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                <label for="email" class="block text-md font-medium text-gray-500">Email</label>
                 <div class="mt-1">
                   <input id="email" name="email" type="email" autocomplete="email" class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
                 </div>
               </div>
               <div class="sm:col-span-2">
-                <div class="flex justify-between">
-                  <label for="how_can_we_help" class="block text-sm font-medium text-gray-700">How can we help you?</label>
-                  <span id="how_can_we_help_description" class="text-sm text-gray-500">Max. 500 characters</span>
-                </div>
+                <label for="how_can_we_help" class="block text-md font-medium text-gray-500">How can we help?</label>
                 <div class="mt-1">
                   <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows="4" class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"></textarea>
                 </div>
