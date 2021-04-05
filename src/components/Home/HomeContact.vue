@@ -2,7 +2,7 @@
   <div>
     <section>
       <div class="bg-gray-50">
-        <div class="py-10 px-5 2xl:px-8 2xl:container">
+        <div class="py-10 px-4 sm:px-5 2xl:px-8 2xl:container">
 
           <!-- Text section -->
           <div class="text-left max-w-prose">

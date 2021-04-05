@@ -2,7 +2,8 @@
   <div>
     <footer>
       <h2 class="sr-only">Athena Cannabis Site Footer</h2>
-      <div class="px-5 lg:px-20 py-16 flex justify-between items-center
+      <div class="py-16 px-4 sm:px-5 2xl:px-8 2xl:container
+                  flex justify-between items-center
                 bg-gray-800">
 
         <!-- Logo -->

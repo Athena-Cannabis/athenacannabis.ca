@@ -2,7 +2,7 @@
   <div v-if="false">
     <section>
       <div class="bg-gray-900">
-        <div class="py-20 px-5 2xl:px-8 2xl:container">
+        <div class="py-20 px-4 sm:px-5 2xl:px-8 2xl:container">
 
           <!-- Text section -->
           <div class="text-left max-w-prose">
@@ -48,7 +48,7 @@
 
             <p class="mt-4 text-xl text-gray-500">At this time, we are hiring for the positions of part time Budtenders. Applicant is responsible for obtaining a Criminal Record Check and Cannsell Certificate, prior to their first scheduled shift but not necessary to apply. </p>
 
-            <p class="mt-4 text-xl text-gray-500">Please send an email with your updated resume to <a class="font-medium underline" href="mailto:hello@athenacannabis.ca">hello@athenacannabis.ca</a></p>
+            <p class="mt-4 text-xl text-gray-500">Please send an email with your updated resume to <a class=" text-brand-blue-700 font-medium text-xl underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="mailto:hello@athenacannabis.ca">hello@athenacannabis.ca</a></p>
 
           </div>
 

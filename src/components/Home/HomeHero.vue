@@ -2,11 +2,11 @@
   <div>
     <section>
       <div class="bg-gray-50">
-        <div class="py-10 px-5 2xl:px-8 2xl:container">
+        <div class="py-10 px-4 sm:px-5 2xl:px-8 2xl:container">
 
           <h2 class="sr-only">Athena Cannabis Main Hero Section</h2>
           <div class="my-10 flex flex-col md:flex-row">
-            <div class="w-full lg:w-2/5 pb-52">
+            <div class="w-full lg:w-2/5 pb-10 md:pb-52">
               <!--
               <div>
                 <div class="inline-flex space-x-4">
@@ -17,10 +17,10 @@
               </div>
               -->
               <h3 class="text-4xl font-bold text-gray-900 tracking-tight sm:text-6xl lg:text-7xl">
-                <span class="block">Opening </span>
-                <span class="block">mid April</span>
+                <span class="sm:block">Opening </span>
+                <span class="sm:block">mid April</span>
               </h3>
-              <p class="mt-5 text-5xl text-gray-500 w-3/4">
+              <p class="mt-5 text-2xl md:text-5xl text-gray-500 w-3/4">
                 An inviting, legal and judgement-free cannabis retail experience coming soon to
                 Kanata South
               </p>

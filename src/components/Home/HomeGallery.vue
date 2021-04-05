@@ -2,7 +2,7 @@
   <div>
     <section>
       <div class="bg-gray-50">
-        <div class="py-10 px-5 2xl:px-8 2xl:container">
+        <div class="py-10 px-4 sm:px-5 2xl:px-8 2xl:container">
 
             <!-- Text section -->
             <div class="text-left max-w-prose">
@@ -11,7 +11,7 @@
               </h2>
 
               <p class="mt-3 text-xl text-gray-500 sm:mt-4">
-                The store is going to feature a warm and inviting hotel inspired lobby which connects to the age restricted retail space.
+                The store is going to feature an elegant and inviting hotel inspired lobby which connects to the age restricted retail space.
               </p>
 
               <p class="mt-3 text-xl text-gray-500 sm:mt-4">
@@ -19,7 +19,7 @@
               </p>
 
               <p class="mt-3 text-xl text-gray-500 sm:mt-4">
-                We can't invite you into the store just yet, but we're excited to share with you some pre-construction renderings from our design phase.
+                We can't invite you into the store just yet, but we're excited to share some pre-construction renderings from our design phase.
               </p>
             </div>
 
