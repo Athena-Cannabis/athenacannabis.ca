@@ -26,11 +26,11 @@
             <!-- Images section -->
             <div class="mt-12 grid gap-10 lg:grid-cols-3 lg:max-w-none">
 
-              <img class="h-72 w-full object-cover rounded-lg shadow-xl" src="/images/home/gallery-a.jpg" alt="">
+              <img class="h-36 md:h-72 w-full object-cover rounded-lg shadow-xl" src="/images/home/gallery-a.jpg" alt="">
 
-              <img class="h-72 w-full object-cover rounded-lg shadow-xl" src="/images/home/gallery-b.jpg" alt="">
+              <img class="h-36 md:h-72 w-full object-cover rounded-lg shadow-xl" src="/images/home/gallery-b.jpg" alt="">
 
-              <img class="h-72 w-full object-cover object-left rounded-lg shadow-xl" src="/images/home/gallery-c.jpg" alt="">
+              <img class="h-36 md:h-72 w-full object-cover object-left rounded-lg shadow-xl" src="/images/home/gallery-c.jpg" alt="">
 
             </div>
 
