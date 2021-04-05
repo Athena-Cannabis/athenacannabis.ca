@@ -16,18 +16,18 @@
                 </div>
               </div>
               -->
-              <h3 class="text-center md:text-right text-4xl font-bold md:text-gray-900 tracking-tight sm:text-6xl lg:text-7xl">
+              <h3 class="text-center md:text-left text-4xl font-bold md:text-gray-900 tracking-tight sm:text-6xl lg:text-7xl">
                 <span class="sm:block">Opening </span>
                 <span class="sm:block">mid April</span>
               </h3>
-              <p class="md:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-right tracking-normal">
+              <p class="md:w-full lg:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
                 An inviting, legal and judgement-free cannabis retail experience coming soon to
                 Kanata South
               </p>
             </div>
             <div class="w-full md:w-3/5 flex items-center">
             <img
-              class="object-cover object-center sm:object-left w-full h-72 sm:h-full rounded-lg shadow-xl"
+              class="object-cover object-center lg:object-left w-full h-72 sm:h-full rounded-lg shadow-xl"
               src="/images/home/hero.jpg" alt="">
             </div>
           </div>
