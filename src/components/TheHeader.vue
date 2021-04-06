@@ -1,7 +1,7 @@
 <template>
   <div>
     <header>
-      <div class="bg-gray-50 border-b border-gray-300">
+      <div class="bg-gray-50 border-b border-gray-500">
         <div class="py-5 md:py-10 px-4 sm:px-5 2xl:px-8 2xl:container">
 
           <h2 class="sr-only">Athena Cannabis Site Header</h2>
