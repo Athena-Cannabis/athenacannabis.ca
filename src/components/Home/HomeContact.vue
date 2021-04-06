@@ -24,6 +24,9 @@
               data-netlify="true"
               method="post"
               class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+
+              <input type="hidden" name="form-name" value="athena-cannabis-contact-form" />
+
               <div>
                 <label for="first_name" class="block text-md font-medium text-gray-500">First name</label>
                 <div class="mt-1">
@@ -158,7 +161,7 @@
                 name="contact"
                 data-netlify="true">
 
-                <input type="hidden" name="form-name" value="contact" />
+
 
                 <div>
                   <label for="full_name" class="block text-sm font-medium text-gray-700 mb-2">Name
