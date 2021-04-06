@@ -9,5 +9,19 @@
   <body>
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
+
+    <!-- Netlify form base so that the bots setup teh form properly -->
+    <form
+      name="athena-cannabis-contact-form"
+      netlify
+      hidden
+      aria-hidden="true">
+      <input type="text" name="first_name" />
+      <input type="text" name="last_name" />
+      <input type="email" name="email" />
+      <textarea name="how_can_we_help"></textarea>
+    </form>
+    <!-- End Netlify form base -->
+
   </body>
 </html>

@@ -19,7 +19,11 @@
             </p>
 
 
-            <form action="#" method="POST" class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+            <form
+              name="athena-cannabis-contact-form"
+              data-netlify="true"
+              method="post"
+              class="mt-9 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
               <div>
                 <label for="first_name" class="block text-md font-medium text-gray-500">First name</label>
                 <div class="mt-1">
