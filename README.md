@@ -4,7 +4,7 @@ Source code for the Athena Cannabis website.
 
 This site is built with [Vue.js](https://vuejs.org) and a host of other open source tools.
 
-The project will develop into a front end for a [Shopify store](https://www.shopify.ca/) using their [Storefront API](https://shopify.dev/docs/storefront-api) as the back end.
+The project is a front end application for a [Woocommerce store](https://woocommerce.com) back end. Actual product information data will come from [TechPOS](https://www.techpos.ca/).
 
 ## Live Site
 
@@ -12,26 +12,35 @@ The site can be found at [athenacannabis.ca](https://athenacannabis.ca).
 
 ## Customer Issues
 
-If you are having customer service issues, please contact the store directly. In time, a contact us page will be added to the site which will provide the vehicles for contacting the store.
+If you are having customer service issues, please contact the store directly. A contact form exists on the site which you can fill out or you could email [hello@athenacannabis.ca].
 
 Please do not create GitHub issues for customer service related issues.
 
 ## Contributing
 
-To do
-
-### General contributions
-
-To do
+ Thank you so much for your time! We love contributers and will excitedly accept any contributions to advance the project. 
+ 
+ Please feel free to create a pull request or github issue. In time we'll add templates for these things, but for now just use your best judgement on what information needs to be included.
 
 ### Security related concerns
 
 If you identify any security related concerns, please contact @neilmispelaar. Please do not create a GitHub issue for these items.
 
-
 ## Branch Management
 
-To do
+### Main 
+
+The `main` branch is built and deployed to the live site ([athenacannabis.ca](https://athenacannabis.ca)) using Netlify's brilliant integration. 
+
+This branch holds the current production version of the site. 
+
+### Next
+
+The `next` branch will be setup shortly and will house the code for the storefront functionality (display products, add to cart, purchases, etc.).
+
+This branch will be deployed to ([next.athenacannabis.ca](https://athenacannabis.ca)) during development and then upon launch will move to the main domain.
+
+Once the storefront functionality is launched (End April-ish), the `next` branch will be used for future development and beta testing. 
 
 ## Project setup
 ```
@@ -40,22 +49,13 @@ npm install
 
 ### Compiles and hot-reloads for development
 ```
-npm run serve
+npm run dev
 ```
 
 ### Compiles and minifies for production
 ```
 npm run build
 ```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
-
 
 ## Why open source
 
