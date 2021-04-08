@@ -18,11 +18,19 @@
               </div>
               -->
               <h3 class="text-center md:text-left text-4xl font-bold md:text-gray-900 tracking-tight sm:text-6xl lg:text-7xl">
-                <span class="sm:block">Oh no</span>
+                Sorry Bud
               </h3>
               <p class="md:w-full lg:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
                 Clearly something went wrong.
               </p>
+
+              <router-link
+                to="/"
+                class="inline-block mt-5 text-brand-blue-700 font-medium text-2xl underline
+                    hover:text-brand-blue-900 transition-all ease-in-out duration-150">
+                Return to the home page
+              </router-link>
+
             </div>
             <div class="w-full md:w-3/5 flex justify-center items-top">
 
