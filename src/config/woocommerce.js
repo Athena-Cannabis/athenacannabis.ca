@@ -1,0 +1,9 @@
+// WooCommerce Configuration
+
+export default {
+  API_BASE_URL: 'https://api.athenacannabis.ca',
+  API_VERSION: 'wc/v3',
+  API_CONSUMER_KEY: "ck_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  API_CONSUMER_SECRET: "cs_XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  API_TEST: import.meta.env.VITE_MY_API_KEY,
+}

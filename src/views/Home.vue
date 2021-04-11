@@ -3,6 +3,7 @@
 
     <home-hero />
     <!-- <home-about /> -->
+    <home-categories />
     <home-gallery />
     <home-location />
     <home-team />
@@ -18,7 +19,7 @@ import HomeGallery from '../components/Home/HomeGallery.vue';
 import HomeLocation from '../components/Home/HomeLocation.vue';
 import HomeTeam from '../components/Home/HomeTeam.vue';
 import HomeContact from '../components/Home/HomeContact.vue';
-
+import HomeCategories from '../components/Home/HomeCategories.vue';
 
 export default {
   components : {
@@ -28,6 +29,7 @@ export default {
     HomeLocation,
     HomeTeam,
     HomeContact,
+    HomeCategories,
   },
   setup() {
 
