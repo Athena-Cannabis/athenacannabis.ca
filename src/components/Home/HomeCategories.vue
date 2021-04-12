@@ -26,7 +26,7 @@
                     class=" bg-white rounded-xl">
 
                       <router-link
-                        :to="{ name: 'category', params: { slug: category.slug }}"
+                        :to="{ name: 'category-products', params: { slug: category.slug }}"
                         class="flex flex-col border border-gray-100 rounded-xl hover:border-gray-300">
 
                         <div class="order-2 text-center mb-16">
@@ -89,7 +89,7 @@ export default {
 
     const parentCategories = computed(() => store.getters['productCategory/getParentCategories']);
 
-    store.dispatch('productCategory/fetchCatagories');
+    store.dispatch('productCategory/fetchCategories');
 
     return {
       productsCategories,

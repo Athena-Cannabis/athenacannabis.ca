@@ -1,7 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 
-const Category = () => import('../views/Category.vue');
+const CategoryHome = () => import('../views/CategoryHome.vue');
+const CategoryProducts = () => import('../views/CategoryProducts.vue');
 const NotFound = () => import('../views/NotFound.vue');
 
 export const router = createRouter({
@@ -13,9 +14,14 @@ export const router = createRouter({
       component: Home,
     },
     {
+      path: '/category',
+      name: 'category-home',
+      component: CategoryHome,
+    },
+    {
       path: '/category/:slug',
-      name: 'category',
-      component: Category,
+      name: 'category-products',
+      component: CategoryProducts,
     },
     {
       path: '/404',
