@@ -18,24 +18,38 @@
             <div class="mt-10">
 
                 <ul
-                  class="list-none grid grid-cols-3 lg:grid-cols-4 gap-10">
+                  class="list-none grid grid-cols-3 lg:grid-cols-4 gap-5">
 
                   <li
                     v-for="category in parentCategories"
                     :key="category.id"
-                    class=" bg-white rounded-2xl p-5 hover:shadow-lg">
+                    class=" bg-white rounded-xl">
 
-                    <h3
-                      class="mb-4 text-left tracking-wide text-xl text-gray-800 font-bold">
-                      {{ category.title }}
-                    </h3>
+                      <router-link
+                        :to="{ name: 'category', params: { slug: category.slug }}"
+                        class="flex flex-col border border-gray-100 rounded-xl hover:border-gray-300">
 
-                    <img
-                      class="h-52 w-full object-contain object-center"
-                      :src="category.image.src"
-                      :alt="category.image.alt" />
+                        <div class="order-2 text-center mb-16">
+
+                          <h3
+                            class="text-center tracking-wide text-xl text-gray-800 font-bold">
+                            {{ category.title }}
+                          </h3>
+
+                          <p class="text-gray-600">Lorem ipsum dolar</p>
+
+                        </div>
+
+                        <div class="order-1">
+                          <img
+                            class="my-16 h-52 w-full object-contain object-center"
+                            :src="category.image.src"
+                            :alt="category.image.alt" />
+
+                        </div>
 
 
+                      </router-link>
 
                   </li>
 
