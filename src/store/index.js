@@ -1,6 +1,6 @@
 import { createStore, createLogger } from 'vuex'
 import identity from './modules/identity'
-import productCategories from './modules/product-categories'
+import productCategory from './modules/product-category'
 
 
 const debug = process.env.NODE_ENV !== 'production'
@@ -8,7 +8,7 @@ const debug = process.env.NODE_ENV !== 'production'
 export const store = createStore({
   modules: {
     identity,
-    productCategories,
+    productCategory,
   },
   strict: debug,
   plugins: debug ? [createLogger()] : []

@@ -7,7 +7,7 @@
             <!-- Text section -->
             <div class="text-left max-w-prose">
               <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
-                Browse the categories
+                Browse by categories
               </h2>
 
               <p class="mt-3 text-xl text-gray-500 sm:mt-4">
@@ -15,35 +15,36 @@
               </p>
             </div>
 
-            <div class="">
+            <div class="mt-10">
 
-              <ul>
+                <ul
+                  class="list-none grid grid-cols-3 lg:grid-cols-4 gap-6">
 
-                <li>
-                  Category 1
-                </li>
+                  <li
+                    v-for="category in parentCategories"
+                    :key="category.id"
+                    class=" bg-white rounded-xl p-6 hover:shadow-lg hover:opacity-80">
 
-                <li>
-                  Category 2
-                </li>
+                    <h3
+                      class="mt-4 text-left tracking-wide text-xl text-gray-800 font-bold">
+                      {{ category.title }}
+                    </h3>
 
-                <li>
-                  Category 3
-                </li>
+                    <img
+                      class="h-52 w-full object-contain object-center"
+                      :src="category.image.src"
+                      :alt="category.image.alt" />
 
-                <li>
-                  Category 4
-                </li>
 
-                <li>
-                  Category 5
-                </li>
 
-              </ul>
+                  </li>
+
+                </ul>
 
             </div>
 
-            <!-- Images section -->
+
+            <!-- Images section
             <div class="mt-12 grid gap-10 lg:grid-cols-3 lg:max-w-none">
 
               <img class="h-36 md:h-72 w-full object-cover rounded-lg shadow-xl" src="/images/home/gallery-a.jpg" alt="">
@@ -53,6 +54,7 @@
               <img class="h-36 md:h-72 w-full object-cover object-left rounded-lg shadow-xl" src="/images/home/gallery-c.jpg" alt="">
 
             </div>
+            -->
 
         </div>
       </div>
@@ -61,16 +63,24 @@
 </template>
 
 <script>
-import { useStore } from 'vuex'
+import { computed } from 'vue';
+import { useStore } from 'vuex';
 
 export default {
   setup() {
 
     const store = useStore()
 
-    console.log('Hello');
+    const productsCategories = computed(() => store.getters['productCategory/getCategories']);
 
-    store.dispatch('productCategories/fetchCatagories');
+    const parentCategories = computed(() => store.getters['productCategory/getParentCategories']);
+
+    store.dispatch('productCategory/fetchCatagories');
+
+    return {
+      productsCategories,
+      parentCategories,
+    }
 
   },
 }
