@@ -18,15 +18,15 @@
             <div class="mt-10">
 
                 <ul
-                  class="list-none grid grid-cols-3 lg:grid-cols-4 gap-6">
+                  class="list-none grid grid-cols-3 lg:grid-cols-4 gap-10">
 
                   <li
                     v-for="category in parentCategories"
                     :key="category.id"
-                    class=" bg-white rounded-xl p-6 hover:shadow-lg hover:opacity-80">
+                    class=" bg-white rounded-2xl p-5 hover:shadow-lg">
 
                     <h3
-                      class="mt-4 text-left tracking-wide text-xl text-gray-800 font-bold">
+                      class="mb-4 text-left tracking-wide text-xl text-gray-800 font-bold">
                       {{ category.title }}
                     </h3>
 
