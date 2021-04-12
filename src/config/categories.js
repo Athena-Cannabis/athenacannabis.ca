@@ -49,12 +49,12 @@ const categories = [
   // Cannabis - Flower
   {
     id: 29,
-    title: 'Flower',
-    slug: 'flower',
+    title: 'Dried Flower',
+    slug: 'dried-flower',
     weight: 900,
     parent: null,
     image: {
-      src: '/images/categories/flower.jpg',
+      src: '/images/categories/dried-flower.jpg',
       alt: 'Cannabis dried flower',
     },
   },
