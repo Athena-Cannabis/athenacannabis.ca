@@ -48,7 +48,7 @@ const categories = [
 
   // Cannabis - Flower
   {
-    id: 17,
+    id: 29,
     title: 'Flower',
     slug: 'flower',
     weight: 900,
@@ -85,6 +85,83 @@ const categories = [
     },
   },
 
+  // Cannabis - Capsules
+  {
+    id: 36,
+    title: 'Capsules',
+    slug: 'capsules',
+    weight: 100,
+    parent: null,
+    image: {
+      src: '/images/categories/unknown.png',
+      alt: 'Capsules containing cannabis',
+    },
+  },
+
+  // Cannabis - Extracts
+  {
+    id: 30,
+    title: 'Extracts',
+    slug: 'extracts',
+    weight: 100,
+    parent: null,
+    image: {
+      src: '/images/categories/unknown.png',
+      alt: 'Extracts',
+    },
+  },
+
+  // Cannabis - Oils
+  {
+    id: 35,
+    title: 'Oils',
+    slug: 'oils',
+    weight: 100,
+    parent: null,
+    image: {
+      src: '/images/categories/unknown.png',
+      alt: 'Oils',
+    },
+  },
+
+  // Cannabis - Vapes
+  {
+    id: 34,
+    title: 'Vapes',
+    slug: 'vapes',
+    weight: 100,
+    parent: null,
+    image: {
+      src: '/images/categories/unknown.png',
+      alt: 'Vapes',
+    },
+  },
+
+  // Cannabis - Seeds
+  {
+    id: 37,
+    title: 'Seeds',
+    slug: 'seeds',
+    weight: 100,
+    parent: null,
+    image: {
+      src: '/images/categories/unknown.png',
+      alt: 'Seeds',
+    },
+  },
+
+  // Cannabis - Topicals
+  {
+    id: 33,
+    title: 'Topicals',
+    slug: 'topicals',
+    weight: 100,
+    parent: null,
+    image: {
+      src: '/images/categories/unknown.png',
+      alt: 'Topicals',
+    },
+  },
 
 ]
 
@@ -94,7 +171,6 @@ export {
 
 
 /**
-
 
   {
       "id": 27,
@@ -153,57 +229,7 @@ export {
           ]
       }
   },
-  {
-      "id": 16,
-      "name": "Cannabis",
-      "slug": "cannabis",
-      "parent": 0,
-      "description": "",
-      "display": "default",
-      "image": null,
-      "menu_order": 0,
-      "count": 121,
-      "_links": {
-          "self": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/16"
-              }
-          ],
-          "collection": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories"
-              }
-          ]
-      }
-  },
-  {
-      "id": 36,
-      "name": "Capsules",
-      "slug": "capsules",
-      "parent": 16,
-      "description": "",
-      "display": "default",
-      "image": null,
-      "menu_order": 0,
-      "count": 2,
-      "_links": {
-          "self": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/36"
-              }
-          ],
-          "collection": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories"
-              }
-          ],
-          "up": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/16"
-              }
-          ]
-      }
-  },
+
   {
       "id": 18,
       "name": "Cleaning and Storage",
@@ -232,62 +258,8 @@ export {
           ]
       }
   },
-  {
-      "id": 29,
-      "name": "Dried Flower",
-      "slug": "dried-flower",
-      "parent": 16,
-      "description": "",
-      "display": "default",
-      "image": null,
-      "menu_order": 0,
-      "count": 32,
-      "_links": {
-          "self": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/29"
-              }
-          ],
-          "collection": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories"
-              }
-          ],
-          "up": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/16"
-              }
-          ]
-      }
-  },
-  {
-      "id": 30,
-      "name": "Extracts",
-      "slug": "extracts",
-      "parent": 16,
-      "description": "",
-      "display": "default",
-      "image": null,
-      "menu_order": 0,
-      "count": 7,
-      "_links": {
-          "self": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/30"
-              }
-          ],
-          "collection": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories"
-              }
-          ],
-          "up": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/16"
-              }
-          ]
-      }
-  },
+
+
   {
       "id": 22,
       "name": "Grinders",
@@ -340,34 +312,6 @@ export {
           "up": [
               {
                   "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/17"
-              }
-          ]
-      }
-  },
-  {
-      "id": 35,
-      "name": "Oils",
-      "slug": "oils",
-      "parent": 16,
-      "description": "",
-      "display": "default",
-      "image": null,
-      "menu_order": 0,
-      "count": 3,
-      "_links": {
-          "self": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/35"
-              }
-          ],
-          "collection": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories"
-              }
-          ],
-          "up": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/16"
               }
           ]
       }
@@ -429,34 +373,7 @@ export {
           ]
       }
   },
-  {
-      "id": 37,
-      "name": "Seeds",
-      "slug": "seeds",
-      "parent": 16,
-      "description": "",
-      "display": "default",
-      "image": null,
-      "menu_order": 0,
-      "count": 2,
-      "_links": {
-          "self": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/37"
-              }
-          ],
-          "collection": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories"
-              }
-          ],
-          "up": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/16"
-              }
-          ]
-      }
-  },
+
   {
       "id": 25,
       "name": "Tools, Scales and Kits",
@@ -536,34 +453,7 @@ export {
           ]
       }
   },
-  {
-      "id": 34,
-      "name": "Vapes",
-      "slug": "vapes",
-      "parent": 16,
-      "description": "",
-      "display": "default",
-      "image": null,
-      "menu_order": 0,
-      "count": 20,
-      "_links": {
-          "self": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/34"
-              }
-          ],
-          "collection": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories"
-              }
-          ],
-          "up": [
-              {
-                  "href": "https://api.athenacannabis.ca/wp-json/wc/v3/products/categories/16"
-              }
-          ]
-      }
-  },
+
   {
       "id": 23,
       "name": "Vaporizers",
