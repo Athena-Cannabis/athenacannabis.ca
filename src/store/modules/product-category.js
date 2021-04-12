@@ -11,10 +11,16 @@ import ProductCategoryService from '../../services/woocommerce/product-category'
 //
 const state = {
   categories: [],
+  loaded: false,
 }
 
 // getters
 const getters = {
+
+  // Get all categories - no sorting applied
+  getLoadedState (state) {
+    return state.loaded;
+  },
 
   // Get all categories - no sorting applied
   getCategories (state) {
@@ -32,6 +38,11 @@ const getters = {
     categories.sort((a, b) => b.weight - a.weight);
 
     return categories;
+  },
+
+  // Find a category with a matching slug value
+  getCategoryBySlug: (state, getters) => (slug) => {
+    return getters.getCategories.find(category => category.slug === slug) || null;
   }
 
 }
@@ -39,11 +50,27 @@ const getters = {
 // actions
 const actions = {
 
-  fetchCatagories ({ commit, state }) {
+  // Run this at the start of the app to initialise
+  // the categories
+  initialiseCategories ({ commit, dispatch }) {
 
-    var loadedCategories = categories;
+    dispatch('fetchCategories');
 
-    commit('setCategories', loadedCategories);
+  },
+
+  // Fetch and load the categories
+  fetchCategories ({ commit, state, getters }) {
+
+    // Have the categories been loaded into the store
+    if (!getters.getLoadedState) {
+
+      var loadedCategories = categories;
+
+      commit('setCategories', loadedCategories);
+
+      commit('setLoadedState', true);
+
+    }
 
   }
 
@@ -54,6 +81,10 @@ const mutations = {
 
   setCategories (state,  categories ) {
     state.categories = categories;
+  },
+
+  setLoadedState (state,  flag ) {
+    state.loaded = flag;
   },
 
 }

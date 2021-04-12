@@ -50,6 +50,8 @@ export default {
     // Use Identity Store Age Check to see if the user is allowed in
     const { isAllowed }  = useIdentityStoreAgeCheck();
 
+    // Initialise Vuex Store State
+    useStoreInitialisation();
 
     return {
       isAllowed,
@@ -57,6 +59,24 @@ export default {
 
   }
 }
+
+
+
+
+/* Use Identity Store Age Check
+ *
+ *
+ */
+function useStoreInitialisation() {
+  // Use the store
+  const store = useStore();
+
+  // Initialise the product categories store
+  store.dispatch('productCategory/initialiseCategories');
+
+}
+
+
 
 /* Use Identity Store Age Check
  *
@@ -76,5 +96,8 @@ function useIdentityStoreAgeCheck() {
     isAllowed,
   }
 }
+
+
+
 
 </script>
