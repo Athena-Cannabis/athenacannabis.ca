@@ -49,7 +49,7 @@
                 <h2 class="tracking-widest text-brand-blue-500 text-sm font-medium uppercase">Step 1</h2>
                 <p class="text-lg text-gray-900 font-medium title-font mb-4">
                   <span class="sr-only">Title: </span>Browse our menu</p>
-                <p class="leading-relaxed text-base">Visit our <a rel="external" class="text-brand-blue-700 font-medium underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="https://athenawebmenu.azurewebsites.net/">online menu</a>. Browse through a host of different products like dried flower, pre-rolls, edibles, cannabis infused beverages and much more.</p>
+                <p class="text-lg text-gray-600">Visit our <a rel="external" class="text-brand-blue-700 font-medium underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="https://athenawebmenu.azurewebsites.net/">online menu</a>. Browse through a host of different products like dried flower, pre-rolls, edibles, cannabis infused beverages and much more.</p>
 
               </li>
 
@@ -59,8 +59,9 @@
 
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
                 <h2 class="tracking-widest text-brand-blue-500 text-sm font-medium uppercase">Step 2</h2>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Checkout and payment</h2>
-                <p class="leading-relaxed text-base">Need help navigating the store? Feeling overwhelmed with all the choices? Don't know the difference between indica and sativa? Call the store at <a href="tel:+15551000">613-555-1000</a></p>
+                <p class="text-xl text-gray-900 font-medium mb-4">
+                  <span class="sr-only">Title: </span>Checkout and payment</p>
+                <p class="text-lg text-gray-600">Need help navigating the store? Feeling overwhelmed with all the choices? Don't know the difference between indica and sativa? Call the store at <a href="tel:+15551000">613-555-1000</a></p>
 
               </li>
 
@@ -70,7 +71,8 @@
 
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
                 <h2 class="tracking-widest text-brand-blue-500 text-sm font-medium uppercase">Step 3</h2>
-                <h2 class="text-xl text-gray-900 font-medium mb-4">Receive confirmation email</h2>
+                <p class="text-xl text-gray-900 font-medium mb-4">
+                  <span class="sr-only">Title: </span>Receive confirmation email</p>
                 <p class="text-lg text-gray-600">Receive an email confirmation and pickup details when your order is ready. Orders are usualy ready in as little as 1 hour.</p>
 
               </li>
@@ -81,9 +83,9 @@
 
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
                 <h2 class="tracking-widest text-brand-blue-500 text-sm font-medium uppercase">Step 4</h2>
-                <h2 class="text-lg text-gray-900 font-medium title-font mb-4">Head to the store</h2>
-                <p class="leading-relaxed text-base">When you get to the store, please make sure that you have your valid ID and credit card that the purchase was paid with.</p>
-                <p class="leading-relaxed text-base"></p>
+                <p class="text-xl text-gray-900 font-medium mb-4">
+                  <span class="sr-only">Title: </span>Head to the store</p>
+                <p class="text-lg text-gray-600">When you get to the store, please make sure that you have your valid ID and credit card that the purchase was paid with.</p>
               </li>
 
 
