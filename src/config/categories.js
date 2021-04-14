@@ -35,7 +35,7 @@ const categories = [
 
   // Cannabis - Edibles
   {
-    id: 17,
+    id: 32,
     title: 'Edibles',
     slug: 'edibles',
     weight: 100,

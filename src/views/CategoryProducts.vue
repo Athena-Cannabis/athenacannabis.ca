@@ -4,6 +4,7 @@
       <div class="bg-gray-100 sm:bg-gray-50">
         <div class="pt-5 pb-10 md:pt-10 px-4 sm:px-5 2xl:px-8 2xl:container ">
 
+          <!-- Render only if the category object is true -->
           <div v-if="category">
 
             <h2
@@ -14,6 +15,8 @@
             </h2>
 
             <p>Category data: {{ category }}</p>
+
+            <category-products-grid :category="category"></category-products-grid>
 
           </div>
 
@@ -27,8 +30,12 @@
 import { reactive, toRefs, watch, watchEffect, computed } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { useStore } from 'vuex';
+import CategoryProductsGrid from '../components/CategoryProducts/CategoryProductsGrid.vue';
 
 export default {
+  components: {
+    CategoryProductsGrid
+  },
   // Check that the relevant category title exists
   // otherwise push to an error page
   setup() {
