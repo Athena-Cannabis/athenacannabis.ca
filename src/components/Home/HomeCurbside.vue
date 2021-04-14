@@ -10,7 +10,7 @@
                 Curbside pickup: here's how it works!
               </h2>
 
-              <p class="mt-3 text-xl text-gray-500 sm:mt-4">
+              <p class="mt-3 text-xl text-gray-500 sm:mt-8">
                 Your safety and peace of mind are always our top priority.
               </p>
 
@@ -31,7 +31,7 @@
                 Don't take it personally, but if you look under 25 years old we may ask you for two pieces of valid ID.
               </p>
 
-              <p class="mt-3 text-xl text-brand-blue-600 sm:mt-4 font-semibold">
+              <p class="mt-3 text-xl text-gray-600 sm:mt-4 font-semibold">
                 Please place your order prior to arriving at the store.
               </p>
 
@@ -39,11 +39,11 @@
             </div>
 
             <!-- Steps section -->
-            <ol class="list-none mt-12 grid gap-4 md:grid-cols-2 lg:grid-cols-4">
+            <ol class="list-none mt-12 grid gap-2 md:gap-8 md:grid-cols-2 lg:grid-cols-4">
 
               <!-- Step 1 -->
               <li
-                class="bg-gray-100 p-6 rounded-lg">
+                class="">
 
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
                 <h2 class="tracking-widest text-brand-blue-500 text-sm font-medium uppercase">Step 1</h2>
@@ -55,19 +55,19 @@
 
               <!-- Step 2 -->
               <li
-                class="bg-gray-100 p-6 rounded-lg">
+                class="">
 
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
                 <h2 class="tracking-widest text-brand-blue-500 text-sm font-medium uppercase">Step 2</h2>
                 <p class="text-xl text-gray-900 font-medium mb-4">
                   <span class="sr-only">Title: </span>Checkout and payment</p>
-                <p class="text-lg text-gray-600">Need help navigating the store? Feeling overwhelmed with all the choices? Don't know the difference between indica and sativa? Call the store at <a href="tel:+15551000">613-555-1000</a></p>
+                <p class="text-lg text-gray-600">Need help navigating the store? Feeling overwhelmed with all the choices? Call the store at <a href="tel:+15551000">613-555-1000</a> and our knowledable staff will be able to help you.</p>
 
               </li>
 
               <!-- Step 3 -->
               <li
-                class="bg-gray-100 p-6 rounded-lg">
+                class="">
 
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
                 <h2 class="tracking-widest text-brand-blue-500 text-sm font-medium uppercase">Step 3</h2>
@@ -79,7 +79,7 @@
 
               <!-- Step 4 -->
               <li
-                class="bg-gray-100 p-6 rounded-lg">
+                class="">
 
                 <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/720x400" alt="content">
                 <h2 class="tracking-widest text-brand-blue-500 text-sm font-medium uppercase">Step 4</h2>
