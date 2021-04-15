@@ -4,6 +4,7 @@
     <home-hero />
     <!-- <home-about /> -->
     <home-curbside />
+    <home-FAQ />
     <home-gallery />
     <home-location />
     <home-team />
@@ -20,6 +21,7 @@ import HomeGallery from '../components/Home/HomeGallery.vue';
 import HomeLocation from '../components/Home/HomeLocation.vue';
 import HomeTeam from '../components/Home/HomeTeam.vue';
 import HomeContact from '../components/Home/HomeContact.vue';
+import HomeFAQ from '../components/Home/HomeFAQ.vue';
 
 
 export default {
@@ -30,6 +32,7 @@ export default {
     HomeLocation,
     HomeTeam,
     HomeContact,
+    HomeFAQ,
   },
   setup() {
 

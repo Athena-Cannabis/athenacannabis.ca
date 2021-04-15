@@ -1,46 +1,74 @@
 <template>
-  <div class="bg-white">
-    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
-      <div class="lg:grid lg:grid-cols-3 lg:gap-8">
-        <div>
-          <h2 class="text-3xl font-extrabold text-gray-900">
-            Frequently asked questions
-          </h2>
-          <p class="mt-4 text-lg text-gray-500">Can’t find the answer you’re looking for? Reach out to our <a href="#" class="font-medium text-indigo-600 hover:text-indigo-500">customer support</a> team.</p>
-        </div>
-        <div class="mt-12 lg:mt-0 lg:col-span-2">
-          <dl class="space-y-12">
-            <div>
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                How do you make holy water?
-              </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-              </dd>
+  <div>
+    <section>
+      <div class="bg-gray-50">
+        <div class="py-20 px-4 sm:px-5 2xl:px-8 2xl:container">
+
+            <!-- Text section -->
+            <div class="text-left max-w-prose">
+              <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+                Frequently asked questions
+              </h2>
+
+              <p class="mt-3 text-xl text-gray-500 sm:mt-4">
+                Can’t find the answer you’re looking for? Reach out to our <a href="mailto:hello@athenacannabis.ca" class="underline font-medium text-brand-blue-700 hover:text-brand-blue-900">customer support</a> team.
+              </p>
+
+               <div class="mt-12 lg:mt-10">
+                <dl class="space-y-10">
+
+                  <div>
+                    <dt class="text-xl leading-6 font-medium text-gray-900">
+                      What are your store hours?
+                    </dt>
+                    <dd class="mt-4 text-xl text-gray-500">
+                      Store pickup available daily from 11:00 AM - 7:00 PM.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt class="text-xl leading-6 font-medium text-gray-900">
+                      How long will my order take to prepare?
+                    </dt>
+                    <dd class="mt-4 text-xl text-gray-500">
+                      Orders ready in as little as 2 Hours. (Order by 5:00 PM for same day)
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt class="text-xl leading-6 font-medium text-gray-900">
+                      What do I need to bring when I pickup my order?
+                    </dt>
+                    <dd class="mt-4 text-xl text-gray-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt class="text-xl leading-6 font-medium text-gray-900">
+                      Can someone else pick up my order?
+                    </dt>
+                    <dd class="mt-4 text-xl text-gray-500">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt class="text-xl leading-6 font-medium text-gray-900">
+                      Can I have my order delivered to my home?
+                    </dt>
+                    <dd class="mt-4 text-xl text-gray-500">
+                      We’re currently just offering store pickup.
+                    </dd>
+                  </div>
+
+                </dl>
+              </div>
+
             </div>
 
-            <div>
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                How do you make holy water?
-              </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-              </dd>
-            </div>
-
-            <div>
-              <dt class="text-lg leading-6 font-medium text-gray-900">
-                How do you make holy water?
-              </dt>
-              <dd class="mt-2 text-base text-gray-500">
-                You boil the hell out of it. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
-              </dd>
-            </div>
-
-            <!-- More items... -->
-          </dl>
         </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
