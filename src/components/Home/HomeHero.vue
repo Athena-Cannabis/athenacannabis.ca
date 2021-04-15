@@ -18,11 +18,11 @@
               </div>
               -->
               <h3 class="text-center md:text-left text-4xl font-bold md:text-gray-900 tracking-tight sm:text-6xl lg:text-7xl">
-                <span class="sm:block">Shop online,</span>
+                <span class="sm:block">Shop online, </span>
                 <span class="sm:block text-brand-blue-600"> Pickup today</span>
               </h3>
               <p class="md:w-full lg:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
-                We are now open for curbside pickup!
+                We are now open for store pickup!
               </p>
               <p class="sr-only md:w-full lg:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
                 It's not quite the grand opening we had in mind, but due to the latest lockdown we've had to change our plans.
