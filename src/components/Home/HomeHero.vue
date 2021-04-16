@@ -7,7 +7,7 @@
           <h1 class="sr-only">Athena Cannabis Home Page</h1>
 
           <div class="my-5 sm:my-10 flex flex-col md:flex-row">
-            <div class="w-full md:pr-5 md:w-1/2 xl:w-2/5 pb-10 md:pb-52">
+            <div class="w-full md:pr-5 md:w-1/2 xl:w-2/5 pt-16 pb-36 md:pt-0 md:pb-52">
               <!--
               <div>
                 <div class="inline-flex space-x-4">
