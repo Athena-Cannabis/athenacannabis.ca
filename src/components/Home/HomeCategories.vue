@@ -18,7 +18,7 @@
             <div class="mt-10">
 
                 <ul
-                  class="list-none grid grid-cols-3 lg:grid-cols-4 gap-5">
+                  class="list-none grid grid-cols-3 lg:grid-cols-6 gap-4">
 
                   <li
                     v-for="category in parentCategories"
@@ -27,7 +27,7 @@
 
                       <router-link
                         :to="{ name: 'category-products', params: { slug: category.slug }}"
-                        class="flex flex-col border border-gray-100 rounded-xl hover:border-gray-300">
+                        class="flex flex-col border bg-gray-200 border-gray-100 rounded-xl hover:border-gray-300 shadow-xl">
 
                         <div class="order-2 text-center mb-16">
 
@@ -42,7 +42,7 @@
 
                         <div class="order-1">
                           <img
-                            class="my-16 h-52 w-full object-contain object-center"
+                            class="my-5 h-48 w-full object-contain object-center rounded-lg"
                             :src="category.image.src"
                             :alt="category.image.alt" />
 

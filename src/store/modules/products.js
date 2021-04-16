@@ -6,7 +6,7 @@ import ProductService from '../../services/woocommerce/products';
 // The flag is set to true when the user is above 19
 
 // initial state
-// category: [{ id, quantity }]
+// products: [{ id, products }]
 //
 const state = {
   products: [],
