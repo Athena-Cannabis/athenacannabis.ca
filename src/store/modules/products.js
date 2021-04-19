@@ -9,15 +9,33 @@ import ProductService from '../../services/woocommerce/products';
 // products: [{ id, products }]
 //
 const state = {
-  products: [],
+  all: [],
 }
 
 // getters
 const getters = {
 
-  // Get all categories - no sorting applied
+  // Get all products - no sorting applied
   getProducts (state) {
-    return state.products;
+    return state.all;
+  },
+
+  // Get all products - no sorting applied
+  getProductsByCategoryId: (state, getters) => (id) => {
+
+    var products = [];
+
+    // Get products by categories
+    getters.getProducts.forEach((element) => {
+      element.categories.forEach((category) => {
+        if (category.id === id) {
+          products.push(element);
+        }
+      })
+    });
+
+    return products;
+
   },
 
   // Find a category with a matching slug value
@@ -41,35 +59,17 @@ const actions = {
   fetchProductsByCategoryId ({ commit, state, getters }, categoryId) {
 
     // TODO: Validate the ID is a number
-
-
-    // Get all of the Product Categories from the API
     ProductService
     .getProductsByCategoryId(categoryId)
-    .then((response) => {
+    .then((products) => {
 
-      // We need to harmonise the categories in the ui with the categories
-      // from the api service
-      if (Array.isArray(response) && response?.length > 0) {
+      // Get an array of product objects
+      // from the service
+      commit('setProducts', products);
 
-        var products = []
-
-        response.forEach(element => {
-
-          var product = new Product({
-            id: element.id,
-            title: element.name,
-            slug: element.slug,
-          })
-
-          products.push(product);
-
-        });
-
-        commit('setProducts', products);
-
-      }
-
+    })
+    .catch((error) => {
+      console.log('Error:', error);
     })
 
   }
@@ -80,7 +80,22 @@ const actions = {
 const mutations = {
 
   setProducts (state,  products ) {
-    state.products = products;
+    state.all = products;
+  },
+
+  // Get an array of prodcut objects
+  // and put them into an associative array
+  addProducts (state,  products ) {
+
+    // Loop through the array and add products
+    // to the array
+    products.forEach(element => {
+
+      // Check if the product is already in the array
+
+
+    })
+
   },
 
 }

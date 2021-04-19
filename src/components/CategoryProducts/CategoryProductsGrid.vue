@@ -2,7 +2,7 @@
   <div>
     <h2 class="text-xl">Category Products Grid</h2>
 
-    <p>{{ category }}</p>
+    <p>Number of products: {{ products.length }}</p>
 
     <ul>
 
@@ -10,6 +10,7 @@
         v-for="product in products"
         :key="product.id">
         <p>{{ product.title }} - {{ product.id }}</p>
+        <p class="bg-red-100">{{ product }}</p>
       </li>
 
     </ul>
@@ -33,9 +34,9 @@ export default {
 
     const store = useStore()
 
-    const products = computed(() => store.getters['products/getProducts']);
+    //const products = computed(() => store.getters['products/getProductsByCategoryId'], props.category.id);
 
-    //const { title } = toRefs(props)
+    const products = computed(() => store.getters['products/getProductsByCategoryId'](props.category.id));
 
     store.dispatch('products/fetchProductsByCategoryId', props.category.id );
 
