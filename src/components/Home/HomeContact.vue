@@ -15,7 +15,7 @@
             </p>
 
             <p class="mt-4 text-xl text-gray-500 sm:mt-4 not-italic">
-              Reach out to us using the form below. We're pretty busy setting up the store so it may take us up to 48 hours to reply back.
+              Reach out to us using the form below. We're pretty busy with the store opening so it may take us up to 48 hours to reply back.
             </p>
 
 
