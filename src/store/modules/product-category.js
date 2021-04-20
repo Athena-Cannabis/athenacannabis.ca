@@ -40,9 +40,34 @@ const getters = {
     return categories;
   },
 
+  getChildCategoriesById (state, getters) {
+
+    var categories = [];
+
+    // Get parent categories
+    categories = getters.getCategories.filter(element => element.parent === null);
+
+    // Sort parents by weight
+    categories.sort((a, b) => b.weight - a.weight);
+
+    return categories;
+  },
+
   // Find a category with a matching slug value
   getCategoryBySlug: (state, getters) => (slug) => {
     return getters.getCategories.find(category => category.slug === slug) || null;
+  },
+
+  // Find a category with a matching slug value
+  getCategoryIDBySlug: (state, getters) => (slug) => {
+
+    var categoryId = null;
+
+    var category = getters.getCategories.find(category => category.slug === slug) || null;
+
+    category ? categoryId = category.id  : categoryId = null;
+
+    return categoryId;
   }
 
 }
@@ -64,11 +89,38 @@ const actions = {
     // Have the categories been loaded into the store
     if (!getters.getLoadedState) {
 
-      var loadedCategories = categories;
+      // Get all of the Product Categories from the API
+      ProductCategoryService
+      .getAll()
+      .then((categories) => {
 
-      commit('setCategories', loadedCategories);
+        var loadedCategories = categories;
 
-      commit('setLoadedState', true);
+        // // See if there is an overide in the config file
+        /*
+      var overide = categoryOverides.filter(el => {
+        return el.id === element.id;
+      })
+
+      if (overide?.length > 0)
+        console.log('Overide', overide)
+
+      var category = new ProductCategory({
+        id: element.id,
+        parent: element.parent,
+        title: overide[0]?.replace?.name || element.name,
+        slug: element.slug,
+      })
+
+      categories.push(category);
+
+        */
+
+        commit('setCategories', loadedCategories);
+
+        commit('setLoadedState', true);
+
+      });
 
     }
 
@@ -80,7 +132,9 @@ const actions = {
 const mutations = {
 
   setCategories (state,  categories ) {
-    state.categories = categories;
+    // Check to see if it's not undefined
+    if (categories)
+      state.categories = categories;
   },
 
   setLoadedState (state,  flag ) {

@@ -37,3 +37,17 @@ export class ProductCategory {
   }
 
 }
+
+// We use an adapter to bring the API response
+// from the WooCommerce API into the correct format
+// for our Category class.
+export function responseAdapter(response) {
+
+  return new ProductCategory({
+    id: response.id,
+    parent: response.parent,
+    title: response.name,
+    slug: response.slug,
+  });
+
+}

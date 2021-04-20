@@ -7,7 +7,7 @@
             <!-- Text section -->
             <div class="text-left max-w-prose">
               <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
-                Browse by categories
+                Explore cannabis {{cannabisProductId}}
               </h2>
 
               <p class="mt-3 text-xl text-gray-500 sm:mt-4">
@@ -85,6 +85,8 @@ export default {
 
     const store = useStore()
 
+    const cannabisProductId = computed(() => store.getters['productCategory/getCategoryIDBySlug']('cannabis'));
+
     const productsCategories = computed(() => store.getters['productCategory/getCategories']);
 
     const parentCategories = computed(() => store.getters['productCategory/getParentCategories']);
@@ -92,6 +94,7 @@ export default {
     store.dispatch('productCategory/fetchCategories');
 
     return {
+      cannabisProductId,
       productsCategories,
       parentCategories,
     }

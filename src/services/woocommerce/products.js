@@ -21,7 +21,7 @@ function getProductsByCategoryId(id) {
 
       var products = [];
 
-      // We need to harmonise the categories in the ui with the categories
+      // We need to harmonise the products in the ui with the products
       // from the api service
       if (Array.isArray(response) && response?.length > 0) {
 
