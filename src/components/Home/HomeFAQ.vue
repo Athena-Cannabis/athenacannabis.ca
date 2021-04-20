@@ -31,7 +31,7 @@
                       How long will my order take to prepare?
                     </dt>
                     <dd class="mt-2 text-lg text-gray-500">
-                      Orders ready in as little as 2 Hours. (Order by 5:00 PM for same day)
+                      Orders ready in up to 2 Hours. (Order by 5:00 PM for same day)
                     </dd>
                   </div>
 
@@ -40,7 +40,7 @@
                       What do I need to bring when I pickup my order?
                     </dt>
                     <dd class="mt-2 text-lg text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                      When you arrive, head to the front door with your valid ID and the credit card that the purchase was paid with. We'll also ask you for your order number which can be found on the "Order ready" email.
                     </dd>
                   </div>
 
@@ -49,7 +49,7 @@
                       Can I place an order at the store?
                     </dt>
                     <dd class="mt-2 text-lg text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                      Due to the current provincial emergency lock down rules, all orders must be placed and paid for online prior to arriving to the store.
                     </dd>
                   </div>
 
@@ -58,7 +58,7 @@
                       Can someone else pick up my order?
                     </dt>
                     <dd class="mt-2 text-lg text-gray-500">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.
+                      Unfortunately no, the online purchaser must be present at the store for pick up with valid ID and the credit card that was used to purchase the items.
                     </dd>
                   </div>
 
@@ -67,7 +67,16 @@
                       Can I have my order delivered to my home?
                     </dt>
                     <dd class="mt-2 text-lg text-gray-500">
-                      We’re currently just offering store pickup.
+                      We’re currently just offering store pickup, but we plan on adding home delivery in the summer.
+                    </dd>
+                  </div>
+
+                  <div>
+                    <dt class="text-xl leading-6 font-medium text-gray-900">
+                      Who can place an order?
+                    </dt>
+                    <dd class="mt-2 text-lg text-gray-500">
+                      Anyone that is at least 19 years of age may purchase cannabis and cannabis accessories.
                     </dd>
                   </div>
 
