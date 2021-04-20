@@ -28,18 +28,6 @@
             Your safety and peace of mind are always our top priority.
           </p>
 
-          <p class="mt-3 text-xl text-gray-500 sm:mt-4">
-            We’re currently just offering store pickup.
-          </p>
-
-          <p class="mt-3 text-xl text-gray-500 sm:mt-4 ">
-            Don't take it personally, but if you look under 25 years we may ask you for two pieces of valid ID.
-          </p>
-
-          <p class="mt-3 text-xl text-gray-600 sm:mt-4 font-semibold">
-            Due to current provincial lockdown rules, please place your order prior to arriving at the store.
-          </p>
-
         -->
 
         <!-- How it works -->
@@ -54,7 +42,7 @@
               <h4 class="tracking-widest text-brand-blue-500 text-sm uppercase">Step 1</h4>
               <p class="text-xl text-gray-900 font-bold tracking-tight mb-4">
                 <span class="sr-only">Title: </span>Browse our menu</p>
-              <p class="text-lg text-gray-500">Visit our <a rel="external" class="text-brand-blue-700 font-medium underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="https://athenawebmenu.azurewebsites.net/">online menu</a>. Browse through a host of different products like dried flower, pre-rolls, edibles and much more. Call the store at <a href="tel:+1613-595-1420">613-595-1420</a> for help from our knowledable staff.</p>
+              <p class="text-lg text-gray-500">Visit our <a rel="external" class="text-brand-blue-700 font-medium underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="https://athenawebmenu.azurewebsites.net/">online menu</a>. Browse through a host of different products like dried flower, pre-rolls, edibles and much more. Call the store at <a href="tel:+1613-595-1420">613-595-1420</a> for help from our knowledgeable staff.</p>
             </li>
             <li>
               <div class="flex flex-row flex-nowrap justify-center items-center
