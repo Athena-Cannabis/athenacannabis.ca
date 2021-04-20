@@ -1,3 +1,6 @@
+import {ProductImage, responseAdapter as imageResponseAdapter } from './product-image';
+
+
 export class Product {
 
   id = null;
@@ -54,6 +57,16 @@ export class Product {
 // from the WooCommerce API into the correct format
 // for our Product class.
 export function responseAdapter(response) {
+
+  // Build a list of images
+  var images = [];
+
+  response.images.forEach(element => {
+    var image = imageResponseAdapter(element);
+    images.push(image);
+  });
+
+
   return new Product({
     id: response.id,
     title: response.name,
@@ -64,5 +77,6 @@ export function responseAdapter(response) {
     onSale: response.on_sale,
     stockQuantity: parseInt(response.stock_quantity, 10),
     categories: response.categories,
+    images: images,
   });
 }

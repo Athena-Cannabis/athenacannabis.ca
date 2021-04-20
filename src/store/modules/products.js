@@ -7,7 +7,11 @@ import ProductService from '../../services/woocommerce/products';
 
 // initial state
 // products: [{ id, products }]
-//
+// cache: [{
+//   type: 'category',
+//   data: 11,
+//   loadDate: DATETIME
+// }]
 const state = {
   all: [],
 }
@@ -58,6 +62,9 @@ const actions = {
   // Fetch and load the categories by an id
   fetchProductsByCategoryId ({ commit, state, getters }, categoryId) {
 
+    // Add caching mechanism to check if category has been cached
+
+
     // TODO: Validate the ID is a number
     ProductService
     .getProductsByCategoryId(categoryId)
@@ -65,7 +72,22 @@ const actions = {
 
       // Get an array of product objects
       // from the service
-      commit('setProducts', products);
+      var uniqueProducts = [];
+
+      // Indentify unique products that aren't in the vuex store already
+      products.forEach(element => {
+
+        // Check if the product is already in the array
+        const findIndex = getters.getProducts.findIndex((product) => product.id === element.id );
+
+        // Only add the product if it's not found
+        if (findIndex === -1) {
+          uniqueProducts.push(element);
+        }
+
+      });
+
+      commit('addProducts', uniqueProducts);
 
     })
     .catch((error) => {
@@ -85,17 +107,8 @@ const mutations = {
 
   // Get an array of prodcut objects
   // and put them into an associative array
-  addProducts (state,  products ) {
-
-    // Loop through the array and add products
-    // to the array
-    products.forEach(element => {
-
-      // Check if the product is already in the array
-
-
-    })
-
+  addProducts (state, products ) {
+    state.all.push(...products);
   },
 
 }

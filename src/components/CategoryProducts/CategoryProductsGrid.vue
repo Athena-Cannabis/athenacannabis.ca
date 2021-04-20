@@ -1,16 +1,32 @@
 <template>
   <div>
-    <h2 class="text-xl">Category Products Grid</h2>
 
     <p>Number of products: {{ products.length }}</p>
 
-    <ul>
+    <ul
+      class="grid grid-cols-4 gap-10">
 
       <li
         v-for="product in products"
         :key="product.id">
-        <p>{{ product.title }} - {{ product.id }}</p>
-        <p class="bg-red-100">{{ product }}</p>
+
+        <div class="flex flex-col">
+
+          <h3 class="font-bold text-sm order-2">{{ product.title }}</h3>
+
+          <div class="order-1
+                    bg-gray-200 p-5 mb-5 rounded-xl flex flex-row
+                      justify-center align-middle">
+            <img
+              :src="product.images[0].src"
+              :alt="product.images[0].alt"
+              class="h-44 object-cover rounded-xl" />
+          </div>
+
+
+
+        </div>
+
       </li>
 
     </ul>

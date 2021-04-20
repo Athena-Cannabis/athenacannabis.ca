@@ -14,8 +14,6 @@
               {{ category.title }}
             </h2>
 
-            <p>Category data: {{ category }}</p>
-
             <category-products-grid :category="category"></category-products-grid>
 
           </div>
