@@ -11,6 +11,10 @@
           </h2>
 
           <p class="mt-3 text-xl text-gray-500 sm:mt-4 ">
+            Need help buying? You can <a class="text-brand-blue-700 font-medium underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="mailto:hello@athenacannabis.ca">email</a> or call us at <a href="tel:+16135951420">613-595-1420</a>.
+          </p>
+
+          <p class="mt-3 text-xl text-gray-500 sm:mt-4 ">
             Don't take it personally, but if you look under 25 years we may ask you for two pieces of valid ID.
           </p>
 
@@ -50,7 +54,7 @@
               <h4 class="tracking-widest text-brand-blue-500 text-sm uppercase">Step 1</h4>
               <p class="text-xl text-gray-900 font-bold tracking-tight mb-4">
                 <span class="sr-only">Title: </span>Browse our menu</p>
-              <p class="text-lg text-gray-500">Visit our <a rel="external" class="text-brand-blue-700 font-medium underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="https://athenawebmenu.azurewebsites.net/">online menu</a>. Browse through a host of different products like dried flower, pre-rolls, edibles and much more.</p>
+              <p class="text-lg text-gray-500">Visit our <a rel="external" class="text-brand-blue-700 font-medium underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="https://athenawebmenu.azurewebsites.net/">online menu</a>. Browse through a host of different products like dried flower, pre-rolls, edibles and much more. Call the store at <a href="tel:+1613-595-1420">613-595-1420</a> for help from our knowledable staff.</p>
             </li>
             <li>
               <div class="flex flex-row flex-nowrap justify-center items-center
@@ -62,7 +66,7 @@
               <h4 class="tracking-widest text-brand-blue-500 text-sm uppercase">Step 2</h4>
               <p class="text-xl text-gray-900 font-bold tracking-tight mb-4">
                 <span class="sr-only">Title: </span>Checkout and payment</p>
-              <p class="text-lg text-gray-500">Need help navigating the online menu? Call the store at <a href="tel:+15551000">613-555-1000</a> for help from our knowledable staff.</p>
+              <p class="text-lg text-gray-500">Hit the checkout button on the online menu to setup payment and complete your order. Once payment has gone through we'll send you an email indicating that we have received your order.</p>
 
             </li>
             <li>
@@ -74,8 +78,12 @@
               </div>
               <h4 class="tracking-widest text-brand-blue-500 text-sm uppercase">Step 3</h4>
               <p class="text-xl text-gray-900 font-bold tracking-tight mb-4">
-                <span class="sr-only">Title: </span>Receive confirmation email</p>
-              <p class="text-lg text-gray-500">Receive an email confirmation and pickup details when your order is ready. Orders are ready in under 2 hours.</p>
+                <span class="sr-only">Title: </span>Receive "Order Ready" email</p>
+              <p class="text-lg text-gray-500">When we're done packing up your order, we'll send you an email indicating that your order is ready for pickup and you can head to the store. <a
+                  href="https://goo.gl/maps/rG3U2kfMMjundn8P6"
+                  class=" text-brand-blue-700 font-medium underline hover:text-brand-blue-900
+                        transition-all ease-in-out duration-150">
+                  Need directions?</a></p>
 
             </li>
             <li>
@@ -87,12 +95,8 @@
               </div>
               <h4 class="tracking-widest text-brand-blue-500 text-sm uppercase">Step 4</h4>
               <p class="text-xl text-gray-900 font-bold tracking-tight mb-4">
-                <span class="sr-only">Title: </span>Head to the store</p>
-              <p class="text-lg text-gray-500 mb-4"><a
-                  href="https://goo.gl/maps/rG3U2kfMMjundn8P6"
-                  class=" text-brand-blue-700 font-medium underline hover:text-brand-blue-900
-                        transition-all ease-in-out duration-150">
-                  Need directions?</a> When you arrive, head to the front door with your valid ID and the credit card that the purchase was paid with.</p>
+                <span class="sr-only">Title: </span>Arrive at the store</p>
+              <p class="text-lg text-gray-500 mb-4"> When you arrive, head to the front door with your valid ID and the credit card that the purchase was paid with.</p>
 
             </li>
           </ol>
