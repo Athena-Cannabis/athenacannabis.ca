@@ -11,6 +11,7 @@ const categories = [
   {
     id: 17,
     weight: 0,
+    description: '',
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Accessories',
@@ -31,6 +32,7 @@ const categories = [
   {
     id: 32,
     weight: 100,
+    description: 'Eat all the things',
     image: {
       src: '/images/categories/edibles.jpg',
       alt: 'Cannabis infused edibles',

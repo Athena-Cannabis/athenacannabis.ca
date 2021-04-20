@@ -23,11 +23,11 @@
                   <li
                     v-for="category in productsCategories"
                     :key="category.id"
-                    class=" bg-white rounded-xl">
+                    class="">
 
                       <router-link
                         :to="{ name: 'category-products', params: { slug: category.slug }}"
-                        class="flex flex-col border bg-gray-200 border-gray-100 rounded-xl hover:border-gray-300 shadow-xl">
+                        class="flex flex-col">
 
                         <div class="order-2 text-center mb-16">
 
@@ -36,7 +36,7 @@
                             {{ category.title }}
                           </h3>
 
-                          <p class="text-gray-600">Lorem ipsum dolar</p>
+                          <p class="text-gray-600">{{ category.description }}</p>
 
                         </div>
 

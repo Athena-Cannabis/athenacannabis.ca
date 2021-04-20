@@ -4,12 +4,14 @@ export class ProductCategory {
   parent = null;
 
   title = '';
+  description = '';
   slug = '';
   weight= null;
 
   image = {
     src: null,
     alt: null,
+    svg: null,
   };
 
   validCategoryPage = null;
@@ -24,12 +26,14 @@ export class ProductCategory {
 
     // Assign the title and slug text
     this.title = data.title || '';
+    this.description = data.description || '';
     this.slug = data.slug || '';
     this.weight = data.weight || 0;
 
     // Assign the cover image
     this.image.src = data.image?.src || null;
     this.image.alt = data.image?.alt || null;
+    this.image.svg = data.image?.svg || null;
 
     // Flag to determine if the category gets a category page
     this.validCategoryPage = data.validCategoryPage || null;
