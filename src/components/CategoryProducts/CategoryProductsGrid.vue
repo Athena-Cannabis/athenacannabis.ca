@@ -3,33 +3,49 @@
 
     <p>Number of products: {{ products.length }}</p>
 
-    <ul
-      class="grid grid-cols-4 gap-10">
+    <div class="flex flex-row flex-nowrap">
 
-      <li
-        v-for="product in products"
-        :key="product.id">
+       <!-- Category Filters -->
+      <aside
+        class="w-1/4
+              bg-white rounded-2xl ">
+        <p>Hello</p>
+      </aside>
 
-        <div class="flex flex-col">
+      <!-- Product list -->
+      <section
+        class="w-3/4">
+        <h2 class="sr-only">Products</h2>
+        <ul
+          class="grid grid-cols-4 gap-10">
 
-          <h3 class="font-bold text-sm order-2">{{ product.title }}</h3>
+          <li
+            v-for="product in products"
+            :key="product.id">
 
-          <div class="order-1
-                    bg-gray-200 p-5 mb-5 rounded-xl flex flex-row
-                      justify-center align-middle">
-            <img
-              :src="product.images[0].src"
-              :alt="product.images[0].alt"
-              class="h-44 object-cover rounded-xl" />
-          </div>
+            <div class="flex flex-col">
+
+              <h3 class="font-bold text-sm order-2">{{ product.title }}</h3>
+
+              <div class="order-1
+                        bg-gray-200 p-5 mb-5 rounded-xl flex flex-row
+                          justify-center align-middle">
+                <img
+                  :src="product.images[0].src"
+                  :alt="product.images[0].alt"
+                  class="h-44 object-cover rounded-xl" />
+              </div>
 
 
 
-        </div>
+            </div>
 
-      </li>
+          </li>
 
-    </ul>
+        </ul>
+      </section>
+
+    </div>
 
   </div>
 </template>
