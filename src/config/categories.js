@@ -10,10 +10,7 @@ const categories = [
   // Accessories
   {
     id: 17,
-    title: 'Accessories',
-    slug: 'accessories',
     weight: 0,
-    parent: null,
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Accessories',
@@ -23,10 +20,7 @@ const categories = [
   // Accessories - Rolling Papers
   {
     id: 26,
-    title: 'Rolling Papers',
-    slug: 'rolling-papers',
     weight: 100,
-    parent: 17,
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Rolling papers',
@@ -36,10 +30,7 @@ const categories = [
   // Cannabis - Edibles
   {
     id: 32,
-    title: 'Edibles',
-    slug: 'edibles',
     weight: 100,
-    parent: null,
     image: {
       src: '/images/categories/edibles.jpg',
       alt: 'Cannabis infused edibles',
@@ -49,10 +40,7 @@ const categories = [
   // Cannabis - Flower
   {
     id: 29,
-    title: 'Dried Flower',
-    slug: 'dried-flower',
     weight: 900,
-    parent: null,
     image: {
       src: '/images/categories/dried-flower.jpg',
       alt: 'Cannabis dried flower',
@@ -62,10 +50,7 @@ const categories = [
   // Cannabis - Beverages
   {
     id: 31,
-    title: 'Beverages',
-    slug: 'beverages',
     weight: 100,
-    parent: null,
     image: {
       src: '/images/categories/beverages.jpg',
       alt: 'Cannabis infused beverage',
@@ -75,10 +60,7 @@ const categories = [
   // Cannabis - Pre-rolls
   {
     id: 28,
-    title: 'Pre-Rolls',
-    slug: 'pre-rolls',
     weight: 800,
-    parent: null,
     image: {
       src: '/images/categories/pre-rolls.jpg',
       alt: 'Pre-rolled cannabis joint',
@@ -88,10 +70,7 @@ const categories = [
   // Cannabis - Capsules
   {
     id: 36,
-    title: 'Capsules',
-    slug: 'capsules',
     weight: 100,
-    parent: null,
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Capsules containing cannabis',
@@ -101,10 +80,7 @@ const categories = [
   // Cannabis - Extracts
   {
     id: 30,
-    title: 'Extracts',
-    slug: 'extracts',
     weight: 100,
-    parent: null,
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Extracts',
@@ -114,10 +90,7 @@ const categories = [
   // Cannabis - Oils
   {
     id: 35,
-    title: 'Oils',
-    slug: 'oils',
     weight: 100,
-    parent: null,
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Oils',
@@ -127,10 +100,7 @@ const categories = [
   // Cannabis - Vapes
   {
     id: 34,
-    title: 'Vapes',
-    slug: 'vapes',
     weight: 100,
-    parent: null,
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Vapes',
@@ -140,10 +110,7 @@ const categories = [
   // Cannabis - Seeds
   {
     id: 37,
-    title: 'Seeds',
-    slug: 'seeds',
     weight: 100,
-    parent: null,
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Seeds',
@@ -153,10 +120,7 @@ const categories = [
   // Cannabis - Topicals
   {
     id: 33,
-    title: 'Topicals',
-    slug: 'topicals',
     weight: 100,
-    parent: null,
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Topicals',

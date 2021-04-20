@@ -7,7 +7,7 @@
             <!-- Text section -->
             <div class="text-left max-w-prose">
               <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
-                Explore cannabis {{cannabisProductId}}
+                Explore cannabis
               </h2>
 
               <p class="mt-3 text-xl text-gray-500 sm:mt-4">
@@ -18,10 +18,10 @@
             <div class="mt-10">
 
                 <ul
-                  class="list-none grid grid-cols-3 lg:grid-cols-6 gap-4">
+                  class="list-none grid grid-cols-3 lg:grid-cols-5 gap-4">
 
                   <li
-                    v-for="category in parentCategories"
+                    v-for="category in productsCategories"
                     :key="category.id"
                     class=" bg-white rounded-xl">
 
@@ -83,20 +83,14 @@ import { useStore } from 'vuex';
 export default {
   setup() {
 
+    const CANNABIS_CATEGORY_ID = 16;
+
     const store = useStore()
 
-    const cannabisProductId = computed(() => store.getters['productCategory/getCategoryIDBySlug']('cannabis'));
-
-    const productsCategories = computed(() => store.getters['productCategory/getCategories']);
-
-    const parentCategories = computed(() => store.getters['productCategory/getParentCategories']);
-
-    store.dispatch('productCategory/fetchCategories');
+    const productsCategories = computed(() => store.getters['productCategory/getChildCategoriesById'](CANNABIS_CATEGORY_ID));
 
     return {
-      cannabisProductId,
       productsCategories,
-      parentCategories,
     }
 
   },

@@ -1,4 +1,4 @@
-import { categories } from '../../config/categories';
+import { categories as configCategories } from '../../config/categories';
 import { ProductCategory } from '../../models/product-catagory';
 import ProductCategoryService from '../../services/woocommerce/product-category';
 
@@ -40,17 +40,16 @@ const getters = {
     return categories;
   },
 
-  getChildCategoriesById (state, getters) {
+  getChildCategoriesById: (state, getters) => (id) => {
 
     var categories = [];
 
-    // Get parent categories
-    categories = getters.getCategories.filter(element => element.parent === null);
+    // Get child categories
+    categories = getters.getCategories.filter(element => element.parent === 16);
 
     // Sort parents by weight
-    categories.sort((a, b) => b.weight - a.weight);
+    return categories.sort((a, b) => b.weight - a.weight);
 
-    return categories;
   },
 
   // Find a category with a matching slug value
@@ -95,6 +94,18 @@ const actions = {
       .then((categories) => {
 
         var loadedCategories = categories;
+
+        // If there is an overide in the config file add it to the object
+        configCategories.forEach(element => {
+
+          const findIndex = loadedCategories.findIndex((category) => category.id === element.id)
+
+          if (findIndex) {
+            loadedCategories[findIndex] = { ...loadedCategories[findIndex], ...element};
+          }
+
+        });
+
 
         // // See if there is an overide in the config file
         /*
