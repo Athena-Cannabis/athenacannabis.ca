@@ -28,7 +28,7 @@
                       <router-link
                         :to="{ name: 'category-products', params: { slug: category.slug }}"
                         class="flex flex-col items-center
-                              border-2 border-blue-900 rounded-2xl
+                              border-2 border-blue-700 rounded-2xl
                               p-5 h-full hover:shadow-2xl">
 
                         <!-- Title and description -->
