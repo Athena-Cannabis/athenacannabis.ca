@@ -31,7 +31,7 @@
                       How long will my order take to prepare?
                     </dt>
                     <dd class="mt-2 text-lg text-gray-500">
-                      Orders ready in up to 2 Hours. (Order by 5:00 PM for same day)
+                      Orders ready in up to 30 minutes. (Order by 6:30 PM for same day)
                     </dd>
                   </div>
 
