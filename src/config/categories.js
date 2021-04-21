@@ -31,7 +31,7 @@ const categories = [
   // Cannabis - Edibles
   {
     id: 32,
-    weight: 100,
+    weight: 300,
     description: 'Eat all the things',
     icon: {
       viewbox: '0 0 100 100',
@@ -47,6 +47,7 @@ const categories = [
   {
     id: 29,
     weight: 900,
+    description: 'Flower power',
     image: {
       src: '/images/categories/dried-flower.jpg',
       alt: 'Cannabis dried flower',
@@ -56,7 +57,8 @@ const categories = [
   // Cannabis - Beverages
   {
     id: 31,
-    weight: 100,
+    weight: 300,
+    description: 'Drinks drinks drinks',
     image: {
       src: '/images/categories/beverages.jpg',
       alt: 'Cannabis infused beverage',
@@ -67,6 +69,7 @@ const categories = [
   {
     id: 28,
     weight: 800,
+    description: 'Pre flower power',
     image: {
       src: '/images/categories/pre-rolls.jpg',
       alt: 'Pre-rolled cannabis joint',
@@ -76,7 +79,8 @@ const categories = [
   // Cannabis - Capsules
   {
     id: 36,
-    weight: 100,
+    weight: 200,
+    description: 'Capsules on capsules',
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Capsules containing cannabis',
@@ -86,7 +90,8 @@ const categories = [
   // Cannabis - Extracts
   {
     id: 30,
-    weight: 100,
+    weight: 200,
+    description: 'Extracts on extracts',
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Extracts',
@@ -96,7 +101,8 @@ const categories = [
   // Cannabis - Oils
   {
     id: 35,
-    weight: 100,
+    weight: 200,
+    description: 'Oils and oils',
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Oils',
@@ -107,6 +113,7 @@ const categories = [
   {
     id: 34,
     weight: 100,
+    description: 'Vapes on vapes',
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Vapes',
@@ -116,7 +123,8 @@ const categories = [
   // Cannabis - Seeds
   {
     id: 37,
-    weight: 100,
+    weight: 200,
+    description: 'Plant things',
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Seeds',
@@ -126,7 +134,7 @@ const categories = [
   // Cannabis - Topicals
   {
     id: 33,
-    weight: 100,
+    weight: 200,
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Topicals',
