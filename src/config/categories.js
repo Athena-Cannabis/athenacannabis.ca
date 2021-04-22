@@ -135,6 +135,7 @@ const categories = [
   {
     id: 33,
     weight: 200,
+    description: 'Bath bombs, creams, and things',
     image: {
       src: '/images/categories/unknown.png',
       alt: 'Topicals',

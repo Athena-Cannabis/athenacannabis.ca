@@ -23,19 +23,41 @@
                   <li
                     v-for="category in productsCategories"
                     :key="category.id"
-                    class="">
+                    class="pt-6">
+
+
+
 
                       <router-link
                         :to="{ name: 'category-products', params: { slug: category.slug }}"
-                        class="flex flex-col items-center
-                              border-2 border-blue-700 rounded-2xl
-                              p-5 h-full hover:shadow-2xl">
+                        class="flex flex-col items-center bg-grays-200
+                              border-s2 border-bransd-blue-800 rounded-2xl
+                              p-5 h-full">
+
+                        <div class="flow-root bg-gray-200 rounded-lg px-6 pb-8">
+                          <div class="-mt-6">
+                            <div>
+                              <span class="inline-flex items-center justify-center p-3 bg-brand-blue-700 rounded-md shadow-lg">
+                                <!-- Heroicon name: outline/cloud-upload -->
+                                <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                                </svg>
+                              </span>
+                            </div>
+                            <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Push to Deploy</h3>
+                            <p class="mt-5 text-base text-gray-500">
+                              Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+                            </p>
+                          </div>
+                        </div>
+
+
 
                         <!-- Title and description -->
-                        <div class="order-2 text-left mt-5 w-full">
+                        <div class="order-2 text-center mt-5 w-full">
 
                           <h3
-                            class="text-left text-xl text-brand-blue-800 font-bold">
+                            class="text-xl text-brand-blue-800 font-bold">
                             {{ category.title }}
                           </h3>
 
@@ -49,7 +71,7 @@
                           class="order-1"
                         >
 
-                          <svg class="h-12 fill-current text-brand-blue-700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" :view-box.camel="category.icon.viewbox" xml:space="preserve" v-html="category.icon.contents"></svg>
+                          <svg class="h-14 fill-current text-brand-blue-700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" :view-box.camel="category.icon.viewbox" xml:space="preserve" v-html="category.icon.contents"></svg>
 
                         </div>
                         <div
@@ -57,7 +79,7 @@
                           class="order-1">
 
                           <!-- Placeholder SVG -->
-                          <svg class=" h-12 fill-current text-brand-blue-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" x="0px" y="0px"><title>Artboard 34</title><g data-name="Layer 2"><path d="M4.33,15h7.34A3.34,3.34,0,0,0,15,11.67V4.33A3.34,3.34,0,0,0,11.67,1H4.33A3.34,3.34,0,0,0,1,4.33v7.34A3.34,3.34,0,0,0,4.33,15ZM3,4.33A1.34,1.34,0,0,1,4.33,3h7.34A1.34,1.34,0,0,1,13,4.33v7.34A1.34,1.34,0,0,1,11.67,13H4.33A1.34,1.34,0,0,1,3,11.67Z"></path><path d="M27.67,1H20.33A3.34,3.34,0,0,0,17,4.33v7.34A3.34,3.34,0,0,0,20.33,15h7.34A3.34,3.34,0,0,0,31,11.67V4.33A3.34,3.34,0,0,0,27.67,1ZM29,11.67A1.34,1.34,0,0,1,27.67,13H20.33A1.34,1.34,0,0,1,19,11.67V4.33A1.34,1.34,0,0,1,20.33,3h7.34A1.34,1.34,0,0,1,29,4.33Z"></path><path d="M4.33,31h7.34A3.34,3.34,0,0,0,15,27.67V20.33A3.34,3.34,0,0,0,11.67,17H4.33A3.34,3.34,0,0,0,1,20.33v7.34A3.34,3.34,0,0,0,4.33,31ZM3,20.33A1.34,1.34,0,0,1,4.33,19h7.34A1.34,1.34,0,0,1,13,20.33v7.34A1.34,1.34,0,0,1,11.67,29H4.33A1.34,1.34,0,0,1,3,27.67Z"></path><path d="M24,17a7,7,0,1,0,7,7A7,7,0,0,0,24,17Zm0,12a5,5,0,1,1,5-5A5,5,0,0,1,24,29Z"></path></g></svg>
+                          <svg class="h-14 fill-current text-brand-blue-700" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" x="0px" y="0px"><title>Artboard 34</title><g data-name="Layer 2"><path d="M4.33,15h7.34A3.34,3.34,0,0,0,15,11.67V4.33A3.34,3.34,0,0,0,11.67,1H4.33A3.34,3.34,0,0,0,1,4.33v7.34A3.34,3.34,0,0,0,4.33,15ZM3,4.33A1.34,1.34,0,0,1,4.33,3h7.34A1.34,1.34,0,0,1,13,4.33v7.34A1.34,1.34,0,0,1,11.67,13H4.33A1.34,1.34,0,0,1,3,11.67Z"></path><path d="M27.67,1H20.33A3.34,3.34,0,0,0,17,4.33v7.34A3.34,3.34,0,0,0,20.33,15h7.34A3.34,3.34,0,0,0,31,11.67V4.33A3.34,3.34,0,0,0,27.67,1ZM29,11.67A1.34,1.34,0,0,1,27.67,13H20.33A1.34,1.34,0,0,1,19,11.67V4.33A1.34,1.34,0,0,1,20.33,3h7.34A1.34,1.34,0,0,1,29,4.33Z"></path><path d="M4.33,31h7.34A3.34,3.34,0,0,0,15,27.67V20.33A3.34,3.34,0,0,0,11.67,17H4.33A3.34,3.34,0,0,0,1,20.33v7.34A3.34,3.34,0,0,0,4.33,31ZM3,20.33A1.34,1.34,0,0,1,4.33,19h7.34A1.34,1.34,0,0,1,13,20.33v7.34A1.34,1.34,0,0,1,11.67,29H4.33A1.34,1.34,0,0,1,3,27.67Z"></path><path d="M24,17a7,7,0,1,0,7,7A7,7,0,0,0,24,17Zm0,12a5,5,0,1,1,5-5A5,5,0,0,1,24,29Z"></path></g></svg>
 
                         </div>
 

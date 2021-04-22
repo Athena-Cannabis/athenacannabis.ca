@@ -7,8 +7,7 @@
 
        <!-- Category Filters -->
       <aside
-        class="w-1/4
-              bg-white rounded-2xl ">
+        class="w-1/4">
         <p>Hello</p>
       </aside>
 
