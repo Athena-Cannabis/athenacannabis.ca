@@ -17,6 +17,7 @@
                <div class="mt-12 lg:mt-10">
                 <dl class="space-y-6">
 
+                  <!--
                   <div>
                     <dt class="text-xl leading-6 font-medium text-gray-900">
                       What are your store hours?
@@ -25,13 +26,14 @@
                       Store pickup available daily from 11:00 AM - 7:00 PM.
                     </dd>
                   </div>
+                  -->
 
                   <div>
                     <dt class="text-xl leading-6 font-medium text-gray-900">
                       How long will my order take to prepare?
                     </dt>
                     <dd class="mt-2 text-lg text-gray-500">
-                      Orders ready in up to 30 minutes. (Order by 6:30 PM for same day)
+                      Orders ready in 25 minutes or less. (Order 25 minutes before close for same day pickup)
                     </dd>
                   </div>
 
@@ -49,7 +51,7 @@
                       Can I place an order at the store?
                     </dt>
                     <dd class="mt-2 text-lg text-gray-500">
-                      Due to the current provincial emergency lock down rules, all orders must be placed and paid for online prior to arriving to the store.
+                      Due to the current provincial emergency lock down rules, all orders must be placed online or over the phone prior to arriving at the store.
                     </dd>
                   </div>
 
@@ -58,7 +60,7 @@
                       Can someone else pick up my order?
                     </dt>
                     <dd class="mt-2 text-lg text-gray-500">
-                      Unfortunately no, the online purchaser must be present at the store for pick up with valid ID and the credit card that was used to purchase the items.
+                      Unfortunately no, the original purchaser must be present at the store for pick up with valid ID and the credit card that was used to purchase the items.
                     </dd>
                   </div>
 

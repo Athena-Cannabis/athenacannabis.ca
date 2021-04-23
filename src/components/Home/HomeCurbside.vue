@@ -42,7 +42,7 @@
               <h4 class="tracking-widest text-brand-blue-500 text-sm uppercase">Step 1</h4>
               <p class="text-xl text-gray-900 font-bold tracking-tight mb-4">
                 <span class="sr-only">Title: </span>Browse our menu</p>
-              <p class="text-lg text-gray-500">Visit our <a rel="external" class="text-brand-blue-700 font-medium underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="https://athenawebmenu.azurewebsites.net/">online menu</a>. Browse through a host of different products like dried flower, pre-rolls, edibles and much more. Call the store at <a href="tel:+1613-595-1420">613-595-1420</a> for help from our knowledgeable staff.</p>
+              <p class="text-lg text-gray-500">Visit our <a rel="external" class="text-brand-blue-700 font-medium underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="https://athenawebmenu.azurewebsites.net/">online menu</a>. Browse through a host of different products like dried flower, pre-rolls, edibles and much more. <!--Call the store at <a href="tel:+1613-595-1420">613-595-1420</a> for help from our knowledgeable staff.--></p>
             </li>
             <li>
               <div class="flex flex-row flex-nowrap justify-center items-center
@@ -54,7 +54,7 @@
               <h4 class="tracking-widest text-brand-blue-500 text-sm uppercase">Step 2</h4>
               <p class="text-xl text-gray-900 font-bold tracking-tight mb-4">
                 <span class="sr-only">Title: </span>Checkout and payment</p>
-              <p class="text-lg text-gray-500">Hit the checkout button on the online menu to setup payment and complete your order. Once payment has gone through we'll send you an email indicating that we have received your order.</p>
+              <p class="text-lg text-gray-500">Hit the checkout button on the online menu to complete your order. You can choose to pay online or pay at the store. We'll send you an email indicating that we have received your order.</p>
 
             </li>
             <li>
@@ -67,7 +67,7 @@
               <h4 class="tracking-widest text-brand-blue-500 text-sm uppercase">Step 3</h4>
               <p class="text-xl text-gray-900 font-bold tracking-tight mb-4">
                 <span class="sr-only">Title: </span>Receive "Order Ready" email</p>
-              <p class="text-lg text-gray-500">When we're done packing up your order, we'll send you an email indicating that your order is ready for pickup and you can head to the store. <a
+              <p class="text-lg text-gray-500">When we're done preparing up your order, we'll send you an email indicating that your order is ready for pickup and you can head to the store. <a
                   href="https://goo.gl/maps/rG3U2kfMMjundn8P6"
                   class=" text-brand-blue-700 font-medium underline hover:text-brand-blue-900
                         transition-all ease-in-out duration-150">
