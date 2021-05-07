@@ -1,12 +1,14 @@
 <template>
-  <div>
-    <section>
-      <div class="bg-gray-50">
-        <div class="py-10 px-4 sm:px-5 2xl:px-8 2xl:container">
+  <section>
+    <!-- Background fluid container -->
+    <div class="bg-gray-100">
+      <!-- Content container -->
+      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
 
-          <!-- Text section -->
+         <!-- Text section -->
           <div class="text-left max-w-prose">
-            <h2 class="text-3xl tracking-tight font-bold text-gray-900 sm:text-4xl">
+
+            <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-6xl text-gray-900">
               Let’s take the next step
             </h2>
 
@@ -66,10 +68,9 @@
 
           </div>
 
-        </div>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
   <section
     v-if="false"
     id="contact">

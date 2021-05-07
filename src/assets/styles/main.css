@@ -4,6 +4,13 @@
 @tailwind utilities;
 
 
+@layer components {
+
+
+
+}
+
+
 @layer base {
 
   .body {
