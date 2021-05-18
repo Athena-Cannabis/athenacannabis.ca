@@ -17,6 +17,7 @@
 
                 <h3 class="text-gray-300 font-bold uppercase"><span class="sr-only">Store</span> address<span class="sr-only">:</span></h3>
 
+                <!-- TODO: Add <address> markup -->
                 <address>
                   <p class="mt-4 max-w-lg text-xl text-gray-400 sm:mt-4 not-italic">
                     782 Eagleson Road, Unit D4<br />
@@ -46,10 +47,10 @@
 
                   <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
                     <dt class="col-span-2">
-                      Monday - Thursday
+                      Monday - Saturday
                     </dt>
                     <dd class="col-span-3 text-right md:text-left">
-                      <span class="whitespace-nowrap">10:00 AM - 7:00 PM</span>
+                      <span class="whitespace-nowrap">10:00 AM - 8:00 PM</span>
                     </dd>
                   </div>
 
@@ -80,7 +81,7 @@
                       10:00 AM - 7:00 PM
                     </dd>
                   </div>
-                  -->
+
 
                   <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
                     <dt class="col-span-2">
@@ -99,13 +100,14 @@
                       <span class="whitespace-nowrap">10:00 AM - 8:00 PM</span>
                     </dd>
                   </div>
+                  -->
 
                   <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
                     <dt class="col-span-2">
                       Sunday
                     </dt>
                     <dd class="col-span-3 text-right md:text-left">
-                      <span class="whitespace-nowrap">11:00 AM - 6:00 PM</span>
+                      <span class="whitespace-nowrap">11:00 AM - 7:00 PM</span>
                     </dd>
                   </div>
 
