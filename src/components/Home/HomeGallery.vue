@@ -8,7 +8,7 @@
         <!-- Text section -->
         <div class="text-left max-w-prose">
 
-          <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-6xl text-gray-900">
+          <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-brand-blue-900">
             What we've built
           </h2>
 
