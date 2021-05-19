@@ -1,4 +1,86 @@
 <template>
+  <section>
+
+     <!-- Background fluid container -->
+    <div class=" bg-gray-100 ">
+
+      <!-- Content container -->
+      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container relative">
+
+        <div class="relative py-32  w-2/3">
+
+            <h1 class="sr-only">Athena Cannabis</h1>
+
+              <p class="mb-8 uppercase text-lg text-gray-800 tracking-widest">A recreational cannabis store</p>
+
+              <p class="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl
+                        font-medium md:text-brand-blue-800">
+                <span class="sm:block md:inline font-bold">Shop online, </span>
+                <span class="sm:block md:inline text-brand-blue-600"> pickup in under 25 minutes</span>
+              </p>
+
+              <!--
+              <h3 class="text-center msd:text-left text-4xl sm:text-6xl lg:text-7xl
+                        font-medium md:text-gray-900 tracking-tight ">
+                <span class="sm:block">Shop online, </span>
+                <span class="sm:block text-brand-blue-600"> pickup in under 25 minutes</span>
+              </h3>
+              -->
+
+              <p class="sr-only md:w-full mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
+                We are now open for store pickup!
+              </p>
+              <p class="sr-only md:w-full lg:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
+                It's not quite the grand opening we had in mind, but due to the latest lockdown we've had to change our plans.
+              </p>
+              <p class="mt-10">
+                <a
+                  rel="external"
+                  href="https://athenawebmenu.azurewebsites.net/"
+                  class="inline-flex align-bottom py-4 px-4 md:py-6 md:px-8 border-2 border-brand-blue-900 shadow-sm text-2xl
+                  font-medium rounded-lg text-white bg-brand-blue-800 hover:bg-brand-blue-900
+                  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                  transition-all duration-150 ease-in-out">
+                    <span class="pr-4">Shop now</span>
+                    <svg class="h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" x="0px" y="0px"><title>shopping, paper, bag, cart</title><g data-name="Shopping Bag"><path d="M50.051,10.64a1,1,0,0,0-1-.9H17.921a1.008,1.008,0,0,0-.99.83l-6.79,39.52a1.017,1.017,0,0,0,.88,1.17l28.7,3h.11a.892.892,0,0,0,.22-.03.743.743,0,0,0,.27-.1l5.99-3.38,6.35,1.42a1,1,0,0,0,.88-.22,1.017,1.017,0,0,0,.33-.85ZM38.921,52.16l-26.63-2.78,6.47-37.64h23.77ZM24.937,23.787a5.359,5.359,0,0,1-1.284-4.227l.616-4.71a1,1,0,0,1,1.983.259l-.617,4.71a3.356,3.356,0,1,0,6.659.835l.693-5.793a1,1,0,0,1,1.986.237l-.693,5.793a5.356,5.356,0,0,1-9.343,2.9Z"></path></g></svg>
+                </a>
+
+                <router-link
+                  to="/how-to-shop"
+                  class="ml-5 inline-flex align-bottom py-4 px-4 md:py-6 md:px-8 border-2 border-brand-blue-900 shadow-sm text-2xl
+                  font-medium rounded-lg text-brand-blue-800 bg-gray-100 hover:bg-brand-blue-900 hover:text-gray-100
+                  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                  transition-all duration-150 ease-in-out">
+                    <span class="">Learn more</span><span class="sr-only"> about our store pickup process</span>
+                    <!--<svg class="h-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" x="0px" y="0px"><title>shopping, paper, bag, cart</title><g data-name="Shopping Bag"><path d="M50.051,10.64a1,1,0,0,0-1-.9H17.921a1.008,1.008,0,0,0-.99.83l-6.79,39.52a1.017,1.017,0,0,0,.88,1.17l28.7,3h.11a.892.892,0,0,0,.22-.03.743.743,0,0,0,.27-.1l5.99-3.38,6.35,1.42a1,1,0,0,0,.88-.22,1.017,1.017,0,0,0,.33-.85ZM38.921,52.16l-26.63-2.78,6.47-37.64h23.77ZM24.937,23.787a5.359,5.359,0,0,1-1.284-4.227l.616-4.71a1,1,0,0,1,1.983.259l-.617,4.71a3.356,3.356,0,1,0,6.659.835l.693-5.793a1,1,0,0,1,1.986.237l-.693,5.793a5.356,5.356,0,0,1-9.343,2.9Z"></path></g></svg>-->
+                </router-link>
+              </p>
+
+
+        </div>
+        <!--
+         <svg class="absolute right-0 bottom-0 transform translate-y-36" width="404" height="392" fill="none" viewBox="0 0 404 392">
+          <defs>
+            <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+              <rect x="0" y="0" width="4" height="4" class="text-brand-blue-600" fill="currentColor" />
+
+            </pattern>
+          </defs>
+          <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" />
+        </svg>-->
+        <svg class="absolute right-10 bottom-0  transform translaste-y-20 rounded-full text-gray-400" width="244" height="492">
+          <defs>
+            <pattern id="pattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+            <circle cx="8" cy="8" r="2" stroke="none" class=" fill-current" fill="currentColor" />
+          </pattern>
+          </defs>
+
+          <rect width="244" height="492" fill="url(#pattern)" />
+          </svg>
+      </div>
+    </div>
+  </section>
+<div v-if="false">
     <section>
     <!-- Background fluid container -->
     <div class="bg-gray-100">
@@ -6,7 +88,7 @@
       <!-- Content container -->
       <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
 
-        <div class="pt-10 pb-48 w-full lg:w-2/3 mx-auto text-center">
+        <div class="pt-10 pb-48 w-full lg:w-2/3">
 
           <h1 class="sr-only">Athena Cannabis</h1>
 
@@ -47,7 +129,7 @@
             <router-link
               to="/how-to-shop"
               class="ml-5 inline-flex align-bottom py-4 px-4 md:py-6 md:px-8 border-2 border-brand-blue-900 shadow-sm text-2xl
-              font-medium rounded-lg text-brand-blue-800 bg-gray-100 hover:bg-brand-blue-700 hover:text-gray-100
+              font-medium rounded-lg text-brand-blue-800 bg-gray-100 hover:bg-brand-blue-900 hover:text-gray-100
               focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
               transition-all duration-150 ease-in-out">
                 <span class="">Learn more</span><span class="sr-only"> about our store pickup process</span>
@@ -65,21 +147,36 @@
         </div>
         -->
 
-         <div class="grid grid-cols-2 gap-8">
+        <div class="w-full flex flex-row-reverse">
 
-          <div class=" ">
-            <img class="h-56 w-full object-cover lg:object-center sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl " src="/images/home/hero-g.jpg" alt="">
+         <div class="grid grid-cols-2 w-4/5">
+
+          <div class="relative">
+            <img class="h-56 w-full object-cover lg:object-center sm:h-72 md:h-96 lg:w-full lg:h-full filter grayscale blur-sm" src="/images/home/hero-f.jpg" alt="">
+            <div class="absolute inset-0 bg-brand-blue-500 mix-blend-multiply ">
+              <svg class="absolute top-8 right-1/2 -mr-3 lg:m-0 lg:left-0" width="404" height="392" fill="none" viewBox="0 0 404 392">
+              <defs>
+                <pattern id="837c3e70-6c3a-44e6-8854-cc48c737b659" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                  <rect x="0" y="0" width="4" height="4" class="text-gray-200" fill="currentColor" />
+                </pattern>
+              </defs>
+              <rect width="404" height="392" fill="url(#837c3e70-6c3a-44e6-8854-cc48c737b659)" />
+            </svg>
+            </div>
           </div>
 <!--
           <div class="">
             <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl shadow-xl" src="/images/home/hero-g.jpg" alt="">
           </div>
 -->
-            <div class="">
-            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl " src="/images/home/hero-f.jpg" alt="">
+          <div class="relative">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full filter grayscale blur-sm " src="/images/home/hero-e.jpg" alt="">
+            <div class="absolute inset-0 bg-brand-blue-500 mix-blend-multiply "></div>
           </div>
 
 
+
+        </div>
 
         </div>
 
@@ -98,10 +195,10 @@
       <!-- Content container -->
       <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
 
-        <div class="grid grid-cols-2 gap-5">
+        <div class="grid grid-cols-2 gap-5 mb-52">
 
           <!-- Hero text -->
-          <div class=" bg-gray-200 rounded-xl py-32 px-10">
+          <div class=" bg-gray-100 rounded-xl py-32 px-10">
 
             <h1 class="sr-only">Athena Cannabis</h1>
 
@@ -152,8 +249,11 @@
 
           </div>
 
-          <div class="">
-            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl shadow-xl" src="/images/home/hero-g.jpg" alt="">
+          <div class="relative px-10 transform translate-y-52">
+            <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full  rounded-xl shadow-xl filter grayscale" src="/images/home/hero-f.jpg" alt="">
+            <div class="mx-10 absolute inset-0 bg-brand-blue-500 mix-blend-multiply rounded-xl"></div>
+
+
           </div>
 
         </div>
@@ -238,6 +338,7 @@
           <!-- Image container -->
           <div class="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 z-10 py-5 md:py-10">
             <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-l-xl" src="/images/home/hero-a.jpg" alt="">
+            <div class="absolute inset-0 bg-brand-blue-500 mix-blend-multiply "></div>
           </div>
 
       </div>
@@ -425,22 +526,23 @@
 
             <div class="grid grid-cols-12 grid-rows-5 relative h-full pl-32">
 
-              <div class="col-start-1 row-start-1 row-span-4 col-span-8 z-10 pt-30 pt-36">
+              <div class="col-start-1 row-start-2 row-span-3 col-span-8 z-20 relative">
                 <img
                   class="relative object-cover object-center lg:object-left w-full h-full rounded-xl shadow-xl"
-                  src="/images/home/hero-a.jpg" alt="">
+                  src="/images/home/hero-g.jpg" alt="">
+                <div class="absolute inset-0 bg-brand-blue-500 mix-blend-multiply rounded-xl"></div>
               </div>
 
-              <div class="col-start-8 col-span-full row-start-1 row-span-2 z-20">
+              <div class="col-start-8 col-span-full row-start-1 row-span-2 z-10">
                 <img
                   class="relative object-cover lg:object-left w-full h-full rounded-xl shadow-xl"
-                  src="/images/home/hero-c.jpg" alt="">
+                  src="/images/home/hero-e.jpg" alt="">
               </div>
 
                <div class="col-start-5 col-span-6 row-start-4 row-span-full z-30 mt-10">
                 <img
                   class="relative object-cover lg:object-left w-full rounded-xl shadow-xl"
-                  src="/images/home/hero-b.jpg" alt="">
+                  src="/images/home/hero-f.jpg" alt="">
               </div>
 
             </div>
@@ -580,5 +682,6 @@
         </div>
       </div>
     </section>
+  </div>
   </div>
 </template>
