@@ -1,33 +1,47 @@
 <template>
   <section>
-    <!-- Background fluid container -->
+
+     <!-- Background fluid container -->
     <div class="bg-gray-100">
+
       <!-- Content container -->
       <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
 
-        <!-- Text section -->
-        <div class="text-left max-w-prose">
+        <div class="grid grid-cols-2 gap-5 mb-52">
 
-          <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-6xl text-gray-900">
-            Join Our Team - We’re hiring!
-            <!--
-            <span class="block">Join Our Team</span>
-            <span class="block">We’re hiring!</span>
-            -->
-          </h2>
+          <!-- Text -->
+          <div class="p-10 rounded-xl ">
 
-          <p class="mt-4 text-xl text-gray-500">If you’re passionate about customer service and providing the community with a safe and accessible way to purchase cannabis, we’d love to hear from you!</p>
+            <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-gray-800 font-semibold">
+              <span class="sr-only">Join Our Team - </span>We’re hiring!
+            </h2>
 
-          <p class="mt-4 text-xl text-gray-500">At this time, we are hiring for the positions of part time Budtenders. Applicant is responsible for obtaining a Criminal Record Check and Cannsell Certificate, prior to their first scheduled shift but not necessary to apply. </p>
+             <!-- Text section -->
+            <div class="text-left max-w-prose">
 
-          <p class="mt-4 text-xl text-gray-500">Please send an email with your updated resume to <a class=" text-brand-blue-700 font-medium text-xl underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="mailto:hello@athenacannabis.ca">hello@athenacannabis.ca</a></p>
+              <p class="mt-4 text-xl text-gray-500">If you’re passionate about customer service and providing the community with a safe and accessible way to purchase cannabis, we’d love to hear from you!</p>
+
+              <p class="mt-4 text-xl text-gray-500">At this time, we are hiring for the positions of part time Budtenders.</p>
+
+              <p class="mt-4 text-xl text-gray-500">Applicant is responsible for obtaining a Criminal Record Check and Cannsell Certificate, prior to their first scheduled shift but not necessary to apply. </p>
+
+              <p class="mt-4 text-xl text-gray-500">Please send an email with your updated resume to <a class=" text-brand-blue-700 font-medium text-xl underline hover:text-brand-blue-900 transition-all ease-in-out duration-150" href="mailto:hello@athenacannabis.ca">hello@athenacannabis.ca</a></p>
+
+            </div>
+
+          </div>
+
+          <!-- Image -->
+          <div class="p-10 bg-white rounded-xl">
+            Image
+          </div>
 
         </div>
 
       </div>
+
     </div>
   </section>
-
   <div v-if="false">
     <section>
       <div class="bg-gray-900">
