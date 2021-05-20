@@ -54,7 +54,7 @@
           </div>
 
            <!-- Picture 4 -->
-          <div class="col-start-1 row-span-3 bg-white">
+          <div class="col-start-1 row-span-4 bg-white">
 
             <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl" src="/images/home/hero-g.jpg" alt="">
 
