@@ -16,7 +16,7 @@
           <div
             v-for="category in categories"
             :key="category.name"
-            class="bg-gray-50
+            class="bg-gray-100
                     py-10 px-5 rounded-xl">
             <div class="text-center">
               <a :href="category.url">
