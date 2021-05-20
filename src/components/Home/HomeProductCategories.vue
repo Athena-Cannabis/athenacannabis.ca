@@ -144,7 +144,7 @@ const categoriesData = [
     name: 'Capsules',
     url: 'https://athenawebmenu.azurewebsites.net/productGroup/12',
     image: {
-      src: '/images/category/AthenaCannabis-Website-Icons-Category-Seeds-NoCircle.svg',
+      src: '/images/category/AthenaCannabis-Website-Icons-Category-Capsules-NoCircle.svg',
       alt: 'Capsules',
     },
   },
