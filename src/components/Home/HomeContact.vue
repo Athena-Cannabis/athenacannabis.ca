@@ -5,6 +5,35 @@
       <!-- Content container -->
       <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
 
+        <!-- Actual panel -->
+        <div class="mt-20 mb-20 p-20 bg-white rounded-xl lg:flex lg:items-center lg:justify-between">
+
+          <h2 class="text-3xl tracking-tight text-gray-900 md:text-4xl">
+            <span class="font-extrabold block">Let's connect!</span>
+            <span class="pt-2 font-medium block text-brand-blue-600"> Have a question, comment, or concern?</span>
+          </h2>
+          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+            <div class="inline-flex rounded-md shadow">
+              <router-link
+                to="contact"
+                class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-brand-blue-800 hover:bg-brand-blue-900">
+                Contact
+              </router-link>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+  <section v-if="false">
+    <!-- Background fluid container -->
+    <div class="bg-gray-100">
+      <!-- Content container -->
+      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
+
          <!-- Text section -->
           <div class="text-left max-w-prose">
 
