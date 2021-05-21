@@ -34,26 +34,12 @@
                 </a>
               </p>
 
-                <!-- TODO: Add <address> markup -->
-                <address>
-                  <p class="mt-4 max-w-lg text-xl text-gray-400 sm:mt-4 not-italic">
-                    782 Eagleson Road, Unit D4<br />
-                    Ottawa, Canada<br />
-                    K2M&nbsp;0N2
-                  </p>
-                </address>
-
             </div>
 
             <!-- Store Hours -->
             <div class="col-span-5 md:col-span-2 pt-10 sm:pt-0 xl:pl-10">
 
               <h3 class="text-gray-300 font-bold uppercase"><span class="sr-only">Store</span> hours<span class="sr-only">:</span></h3>
-
-              <!-- Store Hours -->
-              <div class="col-span-5 md:col-span-2 pt-10 sm:pt-0 xl:pl-10">
-
-                <h3 class="text-gray-300 font-bold uppercase"><span class="sr-only">Store</span> hours<span class="sr-only">:</span></h3>
 
                 <dl class="mt-4 text-gray-400 text-xl">
 
@@ -124,73 +110,6 @@
                   </div>
 
                 </dl>
-
-                <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
-                  <dt class="col-span-2">
-                    Monday - Thursday
-                  </dt>
-                  <dd class="col-span-3 text-right md:text-left">
-                    <span class="whitespace-nowrap">10:00 AM - 7:00 PM</span>
-                  </dd>
-                </div>
-
-                <!--
-                <div class="sm:grid sm:grid-cols-2 sm:gap-4">
-                  <dt class="text-xl font-medium ">
-                    Tuesday
-                  </dt>
-                  <dd class="text-xl text-gray-500">
-                    10:00 AM - 7:00 PM
-                  </dd>
-                </div>
-
-                <div class="sm:grid sm:grid-cols-2 sm:gap-4">
-                  <dt class="text-xl font-medium ">
-                    Wednesday
-                  </dt>
-                  <dd class="text-xl text-gray-500">
-                    10:00 AM - 7:00 PM
-                  </dd>
-                </div>
-
-                <div class="sm:grid sm:grid-cols-2 sm:gap-4">
-                  <dt class="text-xl font-medium text-gray-500">
-                    Thursday
-                  </dt>
-                  <dd class="text-xl text-gray-500">
-                    10:00 AM - 7:00 PM
-                  </dd>
-                </div>
-                -->
-
-                <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
-                  <dt class="col-span-2">
-                    Friday
-                  </dt>
-                  <dd class="col-span-3 text-right md:text-left">
-                    <span class="whitespace-nowrap">10:00 AM - 8:00 PM</span>
-                  </dd>
-                </div>
-
-                <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
-                  <dt class="col-span-2">
-                    Saturday
-                  </dt>
-                  <dd class="col-span-3 text-right md:text-left">
-                    <span class="whitespace-nowrap">10:00 AM - 8:00 PM</span>
-                  </dd>
-                </div>
-
-                <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
-                  <dt class="col-span-2">
-                    Sunday
-                  </dt>
-                  <dd class="col-span-3 text-right md:text-left">
-                    <span class="whitespace-nowrap">11:00 AM - 6:00 PM</span>
-                  </dd>
-                </div>
-
-              </dl>
 
             </div>
 
