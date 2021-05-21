@@ -11,19 +11,28 @@
           Explore products
         </h2>
 
-        <div class="mt-20 grid grid-cols-5 gap-x-10 gap-y-10">
+        <div class="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-6">
 
           <div
             v-for="category in categories"
-            :key="category.name"
-            class="bg-gray-50
-                    py-10 px-5 rounded-xl">
-            <div class="text-center">
-              <a :href="category.url">
-              {{ category.name }}
-              <img class="pt-10 w-1/2 mx-auto" :src="category.image.src" alt="" />
-              </a>
-            </div>
+            :key="category.name">
+            <a
+              :href="category.url"
+              class="py-10 px-5 w-full h-full
+                    bg-gray-50 rounded-xl
+                    flex flex-col
+                    group hover:shadow-xl transition-all ease-in-out duration-200
+                    focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue-600
+                    focus:shadow-xl">
+              <div class="text-center font-medium text-lg no-underline
+                        group-hover:text-brand-blue-800 group-hover:underline">
+                <span class="sr-only">Category name: </span>
+                {{ category.name }}
+              </div>
+              <div class="">
+                <img class="pt-10 w-1/2 mx-auto" :src="category.image.src" alt="" />
+              </div>
+            </a>
           </div>
 
         </div>
