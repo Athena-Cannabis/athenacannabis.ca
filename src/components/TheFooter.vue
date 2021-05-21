@@ -19,7 +19,7 @@
 
               <address>
                 <p class="mt-4 max-w-lg text-xl text-gray-400 sm:mt-4 not-italic">
-                  782 Eagleson Road, Unit D4<br />
+                  782 Eagleson Road, Unit&nbsp;D4<br />
                   Ottawa, Canada<br />
                   K2M&nbsp;0N2
                 </p>
