@@ -19,13 +19,13 @@
             <a
               :href="category.url"
               class="py-10 px-5 w-full h-full
-                    bg-gray-50 rounded-xl
+                    bg-white rounded-xl
                     flex flex-col
                     group hover:shadow-xl transition-all ease-in-out duration-200
                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue-600
                     focus:shadow-xl">
-              <div class="text-center font-medium text-lg no-underline
-                        group-hover:text-brand-blue-800 group-hover:underline">
+              <div class="text-center font-medium text-xl no-underline
+                        group-hover:text-brand-blue-800">
                 <span class="sr-only">Category name: </span>
                 {{ category.name }}
               </div>
