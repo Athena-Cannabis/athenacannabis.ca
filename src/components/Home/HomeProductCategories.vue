@@ -11,6 +11,8 @@
           Explore products
         </h2>
 
+        <p class="sr-only">A list of different categories of products and accessories that are available at the store.</p>
+
         <div class="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-4">
 
           <div
