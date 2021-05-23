@@ -11,7 +11,7 @@
           Explore products
         </h2>
 
-        <div class="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-6">
+        <div class="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-4">
 
           <div
             v-for="category in categories"
