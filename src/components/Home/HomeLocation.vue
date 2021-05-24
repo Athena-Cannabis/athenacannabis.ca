@@ -7,10 +7,10 @@
       <!-- Content container -->
       <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
 
-        <div class="grid grid-cols-2 gap-5 my-52">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-y-20 md:gap-5 my-32 md:my-52">
 
           <!-- Text -->
-          <div class="col-start-2 p-10 rounded-xl ">
+          <div class="col-start-1 md:col-start-2 md:p-10 rounded-xl ">
 
             <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-gray-800 font-semibold">
               Find us here
@@ -45,8 +45,8 @@
           </div>
 
           <!-- Image -->
-          <div class="col-start-1 row-start-1 p-10 bg-white rounded-xl">
-            Image
+          <div class="col-start-1 row-start-2 md:row-start-1 bg-white rounded-xl">
+            <img class="h-72 md:h-full w-full object-cover rounded-xl" src="/images/home/hero-g.jpg" alt="" />
           </div>
 
           <div v-if="false">
