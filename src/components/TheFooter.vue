@@ -47,6 +47,16 @@
 
                   <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
                     <dt class="col-span-2">
+                      Victoria Day
+                    </dt>
+                    <dd class="col-span-3 text-right md:text-left">
+                      <span class="whitespace-nowrap uppercase">Closed</span>
+                    </dd>
+                  </div>
+
+
+                  <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
+                    <dt class="col-span-2">
                       Monday - Saturday
                     </dt>
                     <dd class="col-span-3 text-right md:text-left">
