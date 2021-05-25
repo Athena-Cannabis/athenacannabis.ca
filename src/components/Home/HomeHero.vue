@@ -18,11 +18,11 @@
               </div>
               -->
               <h3 class="text-center md:text-left text-4xl font-bold md:text-gray-900 tracking-tight sm:text-6xl lg:text-7xl">
-                <span class="sm:block">We're closed for Victoria Day, </span>
-                <span class="sm:block text-brand-blue-600"> May 24th 2021</span>
+                <span class="sm:block">Shop online, </span>
+                <span class="sm:block text-brand-blue-600"> pickup in under 25 minutes</span>
               </h3>
               <p class="md:w-full lg:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
-                Any orders placed will be available for pickup on Tuesday May 25th.
+                We are now open for store pickup!
               </p>
               <p class="sr-only md:w-full lg:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
                 It's not quite the grand opening we had in mind, but due to the latest lockdown we've had to change our plans.
@@ -42,8 +42,8 @@
             </div>
             <div class="w-full md:w-3/5 flex items-center">
             <img
-              class="object-cover object-center lg:object-center w-full h-72 sm:h-full rounded-md shadow-xl"
-              src="/images/home/hero-closed.png" alt="">
+              class="object-cover object-center lg:object-left w-full h-72 sm:h-full rounded-md shadow-xl"
+              src="/images/home/hero.jpg" alt="">
             </div>
           </div>
 
