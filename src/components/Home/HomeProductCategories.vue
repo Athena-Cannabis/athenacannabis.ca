@@ -2,7 +2,7 @@
   <section>
 
      <!-- Background fluid container -->
-    <div class=" bg-gray-100 ">
+    <div class="bg-white">
 
       <!-- Content container -->
       <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container relative">
@@ -13,7 +13,7 @@
 
         <p class="sr-only">A list of different categories of products and accessories that are available at the store.</p>
 
-        <div class="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-4">
+        <div class="mt-20 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2 md:gap-4 lg:gap-x-6 lg:gap-y-6">
 
           <div
             v-for="category in categories"
@@ -21,7 +21,7 @@
             <a
               :href="category.url"
               class="py-10 px-5 w-full h-full
-                    bg-white rounded-xl
+                    bg-gray-100 rounded-xl
                     flex flex-col
                     group hover:shadow-xl transition-all ease-in-out duration-200
                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue-600

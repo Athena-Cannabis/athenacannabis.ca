@@ -2,10 +2,10 @@
   <section>
 
      <!-- Background fluid container -->
-    <div class="bg-gray-100">
+    <div class="bg-white">
 
       <!-- Content container -->
-      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
+      <div class="py-5 md:py-0 px-4 md:px-12 xl:px-20 2xl:container">
 
         <div class="grid grid-cols-2 gap-5 mb-52">
 
@@ -32,8 +32,8 @@
           </div>
 
           <!-- Image -->
-          <div class="p-10 bg-white rounded-xl">
-            Image
+          <div class="rounded-xl bg-black">
+            <img class="h-72 md:h-full w-full object-cover object-center rounded-xl" src="/images/home/team-a.jpg" alt="" />
           </div>
 
         </div>

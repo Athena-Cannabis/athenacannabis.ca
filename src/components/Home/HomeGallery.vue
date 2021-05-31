@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Background fluid container -->
-    <div class="bg-gray-100">
+    <div class="bg-white">
       <!-- Content container -->
       <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
 
@@ -53,14 +53,13 @@
 
           </div>
 
-           <!-- Picture 4 -->
+           <!-- Picture 4
           <div class="col-start-1 row-span-4 bg-white">
 
             <img class="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full rounded-xl" src="/images/home/hero-g.jpg" alt="">
 
           </div>
-
-
+          -->
 
         </div>
 

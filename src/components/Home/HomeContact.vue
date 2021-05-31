@@ -1,16 +1,18 @@
 <template>
   <section>
+
     <!-- Background fluid container -->
-    <div class="bg-gray-100">
+    <div class="bg-white">
+
       <!-- Content container -->
       <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
 
         <!-- Actual panel -->
-        <div class="mt-20 mb-20 p-20 bg-white rounded-xl lg:flex lg:items-center lg:justify-between">
+        <div class="mt-20 mb-20 p-20 bg-gray-200 rounded-xl lg:flex lg:items-center lg:justify-between">
 
           <h2 class="text-3xl tracking-tight text-gray-900 md:text-4xl">
             <span class="font-extrabold block">Let's connect!</span>
-            <span class="pt-2 font-medium block text-brand-blue-600"> Have a question, comment, or concern?</span>
+            <span class="pt-2 block text-brand-blue-600"> Have a question, comment, or concern?</span>
           </h2>
           <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
             <div class="inline-flex rounded-md shadow">

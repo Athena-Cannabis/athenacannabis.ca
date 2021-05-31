@@ -2,7 +2,7 @@
   <section>
 
      <!-- Background fluid container -->
-    <div class=" bg-gray-100 ">
+    <div class="bg-white">
 
       <!-- Content container -->
       <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container relative">
@@ -15,7 +15,7 @@
               <p class="mb-8 uppercase text-xs md:text-lg text-gray-800 tracking-widest">A recreational cannabis store</p>
 
               <p class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl
-                        font-medium md:text-brand-blue-800 bg-gray-100">
+                        font-medium md:text-brand-blue-800 bg-white">
                 <span class="sm:block md:inline font-bold">Shop online, </span>
                 <span class="sm:block md:inline text-brand-blue-600"> pickup in under 25 minutes</span>
               </p>
@@ -53,7 +53,7 @@
                 <router-link
                   to="/how-to-shop"
                   class="mt-3 md:mt-0 ml-0 md:ml-5 inline-flex justify-center align-bottom py-6 px-4 md:py-6 md:px-8 border-2 border-brand-blue-900 shadow-sm text-2xl
-                  font-medium rounded-lg text-brand-blue-800 bg-gray-100 hover:bg-brand-blue-900 hover:text-gray-100
+                  font-medium rounded-lg text-brand-blue-800 bg-white hover:bg-brand-blue-900 hover:text-gray-100
                   focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
                   transition-all duration-150 ease-in-out">
                     <span class="">Learn more</span><span class="sr-only"> about our store pickup process</span>
