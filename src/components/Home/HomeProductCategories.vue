@@ -21,7 +21,7 @@
             <a
               :href="category.url"
               class="py-10 px-5 w-full h-full
-                    bg-gray-100 rounded-xl
+                    bg-gray-100
                     flex flex-col
                     group hover:shadow-xl transition-all ease-in-out duration-200
                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue-600
