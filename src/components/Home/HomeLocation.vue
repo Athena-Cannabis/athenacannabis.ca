@@ -1,6 +1,66 @@
 <template>
   <section>
 
+    <!-- Background fluid container -->
+    <div class="bg-white my-5">
+
+      <!-- Content container -->
+      <div class="py-5 md:py-0 px-4 md:px-12 lg:py-20 xl:px-20 2xl:container">
+
+        <div class="flex flex-col md:flex-row justify-center items-center">
+
+          <!-- Image box -->
+          <div class="w-full md:w-2/5 lg:w-3/5">
+            <img class="h-48 sm:h-72 md:h-full w-full object-cover rounded-md" src="/images/home/location-b.jpg" alt="" />
+          </div>
+
+          <!-- Text box -->
+          <div class="w-full md:w-3/5 lg:w-2/5 pt-10 md:pt-0 md:pl-20">
+
+            <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-gray-800 font-semibold">
+              Find us here
+            </h2>
+
+            <!-- Text section -->
+            <div class="text-left max-w-prose">
+
+              <p class="mt-4 max-w-lg text-xl text-gray-500 sm:mt-4 not-italic">
+                Our store is located in Kanata South, close to the Metro off Eagleson.
+              </p>
+
+              <address>
+                <p class="mt-4 max-w-lg text-xl text-gray-500 sm:mt-4 not-italic">
+                  <span class="sr-only">Store address:</span>
+                  782 Eagleson Road, Unit D4<br />
+                  Ottawa, Canada<br />
+                  K2M&nbsp;0N2
+                </p>
+              </address>
+
+              <p class="mt-4">
+                <a
+                  href="https://goo.gl/maps/rG3U2kfMMjundn8P6"
+                  class=" text-brand-blue-700 font-medium text-xl underline hover:text-brand-blue-900
+                        transition-all ease-in-out duration-150">
+                  Get Directions
+                </a>
+              </p>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </section>
+  <section v-if="false">
+
      <!-- Background fluid container -->
     <div class="bg-white">
 

@@ -1,7 +1,7 @@
 <template>
   <section>
 
-     <!-- Background fluid container -->
+    <!-- Background fluid container -->
     <div class="bg-white">
 
       <!-- Content container -->
@@ -23,6 +23,7 @@
               class="py-10 px-5 w-full h-full
                     bg-gray-100
                     flex flex-col
+                    rounded-md
                     group hover:shadow-xl transition-all ease-in-out duration-200
                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brand-blue-600
                     focus:shadow-xl">
@@ -42,6 +43,7 @@
       </div>
 
     </div>
+
   </section>
 </template>
 

@@ -5,7 +5,7 @@
     <home-product-categories />
     <home-location />
     <home-team />
-    <home-gallery />
+    <home-opening />
     <home-contact />
 
   </div>
@@ -13,7 +13,7 @@
 
 <script>
 import HomeHero from '../components/Home/HomeHero.vue';
-import HomeGallery from '../components/Home/HomeGallery.vue';
+import HomeOpening from '../components/Home/HomeOpening.vue';
 import HomeLocation from '../components/Home/HomeLocation.vue';
 import HomeTeam from '../components/Home/HomeTeam.vue';
 import HomeContact from '../components/Home/HomeContact.vue';
@@ -24,9 +24,9 @@ export default {
   components : {
     HomeHero,
     HomeProductCategories,
-    HomeGallery,
     HomeLocation,
     HomeTeam,
+    HomeOpening,
     HomeContact,
   },
   setup() {
