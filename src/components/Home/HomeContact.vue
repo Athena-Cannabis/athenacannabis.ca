@@ -11,7 +11,7 @@
         <div class="mt-20 mb-20 flex flex-col md:flex-row items-center">
 
           <!-- Column 1 -->
-          <div class="w-full md:w-1/2">
+          <div class="mb-10 md:mb-0 w-full md:w-2/5 lg:w-1/2">
 
             <div class="max-w-prose">
 
@@ -35,7 +35,7 @@
           </div>
 
           <!-- Column 2 -->
-          <div class="w-full md:w-1/2">
+          <div class="w-full md:w-3/5 lg:w-1/2">
             <div class="p-5 xl:ml-20 bg-gray-50 white rounded-md shadow-md">
 
               <p class="mt-4 text-xl text-gray-500 sm:mt-4 not-italic">
