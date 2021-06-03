@@ -1,6 +1,150 @@
 <template>
   <section>
 
+     <!-- Background fluid container -->
+    <div class="bg-brand-bslue-700 bg-gray-200 mt-32">
+
+      <!-- Content container -->
+      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
+
+        <!-- Flex box two handle 2 cols -->
+        <div class="mt-20 mb-20 flex flex-col md:flex-row items-center">
+
+          <!-- Column 1 -->
+          <div class="w-full md:w-1/2">
+
+            <div class="max-w-prose">
+
+              <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-black font-semibold">
+                <span class="block">Let's connect!</span>
+                <span class="pt-2 block text-black text-4xl font-normal"> Have a question, comment, or concern?</span>
+              </h2>
+              <!--
+              <h2 class="text-3xl tracking-tight text-black md:text-4xl">
+                <span class="font-extrabold block">Let's connect!</span>
+                <span class="pt-2 block text-black"> Have a question, comment, or concern?</span>
+              </h2>
+              -->
+              <!--
+              <h2 class="text-3xl tracking-tight text-white md:text-4xl">
+                <span class="font-extrabold block">Let's connect!</span>
+                <span class="pt-2 block text-gray-100"> Have a question, comment, or concern?</span>
+              </h2>
+              -->
+            </div>
+          </div>
+
+          <!-- Column 2 -->
+          <div class="w-full md:w-1/2">
+            <div class="p-5 xl:ml-20 bg-gray-50 white rounded-md shadow-md">
+
+              <p class="mt-4 text-xl text-gray-500 sm:mt-4 not-italic">
+                Reach out to us using the form below. We're pretty busy with the store reopening so it may take us up to 48 hours to reply back.
+              </p>
+
+              <!-- Form -->
+               <form
+                name="athena-cannabis-contact-form"
+                data-netlify="true"
+                method="post"
+                class="mt-10 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
+
+                <input type="hidden" name="form-name" value="athena-cannabis-contact-form" />
+
+                <div>
+                  <label for="first_name" class="block text-md font-medium text-gray-500">First name</label>
+                  <div class="mt-1">
+                    <input type="text" name="first_name" id="first_name" autocomplete="given-name" class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                  </div>
+                </div>
+                <div>
+                  <div class="flex justify-between">
+                    <label for="last_name" class="block text-md font-medium text-gray-500">Last name</label>
+                    <span id="how_can_we_help_description" class="text-sm text-gray-400">Optional</span>
+                  </div>
+                  <div class="mt-1">
+                    <input type="text" name="last_name" id="last_name" autocomplete="family-name" class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="email" class="block text-md font-medium text-gray-500">Email</label>
+                  <div class="mt-1">
+                    <input id="email" name="email" type="email" autocomplete="email" class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md">
+                  </div>
+                </div>
+                <div class="sm:col-span-2">
+                  <label for="how_can_we_help" class="block text-md font-medium text-gray-500">How can we help?</label>
+                  <div class="mt-1">
+                    <textarea id="how_can_we_help" name="how_can_we_help" aria-describedby="how_can_we_help_description" rows="4" class="block w-full shadow-sm sm:text-sm focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"></textarea>
+                  </div>
+                </div>
+                <div class="text-right sm:col-span-2">
+                  <button type="submit" class="inline-flex justify-center py-4 px-8 border border-transparent shadow-sm text-lg
+                  font-medium rounded-md text-white bg-brand-blue-800 hover:bg-brand-blue-900
+                  focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                  transition-all duration-150 ease-in-out">
+                    Submit
+                  </button>
+                </div>
+              </form>
+
+
+
+            </div>
+          </div>
+
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+  <section v-if="false">
+
+    <!-- Background fluid container -->
+    <div class="bg-brand-blue-700 mt-32">
+
+      <!-- Content container -->
+      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
+
+        <div class="mt-20 mb-20 bg-none rounded-md lg:flex lg:items-center lg:justify-between">
+
+          <h2 class="text-3xl tracking-tight text-white md:text-4xl">
+            <span class="font-extrabold block">Let's connect!</span>
+            <span class="pt-2 block text-gray-100"> Have a question, comment, or concern?</span>
+          </h2>
+          <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+            <div class="bg-white p-20">
+              <div class="inline-flex rounded-md shadow">
+                <router-link
+                  to="contact"
+                  class="
+                      justify-center
+                      inline-flex align-bottom py-6 px-4 md:py-5 md:px-6 border-2 border-brand-blue-600 shadow-sm text-2xl
+                      font-medium
+                      rounded-lg text-brand-blue-900 bg-white hover:bg-brand-blue-100 hover:border-brand-blue-800
+                      focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                      transition-all duration-150 ease-in-out">
+                  Contact
+                </router-link>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section v-if="false">
+
     <!-- Background fluid container -->
     <div class="bg-white">
 
