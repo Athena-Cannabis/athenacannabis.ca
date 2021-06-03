@@ -13,11 +13,13 @@ export const router = createRouter({
       name: 'home',
       component: Home,
     },
+    /*
     {
       path: '/contact',
       name: 'contact',
       component: Contact,
     },
+    */
     {
       path: '/how-to-shop',
       name: 'how-to-shop',
