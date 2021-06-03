@@ -20,12 +20,14 @@
             <div class="text-left max-w-prose">
 
               <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-gray-800 font-semibold">
-                 Reopening Ontario
+                 Grand reopening
               </h2>
 
-               <p class="mt-3 sm:mt-8 text-xl text-gray-500">We honestly can't wait to invite you inside.</p>
+              <p class="mt-3 sm:mt-8 text-xl text-gray-500">We honestly can't wait to invite you inside, but for now we have to stick to store pickup.</p>
 
-              <p class="mt-3 sm:mt-8 text-xl text-gray-500">The Ontario Provincial Government expects to enter step one of the reopening roadmap the week of <strong>June&nbsp;14,&nbsp;2021</strong> which would allow for non-essential retail at 15% capacity. We will confirm our reopening date closer to the expected start of step one.</p>
+              <p class="mt-3 sm:mt-8 text-xl text-gray-500">The Ontario Provincial Government expects to enter step one of the reopening roadmap the week of <strong>June&nbsp;14,&nbsp;2021</strong> which would allow for non-essential retail at 15% capacity.</p>
+
+              <p class="mt-3 sm:mt-8 text-xl text-gray-500">We will confirm our grand reopening date closer to the expected start of step one and as the province releases more guidance to retailers.</p>
 
               <!--
               <p class="mt-3 sm:mt-4 text-xl text-gray-500">
