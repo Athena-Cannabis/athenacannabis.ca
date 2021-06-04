@@ -5,7 +5,7 @@
     <div class="bg-white my-5">
 
       <!-- Content container -->
-      <div class="py-5 md:py-0 px-4 md:px-12 lg:py-20 xl:px-20 2xl:container">
+      <div class="py-5 md:py-0 px-4 md:px-12 lg:py-20 lg:px-20 xl:px-32 2xl:container">
 
         <div class="flex flex-col md:flex-row justify-center items-center">
 

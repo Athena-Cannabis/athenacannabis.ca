@@ -2,8 +2,9 @@
   <header>
     <!-- Background fluid container -->
     <div class="bg-white">
+
       <!-- Content container -->
-      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
+      <div class="py-5 md:py-10 px-4 md:px-12 lg:px-20 xl:px-32 2xl:container">
 
         <!-- Content flex box -->
         <div class="flex flex-row justify-start">

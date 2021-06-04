@@ -5,7 +5,7 @@
     <div class="bg-white">
 
       <!-- Content container -->
-      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container relative">
+      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-32 2xl:container relative">
 
         <!-- Text section -->
         <div class="relative py-12 md:py-32 w-full md:w-4/5 lg:w-2/3 z-10">

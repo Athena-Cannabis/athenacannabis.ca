@@ -5,7 +5,7 @@
     <div class="bg-brand-bslue-700 bg-gray-200 mt-32">
 
       <!-- Content container -->
-      <div class="py-5 md:py-10 px-4 md:px-12 xl:px-20 2xl:container">
+      <div class="py-5 px-4 md:px-12 lg:px-20 xl:px-32 2xl:container">
 
         <!-- Flex box two handle 2 cols -->
         <div class="mt-20 mb-20 flex flex-col md:flex-row items-center">
@@ -36,7 +36,7 @@
 
           <!-- Column 2 -->
           <div class="w-full md:w-3/5 lg:w-1/2">
-            <div class="p-5 xl:ml-20 bg-gray-50 white rounded-md shadow-md">
+            <div class="p-5 xl:ml-20 bg-gray-50 white rounded-md shsadow-md">
 
               <p class="mt-4 text-xl text-gray-500 sm:mt-4 not-italic">
                 Reach out to us using the form below. We're pretty busy with the store reopening so it may take us up to 48 hours to reply back.
