@@ -1,7 +1,7 @@
 <template>
   <div class="max-w-prose mt-20 mb-20">
 
-    <h1 class="text-4xl sm:text-6xl lg:text-7xl xl:text-8xl text-gray-900 font-medium">
+    <h1 class="text-4xl sm:text-6xl lg:text-7xl xl:text-7xl text-gray-900 font-medium">
       <slot name="header">No heading provided</slot>
     </h1>
 

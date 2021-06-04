@@ -2,16 +2,16 @@
   <section>
 
      <!-- Background fluid container -->
-    <div class="bg-brand-bslue-700 bg-gray-200 mt-32">
+    <div class="bg-brand-bslue-700 bg-white ">
 
       <!-- Content container -->
       <div class="py-5 px-4 md:px-12 lg:px-20 xl:px-32 2xl:container">
 
         <!-- Flex box two handle 2 cols -->
-        <div class="mt-20 mb-20 flex flex-col md:flex-row items-center">
+        <div class="mb-20 flex flex-col lg:flex-row items-center">
 
           <!-- Column 1 -->
-          <div class="mb-10 md:mb-0 w-full md:w-2/5 lg:w-1/2">
+          <div class="mb-10 lg:mb-0 w-full lg:w-2/5">
 
             <div class="max-w-prose">
 
@@ -35,8 +35,8 @@
           </div>
 
           <!-- Column 2 -->
-          <div class="w-full md:w-3/5 lg:w-1/2">
-            <div class="p-5 xl:ml-20 bg-gray-50 white rounded-md shsadow-md">
+          <div class="w-full lg:w-3/5 ">
+            <div class="p-10 lg:ml-10 bg-gray-100 white rounded-md">
 
               <p class="mt-4 text-xl text-gray-500 sm:mt-4 not-italic">
                 Reach out to us using the form below. We're pretty busy with the store reopening so it may take us up to 48 hours to reply back.
