@@ -138,7 +138,7 @@
 
               <!-- Background image -->
               <div class="absolute -bottom-5 -right-5 transform z-0">
-                <img class="h-40 sm:h-60 md:h-72 lg:h-80 xl:h-96" src="/images/how-to-shop/product-collage.png" alt="" />
+                <img class="h-40 sm:h-60 md:h-72 lg:h-80" src="/images/how-to-shop/product-collage.png" alt="" />
               </div>
 
             </div>
