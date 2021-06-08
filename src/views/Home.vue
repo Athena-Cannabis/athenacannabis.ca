@@ -2,12 +2,10 @@
   <div>
 
     <home-hero />
-    <!-- <home-about /> -->
-    <home-curbside />
-    <home-FAQ />
-    <home-gallery />
+    <home-product-categories />
+    <home-opening-left />
+    <!-- <home-team /> -->
     <home-location />
-    <home-team />
     <home-contact />
 
   </div>
@@ -15,24 +13,21 @@
 
 <script>
 import HomeHero from '../components/Home/HomeHero.vue';
-// import HomeAbout from '../components/Home/HomeAbout.vue';
-import HomeCurbside from '../components/Home/HomeCurbside.vue';
-import HomeGallery from '../components/Home/HomeGallery.vue';
+import HomeOpeningLeft from '../components/Home/HomeOpeningLeft.vue';
 import HomeLocation from '../components/Home/HomeLocation.vue';
 import HomeTeam from '../components/Home/HomeTeam.vue';
 import HomeContact from '../components/Home/HomeContact.vue';
-import HomeFAQ from '../components/Home/HomeFAQ.vue';
+import HomeProductCategories from '../components/Home/HomeProductCategories.vue';
 
 
 export default {
   components : {
     HomeHero,
-    HomeCurbside,
-    HomeGallery,
+    HomeProductCategories,
     HomeLocation,
     HomeTeam,
+    HomeOpeningLeft,
     HomeContact,
-    HomeFAQ,
   },
   setup() {
 
