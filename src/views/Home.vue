@@ -3,8 +3,8 @@
 
     <home-hero />
     <home-product-categories />
-    <home-opening />
-    <home-team />
+    <home-opening-left />
+    <!-- <home-team /> -->
     <home-location />
     <home-contact />
 
@@ -13,7 +13,7 @@
 
 <script>
 import HomeHero from '../components/Home/HomeHero.vue';
-import HomeOpening from '../components/Home/HomeOpening.vue';
+import HomeOpeningLeft from '../components/Home/HomeOpeningLeft.vue';
 import HomeLocation from '../components/Home/HomeLocation.vue';
 import HomeTeam from '../components/Home/HomeTeam.vue';
 import HomeContact from '../components/Home/HomeContact.vue';
@@ -26,7 +26,7 @@ export default {
     HomeProductCategories,
     HomeLocation,
     HomeTeam,
-    HomeOpening,
+    HomeOpeningLeft,
     HomeContact,
   },
   setup() {
