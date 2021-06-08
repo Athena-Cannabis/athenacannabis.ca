@@ -3,9 +3,9 @@
 
     <home-hero />
     <home-product-categories />
-    <home-location />
-    <home-team />
     <home-opening />
+    <home-team />
+    <home-location />
     <home-contact />
 
   </div>
