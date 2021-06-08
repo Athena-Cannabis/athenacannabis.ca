@@ -20,16 +20,20 @@
             <div class="text-left max-w-prose">
 
               <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-gray-800 font-semibold">
-                 Grand reopening
+                 Reopening soon
               </h2>
 
-              <p class="mt-3 sm:mt-8 text-xl text-gray-500">We honestly can't wait to invite you inside, but for now we have to stick to store pickup.</p>
-
-              <p class="mt-3 sm:mt-8 text-xl text-gray-500">The Ontario Provincial Government expects to enter step one of the reopening roadmap the week of <strong>June&nbsp;14,&nbsp;2021</strong> which would allow for non-essential retail at 15% capacity.</p>
-
-              <p class="mt-3 sm:mt-8 text-xl text-gray-500">We will confirm our grand reopening date closer to the expected start of step one and as the province releases more guidance to retailers.</p>
+              <p class="mt-3 sm:mt-8 text-xl text-gray-500">
+                We will confirm our exact reopening date in the coming days. We're taking a minute to digest the
+                updated provincial guidelines around reopening.
+              </p>
 
               <!--
+
+              <p class="mt-3 sm:mt-8 text-xl text-gray-500">We honestly can't wait to invite you inside, but for now we're continuing with store pickup.</p>
+
+              <p class="mt-3 sm:mt-8 text-xl text-gray-500">While the Ontario Provincial Government has announced that step one of the reopening roadmap starts June&nbsp;11,&nbsp;2021, we're going to need a couple of extra days.</p>
+
               <p class="mt-3 sm:mt-4 text-xl text-gray-500">
                 The store features an elegant and inviting hotel inspired lobby which connects to the age restricted retail space.
               </p>
