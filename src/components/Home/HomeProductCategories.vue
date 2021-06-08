@@ -169,7 +169,7 @@ const categoriesData = [
     name: 'Accessories',
     url: 'https://athenawebmenu.azurewebsites.net/productGroup/7',
     image: {
-      src: '/images/category/AthenaCannabis-Website-Icons-Category-Vapes-NoCircle.svg',
+      src: '/images/category/AthenaCannabis-Website-Icons-Category-Accessories-NoCircle.svg',
       alt: 'Accessories',
     },
   },
