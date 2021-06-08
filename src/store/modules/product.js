@@ -62,8 +62,7 @@ const actions = {
   // Fetch and load the categories by an id
   fetchProductsByCategoryId ({ commit, state, getters }, categoryId) {
 
-    // Add caching mechanism to check if category has been cached
-
+    // TODO: Add caching mechanism to check if category has been cached
 
     // TODO: Validate the ID is a number
     ProductService

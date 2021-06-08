@@ -32,6 +32,8 @@
 
                   <h3 class="font-normal text-sm order-2">{{ product.title }}</h3>
 
+                  <h3 class="font-normal text-xs">{{ product.brand }}</h3>
+
                   <div
                     class="order-1
                         p-5 mb-5 rounded-xl flex flex-row
@@ -41,6 +43,20 @@
                       :src="product.images[0].src"
                       :alt="product.images[0].alt"
                       class="h-44 object-fit rounded-xl" />
+
+                    <div class="bg-gray-100 rounded-md p-2 w-full">
+
+                      <div
+                        v-if="product.cannabis.thc_value">
+                        {{ product.cannabis.thc_value }}
+                      </div>
+
+                      <div
+                        v-if="product.cannabis.cbd_value">
+                        {{ product.cannabis.cbd_value }}
+                      </div>
+
+                    </div>
                   </div>
 
                 </div>
