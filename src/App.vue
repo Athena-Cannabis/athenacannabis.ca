@@ -51,6 +51,10 @@ export default {
     const { isAllowed }  = useIdentityStoreAgeCheck();
 
 
+    // Use the Products Store and load initial categories and products for the shop
+    // const { isLoaded } = useProductsStore();
+    useProductsStore();
+
     return {
       isAllowed,
     }
@@ -58,10 +62,23 @@ export default {
   }
 }
 
-/* Use Identity Store Age Check
- *
- *
- */
+
+// Use the Products Store and load
+// initial categories and products for the shop
+//
+function useProductsStore() {
+
+  // Use the store
+  const store = useStore();
+
+  // Initialise the categories
+  store.dispatch('category/initialiseCategories');
+
+}
+
+
+// Use Identity Store Age Check
+//
 function useIdentityStoreAgeCheck() {
   // Use the store
   const store = useStore();
