@@ -56,6 +56,17 @@
                         {{ product.cannabis.cbd_value }}
                       </div>
 
+
+                      <div>
+                        {{ product.price.regular }}
+                      </div>
+
+                      <div
+                        v-if="product.onSale === true"
+                        class="text-red-600">
+                        {{ product.price.sale }}
+                      </div>
+
                     </div>
                   </div>
 
