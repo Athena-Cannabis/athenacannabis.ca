@@ -24,7 +24,7 @@ Please do not create GitHub issues for customer service related issues.
 
 ### Security related concerns
 
-If you identify any security related concerns, please contact @neilmispelaar. Please do not create a GitHub issue for these items.
+If you identify any security related concerns, please contact @neilmispelaar directly. Please do not create a GitHub issue for these items.
 
 ## Branch Management
 
@@ -34,13 +34,15 @@ The `main` branch is built and deployed to the live site ([athenacannabis.ca](ht
 
 This branch holds the current production version of the site. 
 
-### Next
+### Development
 
-The `next` branch will be setup shortly and will house the code for the storefront functionality (display products, add to cart, purchases, etc.).
+The `development` branch will be the main line to house the code for the new functionality.
 
-This branch will be deployed to ([next.athenacannabis.ca](https://athenacannabis.ca)) during development and then upon launch will move to the main domain.
+We're investigating using Netlify's deploy previews for testing features and development. 
 
-Once the storefront functionality is launched (End April-ish), the `next` branch will be used for future development and beta testing. 
+This branch may be deployed to ([next.athenacannabis.ca](https://next.athenacannabis.ca)) in the future.
+
+The current major development project is adding shop functionality (products / carts / checkout).
 
 ## Project setup
 ```
