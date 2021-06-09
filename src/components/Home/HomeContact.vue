@@ -17,20 +17,32 @@
 
               <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-black font-semibold">
                 <span class="block">Let's connect!</span>
-                <span class="pt-2 block text-black text-4xl font-normal"> Have a question, comment, or concern?</span>
+
               </h2>
-              <!--
-              <h2 class="text-3xl tracking-tight text-black md:text-4xl">
-                <span class="font-extrabold block">Let's connect!</span>
-                <span class="pt-2 block text-black"> Have a question, comment, or concern?</span>
-              </h2>
-              -->
-              <!--
-              <h2 class="text-3xl tracking-tight text-white md:text-4xl">
-                <span class="font-extrabold block">Let's connect!</span>
-                <span class="pt-2 block text-gray-100"> Have a question, comment, or concern?</span>
-              </h2>
-              -->
+
+              <p class="pt-2 block text-black text-3xl font-normal">Have a question, comment, or concern?</p>
+
+              <h3 class="sr-only">Contact information</h3>
+
+              <dl class="mt-8 space-y-6">
+                <dt><span class="sr-only">Phone number</span></dt>
+                <dd class="flex text-base text-teal-50">
+                  <!-- Heroicon name: outline/phone -->
+                  <svg class="flex-shrink-0 w-6 h-6 text-teal-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                  </svg>
+                  <a class="ml-3" href="tel:16135951420">+1 (613) 595-1420</a>
+                </dd>
+                <dt><span class="sr-only">Email</span></dt>
+                <dd class="flex text-base text-teal-50">
+                  <!-- Heroicon name: outline/mail -->
+                  <svg class="flex-shrink-0 w-6 h-6 text-teal-200" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                  <a class="ml-3" href="mailto:hello@athenacannabis.ca">hello@athenacannabis.ca</a>
+                </dd>
+              </dl>
+
             </div>
           </div>
 
