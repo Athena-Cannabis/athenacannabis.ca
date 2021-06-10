@@ -19,7 +19,7 @@
           <h2 class="sr-only">Products</h2>
 
           <ul
-            class="list-none grid grid-cols-3 gap-10">
+            class="list-none grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4 gap-x-10 gap-y-20">
 
             <li
               v-for="product in products"
@@ -28,46 +28,52 @@
               <router-link
                 :to="{ name: 'product', params: { slug: product.slug }}">
 
-                <div class="flex flex-col">
+                <div class="h-full border-2 border-gray-300 rounded-xl p-10
+transform transition-transform shadow-xl bg-white
+                            hover:shadow-xl hover:transform hover:-translate-y-1 ">
 
-                  <h3 class="font-normal text-sm order-2">{{ product.title }}</h3>
+                  <div class="flex flex-col">
 
-                  <h3 class="font-normal text-xs">{{ product.brand }}</h3>
+                    <h3 class="font-normal text-sm order-2">{{ product.title }}</h3>
 
-                  <div
-                    class="order-1
-                        p-5 mb-5 rounded-xl flex flex-row
-                        justify-center align-middle">
+                    <h3 class="font-normal text-xs">{{ product.brand }}</h3>
 
-                    <img
-                      :src="product.images[0].src"
-                      :alt="product.images[0].alt"
-                      class="h-44 object-fit rounded-xl" />
+                    <div
+                      class="order-1
+                          p-5 mb-5 rounded-xl flex flex-row
+                          justify-center align-middle">
 
-                    <div class="bg-gray-100 rounded-md p-2 w-full">
+                      <img
+                        :src="product.images[0].src"
+                        :alt="product.images[0].alt"
+                        class="h-44 object-fit rounded-xl" />
 
-                      <div
-                        v-if="product.cannabis.thc_value">
-                        {{ product.cannabis.thc_value }}
+                      <div class="bg-gray-100 rounded-md p-2 w-full">
+
+                        <div
+                          v-if="product.cannabis.thc_value">
+                          {{ product.cannabis.thc_value }}
+                        </div>
+
+                        <div
+                          v-if="product.cannabis.cbd_value">
+                          {{ product.cannabis.cbd_value }}
+                        </div>
+
+
+                        <div>
+                          {{ product.price.regular }}
+                        </div>
+
+                        <div
+                          v-if="product.onSale === true"
+                          class="text-red-600">
+                          {{ product.price.sale }}
+                        </div>
+
                       </div>
-
-                      <div
-                        v-if="product.cannabis.cbd_value">
-                        {{ product.cannabis.cbd_value }}
-                      </div>
-
-
-                      <div>
-                        {{ product.price.regular }}
-                      </div>
-
-                      <div
-                        v-if="product.onSale === true"
-                        class="text-red-600">
-                        {{ product.price.sale }}
-                      </div>
-
                     </div>
+
                   </div>
 
                 </div>
