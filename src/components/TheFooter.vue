@@ -46,48 +46,19 @@
 
                   <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
                     <dt class="col-span-2">
-                      Monday - Saturday
+                      Monday - Thursday
                     </dt>
                     <dd class="col-span-3 text-right md:text-left">
-                      <span class="whitespace-nowrap">10:00 AM - 8:00 PM</span>
+                      <span class="whitespace-nowrap">10:00 AM - 10:00 PM</span>
                     </dd>
                   </div>
-
-                  <!--
-                  <div class="sm:grid sm:grid-cols-2 sm:gap-4">
-                    <dt class="text-xl font-medium ">
-                      Tuesday
-                    </dt>
-                    <dd class="text-xl text-gray-500">
-                      10:00 AM - 7:00 PM
-                    </dd>
-                  </div>
-
-                  <div class="sm:grid sm:grid-cols-2 sm:gap-4">
-                    <dt class="text-xl font-medium ">
-                      Wednesday
-                    </dt>
-                    <dd class="text-xl text-gray-500">
-                      10:00 AM - 7:00 PM
-                    </dd>
-                  </div>
-
-                  <div class="sm:grid sm:grid-cols-2 sm:gap-4">
-                    <dt class="text-xl font-medium text-gray-500">
-                      Thursday
-                    </dt>
-                    <dd class="text-xl text-gray-500">
-                      10:00 AM - 7:00 PM
-                    </dd>
-                  </div>
-
 
                   <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
                     <dt class="col-span-2">
                       Friday
                     </dt>
                     <dd class="col-span-3 text-right md:text-left">
-                      <span class="whitespace-nowrap">10:00 AM - 8:00 PM</span>
+                      <span class="whitespace-nowrap">10:00 AM - 11:00 PM</span>
                     </dd>
                   </div>
 
@@ -96,17 +67,17 @@
                       Saturday
                     </dt>
                     <dd class="col-span-3 text-right md:text-left">
-                      <span class="whitespace-nowrap">10:00 AM - 8:00 PM</span>
+                      <span class="whitespace-nowrap">10:00 AM - 11:00 PM</span>
                     </dd>
                   </div>
-                  -->
+
 
                   <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
                     <dt class="col-span-2">
                       Sunday
                     </dt>
                     <dd class="col-span-3 text-right md:text-left">
-                      <span class="whitespace-nowrap">11:00 AM - 7:00 PM</span>
+                      <span class="whitespace-nowrap">11:00 AM - 8:00 PM</span>
                     </dd>
                   </div>
 
