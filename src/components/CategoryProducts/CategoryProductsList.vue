@@ -28,9 +28,12 @@
               <router-link
                 :to="{ name: 'product', params: { slug: product.slug }}">
 
-                <div class="h-full border-2 border-gray-300 rounded-xl p-10
-transform transition-transform shadow-xl bg-white
-                            hover:shadow-xl hover:transform hover:-translate-y-1 ">
+                <div
+                  class="
+                    h-full py-12 px-5
+                  bg-white
+                    borders border-gray-300
+                    rounded-xl">
 
                   <div class="flex flex-col">
 
@@ -75,6 +78,20 @@ transform transition-transform shadow-xl bg-white
                     </div>
 
                   </div>
+
+                  <button
+                    class="
+                      mt-6 md:mt-6 py-6 px-4 md:py-3 md:px-4
+                      inline-flex justify-center align-bottom
+                      border-2 border-brand-blue-900 shadow-sm rounded-md
+                      text-base font-medium text-brand-blue-800
+                      bg-white
+                      hover:bg-brand-blue-900 hover:text-gray-100
+                      focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                      transition-all duration-150 ease-in-out">
+                      Add to cart <span class="sr-only">{{ product.title }} | {{ product.brand }}</span>
+                    <!--<svg class="h-12 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" x="0px" y="0px"><title>shopping, paper, bag, cart</title><g data-name="Shopping Bag"><path d="M50.051,10.64a1,1,0,0,0-1-.9H17.921a1.008,1.008,0,0,0-.99.83l-6.79,39.52a1.017,1.017,0,0,0,.88,1.17l28.7,3h.11a.892.892,0,0,0,.22-.03.743.743,0,0,0,.27-.1l5.99-3.38,6.35,1.42a1,1,0,0,0,.88-.22,1.017,1.017,0,0,0,.33-.85ZM38.921,52.16l-26.63-2.78,6.47-37.64h23.77ZM24.937,23.787a5.359,5.359,0,0,1-1.284-4.227l.616-4.71a1,1,0,0,1,1.983.259l-.617,4.71a3.356,3.356,0,1,0,6.659.835l.693-5.793a1,1,0,0,1,1.986.237l-.693,5.793a5.356,5.356,0,0,1-9.343,2.9Z"></path></g></svg>-->
+                </button>
 
                 </div>
 
