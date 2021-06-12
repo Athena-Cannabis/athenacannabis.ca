@@ -20,7 +20,7 @@
       </content-page-heading>
 
       <!-- Background fluid container -->
-      <div class="bg-white">
+      <div class="bg-gray-100">
 
         <!-- Content container -->
         <div class="py-5 md:py-10 px-4 md:px-12 lg:px-20 xl:px-32 2xl:container">

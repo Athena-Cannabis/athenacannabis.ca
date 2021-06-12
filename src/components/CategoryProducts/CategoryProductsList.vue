@@ -30,10 +30,51 @@
 
                 <div
                   class="
+                    h-full
+                    flex flex-col items-stretch
+                    bg-white rounded-lg
+                    ">
+
+                  <!-- Product Title -->
+                  <div class="px-3 order-4">
+                    <h3 class="font-bold text-base text-gray-800">{{ product.title }}</h3>
+                  </div>
+
+                  <!-- Product Brand -->
+                  <div class="pt-3 px-3 order-3">
+                    <p class="font-light text-xs text-gray-500">{{ product.brand }}</p>
+                  </div>
+
+                  <!-- Product Image -->
+                  <div
+                    class="
+                      order-2
+                      w-full flex flex-row justify-center
+                      ">
+                    <img
+                          :src="product.images[0].src"
+                          :alt="product.images[0].alt"
+                          class="h-40 object-fit rounded-xl" />
+                  </div>
+
+                   <!-- Product Species -->
+                  <div
+                    class="
+                      order-1
+                      pt-3 px-3
+                    ">
+                    <p class="px-3 rounded-md text-xs ont-light text-gray-400 inline-flex bg-gray-100">{{ product.cannabis.species }}</p>
+                  </div>
+
+                </div>
+
+                <div
+                  v-if="false"
+                  class="
                     h-full py-12 px-5
                   bg-white
                     borders border-gray-300
-                    rounded-xl">
+                    shadow-xl rounded-xl">
 
                   <div class="flex flex-col">
 
