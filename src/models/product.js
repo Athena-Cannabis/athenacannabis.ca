@@ -74,7 +74,8 @@ export class Product {
     this.cannabis.thc_value = data.thc_value || null;
     this.cannabis.thc_range = data.thc_range || null;
     this.cannabis.cbd_value = data.cbd_value || null;
-    this.cannabis.cbd_range = data.cbd_range || null;
+    this.cannabis.weight = data.weight || null;
+    this.cannabis.species = data.species || null;
 
      // Price
      this.price.regular = data.regular_price || null;
@@ -151,5 +152,6 @@ export function responseAdapter(response) {
     cbd_range,
     regular_price: response.regular_price,
     sale_price: response.sale_price,
+    species,
   });
 }
