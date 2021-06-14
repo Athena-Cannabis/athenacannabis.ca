@@ -36,7 +36,6 @@ export class Product {
     sale: null,
   };
 
-
   error = null;
 
   constructor(data) {
@@ -55,9 +54,11 @@ export class Product {
     this.description = data.description || '';
     this.shortDescription = data.shortDescription || '';
 
+    // On sale and or purchasable
     this.purchasable = data.purchasable || false;
     this.onSale = data.onSale || false;
 
+    // The amount of product in stock
     this.stockQuantity = data.stockQuantity || null;
 
     // Assign the images blocks
@@ -74,12 +75,16 @@ export class Product {
     this.cannabis.thc_value = data.thc_value || null;
     this.cannabis.thc_range = data.thc_range || null;
     this.cannabis.cbd_value = data.cbd_value || null;
+    this.cannabis.cbd_range = data.cbd_range || null;
     this.cannabis.weight = data.weight || null;
     this.cannabis.species = data.species || null;
 
      // Price
      this.price.regular = data.regular_price || null;
      this.price.sale = data.sale_price || null;
+
+
+
 
   }
 
@@ -101,38 +106,13 @@ export function responseAdapter(response) {
   // Grab the Brand attribute
   var brand = response.attributes.find(element => element.name === 'Brand')?.options[0];
 
-
-  // TODO: This needs to be refactored
-  // Pull the Cannabis related attributes
-  var thc_value = null;
-  var thc_range = null;
-  var cbd_value = null;
-  var cbd_range = null;
-  var weight = null;
-  var species = null;
-
-  response.attributes.forEach(element => {
-    switch (element.name) {
-      case 'THC_VALUE':
-        thc_value = element.options[0];
-        break;
-      case 'THC_RANGE':
-        thc_range = element.options[0];
-        break;
-      case 'CBD_VALUE':
-        cbd_value = element.options[0];
-        break;
-      case 'CBD_RANGE':
-        cbd_range = element.options[0];
-        break;
-      case 'Weight':
-        weight = element.options[0];
-        break;
-      case 'Species':
-        species = element.options[0];
-        break;
-    }
-  });
+  // Grab the Cannabis attributes if they exist
+  var thc_value = response.attributes.find(element => element.name === 'THC_VALUE')?.options[0];
+  var thc_range = response.attributes.find(element => element.name === 'THC_RANGE')?.options[0];
+  var cbd_value = response.attributes.find(element => element.name === 'CBD_VALUE')?.options[0];
+  var cbd_range = response.attributes.find(element => element.name === 'CBD_RANGE')?.options[0];
+  var weight = response.attributes.find(element => element.name === 'Weight')?.options[0];
+  var species = response.attributes.find(element => element.name === 'Species')?.options[0];
 
   return new Product({
     id: response.id,
@@ -153,5 +133,6 @@ export function responseAdapter(response) {
     regular_price: response.regular_price,
     sale_price: response.sale_price,
     species,
+    weight,
   });
 }
