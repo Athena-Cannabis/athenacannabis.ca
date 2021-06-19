@@ -54,10 +54,19 @@
                             {{ product.brand }}
                         </p>
 
-                        <div
+                        <p
                           class="
                             order-3
-                            mt-2 mb-4
+                            mt-2 mb-2
+                            font-normal text-center text-xs text-gray-600
+                            ">
+                            {{ product.cannabis.species }}
+                        </p>
+
+                        <div
+                          class="
+                            order-4
+                            mt-3 mb-4
                             w-full flex flex-row justify-center
                             ">
                           <img
@@ -72,20 +81,20 @@
                       <div class="">
 
                         <!-- Cannabis data section -->
-                        <div class="flex flex-row justify-between mb-8">
+                        <div class="flex flex-row flex-nowrap justify-between mb-8 text-xs bg-grsay-100 rounded-2xl borsder">
 
-                          <div class="border rounded-full border-gray-400 p-3 text-center bg-gray-50">
-                            <p class=" text-xs">THC</p>
-                            <p class="text-sm">27.5%</p>
+                          <div class=" bordesr rounded-full border-grasy-400 p-4 text-center bg-gray-100">
+                            <p class="font-bold">THC</p>
+                            <p>{{ product.cannabis.thc_value }}</p>
                           </div>
 
-                          <div class="border rounded-full border-gray-400 p-3 text-center">
-                            <p class="text-xs">CBD</p>
+                          <div class="  borsder rounded-full border-gsray-400 p-4 text-center bg-gray-100">
+                            <p class="font-bold">CBD</p>
                             <p>0.5%</p>
                           </div>
 
-                          <div class="border rounded-full border-gray-400 p-3 text-center">
-                            <p class="text-xs">Weight</p>
+                          <div class=" bordser rounded-full border-grasy-400 px-3 py-4 text-center bg-gray-100">
+                            <p class="font-bold">Weight</p>
                             <p>3g</p>
                           </div>
 
