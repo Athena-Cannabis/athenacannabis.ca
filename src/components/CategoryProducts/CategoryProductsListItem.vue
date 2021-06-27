@@ -14,6 +14,127 @@
         <!-- Outer wrapper -->
         <div
           class="
+            py-5
+            px-4
+            my-3
+            border rounded-2xl
+            flex flex-col
+            ">
+
+          <h3
+            class="
+              text-lg md:text-lg
+              text-center  text-gray-800
+              font-bold
+              ">
+              {{ product.title }}
+          </h3>
+
+          <p
+            class="
+              order-first
+              font-light
+              text-center text-sm text-gray-600 uppercase
+              ">
+              {{ product.brand }}
+          </p>
+
+          <p
+            class="
+              mt-2 mb-2
+              font-normal text-center text-xs text-gray-600
+              ">
+              {{ product.cannabis.species }}
+          </p>
+
+          <!-- Image -->
+          <div
+            class="
+              w-1/2 self-center
+              ">
+            <img
+                  :src="product.images[0].src"
+                  :alt="product.images[0].alt"
+                  class="" />
+          </div>
+
+          <div
+            class="
+              bg-gray-100
+              rounded-xl
+              p-5
+              ">
+
+            <div
+              class="
+                mb-8
+                bg-gray-100
+                text-center
+                flex flex-row flex-wrap justify-between">
+
+              <div class="bsorder rounded-3xl border-gray-400 bg-grsay-100 ">
+                <p class="text-xs font-bold">THC</p>
+                <p class="text-lg">{{ product.cannabis.thc_value }}</p>
+              </div>
+
+              <div class="  bsorder rounded-3xl border-gray-400 bg-gsray-100 ">
+                <p class="text-xs font-bold">CBD</p>
+                <p class="text-lg">0.5%</p>
+              </div>
+
+              <div class=" bsorder rounded-3xl border-gray-400 bg-gsray-100">
+                <p class="text-xs font-bold">Weight</p>
+                <p class="text-lg">{{ product.cannabis.weight }}g</p>
+              </div>
+
+            </div>
+
+            <p class="order-4 text-4xl mb-5">
+              <!-- Check to see if the product is on sale -->
+              <span
+                v-if="product.onSale === true"
+                class="text-red-600">
+                $&nbsp;{{ product.price.sale }}
+              </span>
+              <span v-else>
+                $&nbsp;{{ product.price.regular }}
+              </span>
+            </p>
+
+               <!-- Add to cart button -->
+            <button
+              v-on:click.stop.prevent="handleAddToCart"
+              class="
+                w-full
+                py-2 px-4 md:py-3 md:px-4
+                align-bottom
+                border-2 border-brand-blue-900 shadow rounded-md
+                text-base font-medium text-brand-blue-800
+                bg-gray-100
+                hover:bg-brand-blue-900 hover:text-gray-100
+                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                transition-all duration-150 ease-in-out
+                ">
+              Add to cart<span class="sr-only"> to cart {{ product.title }} | {{ product.brand }}</span>
+            </button>
+
+
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+
+
+        <!-- Outer wrapper -->
+        <div
+          v-if="false"
+          class="
             sm:h-full
           bg-white
             border-b
@@ -29,6 +150,19 @@
               flex flex-wrap flex-row-reverse md:flex-col
               ">
 
+              <h3
+                class="w-full
+                  font-bold text-left md:text-center text-lg text-gray-800">
+                  {{ product.title }}
+              </h3>
+
+               <p
+                class="w-full
+                  mb-2
+                  font-light text-left md:text-center text-sm text-gray-600 uppercase
+                  ">
+                  {{ product.brand }}
+              </p>
 
 
             <!-- Mobile right column // Full display in anything larger -->
@@ -38,7 +172,7 @@
                 pl-5 md:pl-0
                 flex flex-col
                 ">
-
+<!--
               <h3
                 class="
                   order-2 font-bold text-left md:text-center text-lg text-gray-800">
@@ -52,7 +186,7 @@
                   font-light text-left md:text-center text-sm text-gray-600 uppercase
                   ">
                   {{ product.brand }}
-              </p>
+              </p>-->
 
                <!-- Product Price -->
                <p class="order-4 text-4xl mb-10">
@@ -174,13 +308,13 @@
 
         <!-- Outer container -->
         <div
-
+          v-if="false"
           class="
-            mx-10 sm:mx-0
+            sm:mx-0
             h-full
             bg-white border border-gray-200
-            rounded-3xl
-            shadow-lg
+            sm:rounded-3xl
+            sm:shadow-lg
             ">
 
           <!-- Inner flex container -->
