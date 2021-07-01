@@ -14,48 +14,26 @@
         <!-- Outer wrapper -->
         <div
           class="
-            py-5
-            px-4
+            py-2
+            pb-5
+            px-2
             my-3
-            border rounded-2xl
+            border-b
             flex flex-col
             ">
 
-          <h3
-            class="
-              text-lg md:text-lg
-              text-center  text-gray-800
-              font-bold
-              ">
-              {{ product.title }}
-          </h3>
 
-          <p
-            class="
-              order-first
-              font-light
-              text-center text-sm text-gray-600 uppercase
-              ">
-              {{ product.brand }}
-          </p>
-
-          <p
-            class="
-              mt-2 mb-2
-              font-normal text-center text-xs text-gray-600
-              ">
-              {{ product.cannabis.species }}
-          </p>
 
           <!-- Image -->
           <div
             class="
+              my-2
               w-1/2 self-center
               ">
             <img
                   :src="product.images[0].src"
                   :alt="product.images[0].alt"
-                  class="" />
+                  class="h-40 mx-auto object-contain" />
           </div>
 
           <div
@@ -65,26 +43,55 @@
               p-5
               ">
 
+              <p
+            class="
+              order-first
+              font-light
+              text-left text-sm text-gray-600 uppercase
+              ">
+              {{ product.brand }}
+          </p>
+
+              <h3
+            class="
+              text-lg md:text-lg
+              text-left  text-gray-800
+              font-bold
+              ">
+              {{ product.title }}
+          </h3>
+
+
+
+          <p
+            class="
+              mt-2 mb-2
+              font-normal
+              text-left text-xs text-gray-600
+              ">
+              {{ product.cannabis.species }}
+          </p>
+
             <div
               class="
-                mb-8
+                mb-5
                 bg-gray-100
                 text-center
                 flex flex-row flex-wrap justify-between">
 
               <div class="bsorder rounded-3xl border-gray-400 bg-grsay-100 ">
                 <p class="text-xs font-bold">THC</p>
-                <p class="text-lg">{{ product.cannabis.thc_value }}</p>
+                <p class="text-lg text-gray-600">{{ product.cannabis.thc_value }}</p>
               </div>
 
               <div class="  bsorder rounded-3xl border-gray-400 bg-gsray-100 ">
                 <p class="text-xs font-bold">CBD</p>
-                <p class="text-lg">0.5%</p>
+                <p class="text-lg text-gray-600">0.5%</p>
               </div>
 
               <div class=" bsorder rounded-3xl border-gray-400 bg-gsray-100">
                 <p class="text-xs font-bold">Weight</p>
-                <p class="text-lg">{{ product.cannabis.weight }}g</p>
+                <p class="text-lg text-gray-600">{{ product.cannabis.weight }}g</p>
               </div>
 
             </div>
@@ -103,14 +110,14 @@
 
                <!-- Add to cart button -->
             <button
-              v-on:click.stop.prevent="handleAddToCart"
+              v-on:click.prevent="handleAddToCart"
               class="
                 w-full
                 py-2 px-4 md:py-3 md:px-4
                 align-bottom
                 border-2 border-brand-blue-900 shadow rounded-md
-                text-base font-medium text-brand-blue-800
-                bg-gray-100
+                text-base font-medium text-white
+                bg-brand-blue-800
                 hover:bg-brand-blue-900 hover:text-gray-100
                 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
                 transition-all duration-150 ease-in-out
