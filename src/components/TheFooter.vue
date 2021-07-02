@@ -44,15 +44,6 @@
 
                 <dl class="mt-4 text-gray-400 text-xl">
 
-                  <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4 text-gray-300">
-                    <dt class="col-span-2">
-                      Canada Day
-                    </dt>
-                    <dd class="col-span-3 text-right md:text-left">
-                      <span class="whitespace-nowrap">9:00 AM - 2:00 PM</span>
-                    </dd>
-                  </div>
-
                   <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
                     <dt class="col-span-2">
                       Monday - Thursday
@@ -67,7 +58,7 @@
                       Friday
                     </dt>
                     <dd class="col-span-3 text-right md:text-left">
-                      <span class="whitespace-nowrap">10:00 AM - 10:00 PM</span>
+                      <span class="whitespace-nowrap">10:00 AM - 11:00 PM</span>
                     </dd>
                   </div>
 
@@ -76,7 +67,7 @@
                       Saturday
                     </dt>
                     <dd class="col-span-3 text-right md:text-left">
-                      <span class="whitespace-nowrap">10:00 AM - 10:00 PM</span>
+                      <span class="whitespace-nowrap">10:00 AM - 11:00 PM</span>
                     </dd>
                   </div>
 

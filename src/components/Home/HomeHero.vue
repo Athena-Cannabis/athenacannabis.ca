@@ -17,8 +17,8 @@
               <p class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl
                         font-medium md:text-brand-blue-800 bg-white">
 
-                <span class="sm:block md:inline font-bold">Canada Day hours: </span>
-                <span class="sm:block md:inline text-brand-blue-600"> 9:00&nbsp;AM to 2:00&nbsp;PM</span>
+                <span class="sm:block md:inline font-bold">Shop online, </span>
+                <span class="sm:block md:inline text-brand-blue-600"> pickup in under 25 minutes</span>
               </p>
 
               <!--
@@ -28,10 +28,6 @@
                 <span class="sm:block text-brand-blue-600"> pickup in under 25 minutes</span>
               </h3>
               -->
-
-              <p class="md:w-full mt-5 text-2xl md:text-5xl text-gray-500 text-left tracking-normal">
-                Order online before 1:45&nbsp;PM for pickup today.
-              </p>
 
               <p class="sr-only md:w-full mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
                 We are now open for store pickup!
