@@ -7,8 +7,138 @@
   <div
     v-else
     >
+
     <!-- Wrap in a link to the product page -->
     <router-link
+      :to="{ name: 'product', params: { slug: product.slug }}">
+
+       <!-- Outer wrapper -->
+      <div
+        class="
+          pt-0 pb-3 px-3
+          border border-gray-200 rounded-xl shadow-sm
+          flex flex-col
+          ">
+
+        <!-- Image -->
+        <div
+          class="
+            mt-3 mb-3
+            w-1/2 self-center
+            ">
+          <img
+                :src="product.images[0].src"
+                :alt="product.images[0].alt"
+                class="h-40 mx-auto object-contain" />
+        </div>
+
+        <div class="border-t border-gray-100 pt-3">
+
+          <h3
+            class="
+              text-base
+              text-left text-gray-600
+              font-semibold
+              ">
+              {{ product.title }}
+          </h3>
+
+          <p
+            class="
+              font-light
+              text-left text-sm text-gray-600 uppercase
+              ">
+              {{ product.brand }}
+          </p>
+
+
+          <!-- Cannabis specific information "pills" -->
+          <div
+            v-if="product.cannabis"
+            class="text-sm my-4">
+
+            <!-- Definition list of terms -->
+            <dl class="flex flex-row">
+
+              <div class="bg-gray-100 rounded-xl px-3 py-1 flex flex-row">
+                <dt class="sr-only">Species</dt>
+                <dd>{{ product.cannabis.species }}</dd>
+              </div>
+
+              <div class="m-1 bg-gray-100 rounded-xl px-3 py-1 flex flex-row">
+                <dt class="text-gray-500">THC</dt>
+                <dd
+                  class="
+                    ml-2
+                    text-gray-800
+                    ">
+                  {{ product.cannabis.thc_value }}</dd>
+              </div>
+
+              <div class="m-1 bg-gray-100 rounded-xl px-3 py-1 flex flex-row">
+                <dt class="text-gray-500">CBD</dt>
+                <dd
+                  class="
+                    ml-2
+                    text-gray-800
+                    ">
+                  {{ product.cannabis.cbd_value }}</dd>
+              </div>
+
+            </dl>
+
+
+          </div>
+
+
+
+
+        </div>
+
+
+        <div class="border-t border-gray-100 pt-3 flex flex-row">
+
+          <p class="text-xl mb-5 mr-10 font-semibold">
+              <!-- Check to see if the product is on sale -->
+              <span
+                v-if="product.onSale === true"
+                class="text-red-600">
+                $&nbsp;{{ product.price.sale }}
+              </span>
+              <span v-else>
+                $&nbsp;{{ product.price.regular }}
+              </span>
+            </p>
+
+               <!-- Add to cart button -->
+            <button
+              v-on:click.prevent="handleAddToCart"
+              class="
+                w-full
+                py-2 px-4 md:py-3 md:px-4
+                align-bottom
+                border-2 border-brand-blue-900 shadow rounded-md
+                text-base font-medium text-brand-blue-900
+                bg-white
+                hover:bg-brand-blue-900 hover:text-gray-100
+                focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
+                transition-all duration-150 ease-in-out
+                ">
+              Add to cart<span class="sr-only"> to cart {{ product.title }} | {{ product.brand }}</span>
+            </button>
+
+
+
+        </div>
+
+      </div>
+
+    </router-link>
+
+
+    <!-- Wrap in a link to the product page -->
+    <router-link
+      v-if="false"
       :to="{ name: 'product', params: { slug: product.slug }}">
 
         <!-- Outer wrapper -->
