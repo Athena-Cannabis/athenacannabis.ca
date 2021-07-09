@@ -13,14 +13,13 @@
           <div class="w-full md:w-3/5 lg:w-2/5 pt-10 md:pt-0 md:pr-20 order-2 md:order-none">
 
             <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-gray-800 font-semibold">
-              Reopening soon
+              Now open for in-store shopping
             </h2>
 
              <!-- Text section -->
             <div class="text-left max-w-prose">
 
-              <p class="mt-4 text-xl text-gray-500">We will confirm our exact reopening date in the coming days. We're taking a minute to digest the
-                updated provincial guidelines around reopening.</p>
+              <p class="mt-4 text-xl text-gray-500">From pre-rolls and bath bombs, to gummies and CBD oil, we have something for everyone! Not sure which product is right for you? Pull up one of our comfy chairs and learn all about our cannabis products from one of our experts, we'd love to help!</p>
             </div>
 
           </div>
