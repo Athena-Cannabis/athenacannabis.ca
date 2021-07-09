@@ -1,29 +1,36 @@
 <template>
+  <!-- Loading State -->
   <div
     v-if="!product">
     Loading
   </div>
   <!-- TODO: Add Error Handling -->
+  <!-- Display Product Card -->
   <div
     v-else
     >
 
     <!-- Wrap in a link to the product page -->
     <router-link
+      v-if="false"
       :to="{ name: 'product', params: { slug: product.slug }}">
 
        <!-- Outer wrapper -->
       <div
         class="
-          pt-0 pb-3 px-3
-          border border-gray-200 rounded-xl shadow-sm
+          h-full
+          p-5
+        bg-white
+          border border-gray-200
+          rounded-2xl
           flex flex-col
+          hover:shadow-xl transition-all duration-200 ease-in-out
           ">
 
         <!-- Image -->
         <div
           class="
-            mt-3 mb-3
+            my-10
             w-1/2 self-center
             ">
           <img
@@ -32,12 +39,13 @@
                 class="h-40 mx-auto object-contain" />
         </div>
 
-        <div class="border-t border-gray-100 pt-3">
+        <div class="border-t border-gray-200 pt-3 flex flex-col">
 
           <h3
             class="
+              order-2
               text-base
-              text-left text-gray-600
+              text-left text-gray-500
               font-semibold
               ">
               {{ product.title }}
@@ -45,6 +53,7 @@
 
           <p
             class="
+              order-1
               font-light
               text-left text-sm text-gray-600 uppercase
               ">
@@ -55,10 +64,10 @@
           <!-- Cannabis specific information "pills" -->
           <div
             v-if="product.cannabis"
-            class="text-sm my-4">
+            class="text-sm my-4 order-3">
 
             <!-- Definition list of terms -->
-            <dl class="flex flex-row">
+            <dl class="flex flex-row flex-wrap">
 
               <div class="bg-gray-100 rounded-xl px-3 py-1 flex flex-row">
                 <dt class="sr-only">Species</dt>
@@ -85,17 +94,23 @@
                   {{ product.cannabis.cbd_value }}</dd>
               </div>
 
-            </dl>
+               <div class="m-1 bg-gray-100 rounded-xl px-3 py-1 flex flex-row">
+                <dt class="text-gray-500">Weight</dt>
+                <dd
+                  class="
+                    ml-2
+                    text-gray-800
+                    ">
+                  {{ product.cannabis.weight }}</dd>
+              </div>
 
+            </dl>
 
           </div>
 
-
-
-
         </div>
 
-
+        <!-- Anchor to the bottom of the card -->
         <div class="border-t border-gray-100 pt-3 flex flex-row">
 
           <p class="text-xl mb-5 mr-10 font-semibold">
@@ -138,7 +153,6 @@
 
     <!-- Wrap in a link to the product page -->
     <router-link
-      v-if="false"
       :to="{ name: 'product', params: { slug: product.slug }}">
 
         <!-- Outer wrapper -->
@@ -445,7 +459,6 @@
 
         <!-- Outer container -->
         <div
-          v-if="false"
           class="
             sm:mx-0
             h-full
@@ -556,7 +569,6 @@
         </div>
 
         <div
-        v-if="false"
         class="
           h-full
           p-5
