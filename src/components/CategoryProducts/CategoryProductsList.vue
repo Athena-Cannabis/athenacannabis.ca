@@ -1,43 +1,39 @@
 <template>
   <section>
 
-    <div class="">
+    <h2 class="sr-only">List of products</h2>
 
-      <h2 class="sr-only">List of products</h2>
+    <div class="flex flex-row flex-nowrap items-start">
 
-      <div class="flex flex-row flex-nowrap items-start">
+      <!-- Category Filters -->
+      <aside class="sr-only">
+        <p>Hello</p>
+      </aside>
 
-        <!-- Category Filters -->
-        <aside class="sr-only">
-          <p>Hello</p>
-        </aside>
+      <!-- Product list -->
+      <section
+        class="w-full">
 
-        <!-- Product list -->
-        <section
-          class="w-full">
+        <h2 class="sr-only">Products</h2>
 
-          <h2 class="sr-only">Products</h2>
+          <ul
+          class="
+            list-none
+            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+            gap-x-0
+            gap-y-3
+            md:gap-x-8 md:gap-y-20
 
-           <ul
-            class="
-              list-none
-              grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
-              gap-x-0
-              gap-y-3
-              md:gap-x-8 md:gap-y-20
+            ">
 
-              ">
+          <category-products-list-item
+            v-for="product in products"
+            :key="product.id"
+            :product="product" />
 
-            <category-products-list-item
-              v-for="product in products"
-              :key="product.id"
-              :product="product" />
+        </ul>
 
-          </ul>
-
-        </section>
-
-      </div>
+      </section>
 
     </div>
 
