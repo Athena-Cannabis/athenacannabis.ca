@@ -14,12 +14,21 @@
 
               <p class="mb-8 uppercase text-xs md:text-lg text-gray-800 tracking-widest">A recreational cannabis store</p>
 
+             <p class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl
+                        font-medium md:text-brand-blue-800 bg-white">
+
+                <span class="sm:block md:inline font-bold">Now open </span>
+                <span class="sm:block md:inline text-brand-blue-600">for in&#8209;store shopping</span>
+              </p>
+
+              <!--
               <p class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl
                         font-medium md:text-brand-blue-800 bg-white">
 
                 <span class="sm:block md:inline font-bold">Shop online, </span>
                 <span class="sm:block md:inline text-brand-blue-600"> pickup in under 25 minutes</span>
               </p>
+              -->
 
               <!--
               <h3 class="text-center msd:text-left text-4xl sm:text-6xl lg:text-7xl
@@ -29,8 +38,8 @@
               </h3>
               -->
 
-              <p class="sr-only md:w-full mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
-                We are now open for store pickup!
+              <p class="md:w-full pt-5 text-3xl md:text-5xl text-gray-500 text-left tracking-normal bg-white">
+                Shop online, pickup in under 25 minutes also available
               </p>
               <p class="sr-only md:w-full lg:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
                 It's not quite the grand opening we had in mind, but due to the latest lockdown we've had to change our plans.
