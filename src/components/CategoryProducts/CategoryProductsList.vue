@@ -19,10 +19,10 @@
           <ul
           class="
             list-none
-            grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4
+            grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4
             gap-x-0
             gap-y-3
-            md:gap-x-8 md:gap-y-20
+            sm:gap-x-8 sm:gap-y-10 md:gap-y-20
 
             ">
 

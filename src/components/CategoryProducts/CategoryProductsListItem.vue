@@ -19,26 +19,27 @@
         class="
           h-full
           p-5
-        bg-white border border-gray-200 rounded-2xl
-          hover:shadow-xl transition-all duration-200 ease-in-out
-          flex flex-col
+        bg-white border sm:border-gray-200 rounded-2xl
+          hover:shadow-none sm:hover:shadow-xl transition-all duration-200 ease-in-out
+          flex flex-row-reverse flex-nowrap sm:flex-col
           ">
 
         <!-- Product Image Container -->
         <div
           class="
-            py-10
-            w-full self-center
+            pt-5 sm:py-10
+            ml-10 sm:ml-0 w-1/2 sm:w-full self-start sm:self-center
             ">
           <img
                 :src="product.images[0].src"
                 :alt="product.images[0].alt"
-                class="h-40 mx-auto object-contain" />
+                class="h-auto sm:h-40 mx-auto object-contain" />
         </div>
 
         <!-- Product Information Container -->
         <div
           class="
+             w-1/2 sm:w-full
             h-full
             flex flex-col
             ">
@@ -59,7 +60,7 @@
             class="
               order-1
               pt-3 pb-1
-              border-t border-gray-200
+              sm:border-t sm:border-gray-200
               font-light
               text-left text-sm text-gray-600 uppercase
               ">
