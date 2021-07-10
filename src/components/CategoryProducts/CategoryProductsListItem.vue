@@ -58,7 +58,7 @@
           <p
             class="
               order-1
-              pt-3
+              pt-3 pb-1
               border-t border-gray-200
               font-light
               text-left text-sm text-gray-600 uppercase
@@ -66,29 +66,61 @@
               {{ product.brand }}
           </p>
 
+           <!-- Product Species -->
+          <p
+            class="
+              mt-1
+              order-3
+              font-light
+              text-left text-sm text-gray-400
+              ">
+              <span class="sr-only">Cannabis Species: </span>
+              {{ product.cannabis.species }}
+          </p>
+
           <!-- Cannabis specific information "pills" -->
           <div
-            class="
-              order-3
-              pt-5
-              mb-5
-              text-center
-              flex flex-row flex-wrap justify-between">
+            class="order-4">
 
-            <div class="bsorder rounded-3xl border-gray-400 bg-gray-100 p-3 ">
-              <p class="text-xs font-bold">THC</p>
-              <p class="text-lg text-gray-600">{{ product.cannabis.thc_value }}</p>
-            </div>
+              <dl
+                class="
+                  pt-5
+                  mb-5
+                  flex flex-row flex-nowrap justify-between items-center
+                  text-center
+                  ">
 
-            <div class="  bsorder rounded-3xl border-gray-400 bg-gray-100 p-3 ">
-              <p class="text-xs font-bold">CBD</p>
-              <p class="text-lg text-gray-600">{{ product.cannabis.cbd_value }}%</p>
-            </div>
+                <!-- THC Value -->
+                <div class="p-3 bg-brand-blue-100 rounded-2xl text-gray-600 flex-grow">
+                  <dt class="text-xs font-bold">
+                    THC
+                  </dt>
+                  <dd class="text-sm ">
+                    {{ product.cannabis.thc_value }}
+                  </dd>
+                </div>
 
-            <div class=" bsorder rounded-3xl border-gray-400 bg-gray-100 p-3 ">
-              <p class="text-xs font-bold">Weight</p>
-              <p class="text-lg text-gray-600">{{ product.cannabis.weight }}g</p>
-            </div>
+                <!-- CBD Value -->
+                <div class="p-3 bg-brand-blue-100 rounded-2xl text-gray-600 mx-4 flex-grow">
+                  <dt class="text-xs font-bold">
+                    CBD
+                  </dt>
+                  <dd class="text-sm ">
+                    {{ product.cannabis.thc_value }}
+                  </dd>
+                </div>
+
+                <!-- Weight -->
+                <div class="p-3 bg-brand-blue-100 rounded-2xl text-gray-600 flex-grow">
+                  <dt class="text-xs font-bold">
+                    Weight
+                  </dt>
+                  <dd class="text-sm ">
+                    {{ product.cannabis.weight }}
+                  </dd>
+                </div>
+
+              </dl>
 
           </div>
 
