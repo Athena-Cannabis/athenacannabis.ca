@@ -30,7 +30,7 @@
 
             <h2 class="sr-only">Products</h2>
 
-            <category-products-list :category="category"></category-products-list>
+            <collections-products-list :category="category"></collections-products-list>
 
           </div>
         </div>
@@ -46,12 +46,12 @@ import { reactive, toRefs, watch, watchEffect, computed } from 'vue';
 import { useRouter, useRoute } from 'vue-router';
 import { useStore } from 'vuex';
 import ContentPageHeading from '../components/Content/PageHeading.vue';
-import CategoryProductsList from '../components/CategoryProducts/CategoryProductsList.vue';
+import CollectionsProductsList from '../components/CollectionsProducts/CollectionsProductsList.vue';
 
 export default {
   components : {
     ContentPageHeading,
-    CategoryProductsList,
+    CollectionsProductsList,
   },
   setup() {
 

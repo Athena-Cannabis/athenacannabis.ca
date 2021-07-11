@@ -26,7 +26,7 @@
 
             ">
 
-          <category-products-list-item
+          <collections-products-list-item
             v-for="product in products"
             :key="product.id"
             :product="product" />
@@ -43,11 +43,11 @@
 <script>
 import { computed } from 'vue';
 import { useStore } from 'vuex';
-import CategoryProductsListItem from './CategoryProductsListItem.vue';
+import CollectionsProductsListItem from './CollectionsProductsListItem.vue';
 
 export default {
   components: {
-    CategoryProductsListItem
+    CollectionsProductsListItem
   },
   props: {
     category: Object

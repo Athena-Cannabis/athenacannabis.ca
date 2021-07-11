@@ -32,7 +32,7 @@
 
 
               <router-link
-                :to="{ name: 'category-products', params: { slug: category.slug }}"
+                :to="{ name: 'collections-products', params: { slug: category.slug }}"
                 class="underline text-brand-blue-700 hover:text-brand-blue-900">
                 {{ category.title }}
               </router-link>

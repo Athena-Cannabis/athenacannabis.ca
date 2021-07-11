@@ -2,8 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 
 // const Contact = () => import('../views/Contact.vue');
-const CategoryProducts = () => import('../views/CategoryProducts.vue');
-const CategoryHome = () => import('../views/CategoryHome.vue');
+const Collections = () => import('../views/Collections.vue');
+const CollectionsProducts = () => import('../views/CollectionsProducts.vue');
 const HowToShop = () => import('../views/HowToShop.vue');
 const NotFound = () => import('../views/NotFound.vue');
 const Product = () => import('../views/Product.vue');
@@ -29,17 +29,17 @@ export const router = createRouter({
       component: HowToShop,
     },
     {
-      path: '/category',
-      name: 'category-home',
-      component: CategoryHome,
+      path: '/collections',
+      name: 'collections',
+      component: Collections,
     },
     {
-      path: '/category/:slug',
-      name: 'category-products',
-      component: CategoryProducts,
+      path: '/collections/:slug',
+      name: 'collections-products',
+      component: CollectionsProducts,
     },
     {
-      path: '/product/:slug',
+      path: '/products/:slug',
       name: 'product',
       component: Product,
     },
