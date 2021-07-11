@@ -1,12 +1,8 @@
 import { Product } from '../../models/product';
 import ProductService from '../../services/woocommerce/product';
 
-
-// Local Storage Flag
-// The flag is set to true when the user is above 19
-
 // initial state
-// products: [{ id, products }]
+// products: [{ ...product info }]
 // cache: [{
 //   type: 'category',
 //   data: 11,
@@ -14,10 +10,46 @@ import ProductService from '../../services/woocommerce/product';
 // }]
 const state = {
   all: [],
+  cache: {
+    category: []
+  }
 }
 
 // getters
 const getters = {
+
+
+   // Get all products - no sorting applied
+   getCategoryCache (state) {
+    return state.cache.category;
+  },
+
+  // Get Boolean status of category cache
+  getCacheStatusByCategoryId: (state, getters) => (id) => {
+
+    // TIMELIMIT FOR CACHE (1000 ms * 5 minutes)
+    const INVALIDATECACHETIME = 1000 * 60 * 5;
+
+    // Initialise variable to false
+    var cacheStatus = false;
+
+    // Check if the category is in the array
+    const findIndex = getters.getCategoryCache.findIndex((categoryCache) => categoryCache.id === id);
+
+    // Update the state cache variable
+    if (findIndex === -1) {
+      // Category Cache not found
+      cacheStatus = false;
+    }
+    else {
+      // Category Cache was found - check if it's older than 5 minutes
+      // Negative value means it's older
+      const cacheTimeLimitAgo = Date.now() - INVALIDATECACHETIME;
+      cacheStatus = getters.getCategoryCache[findIndex].date > cacheTimeLimitAgo;
+    }
+
+    return cacheStatus;
+  },
 
   // Get all products - no sorting applied
   getProducts (state) {
@@ -62,36 +94,40 @@ const actions = {
   // Fetch and load the categories by an id
   fetchProductsByCategoryId ({ commit, state, getters }, categoryId) {
 
-    // TODO: Add caching mechanism to check if category has been cached
+    // Check if there is an entry in the cache for the category id
+    if (!getters.getCacheStatusByCategoryId(categoryId)) {
 
-    // TODO: Validate the ID is a number
-    ProductService
-    .getProductsByCategoryId(categoryId)
-    .then((products) => {
+      // TODO: Validate the ID is a number
+      ProductService
+      .getProductsByCategoryId(categoryId)
+      .then((products) => {
 
-      // Get an array of product objects
-      // from the service
-      var uniqueProducts = [];
+        // Get an array of product objects
+        // from the service
+        var uniqueProducts = [];
 
-      // Indentify unique products that aren't in the vuex store already
-      products.forEach(element => {
+        // Indentify unique products that aren't in the vuex store already
+        products.forEach(element => {
 
-        // Check if the product is already in the array
-        const findIndex = getters.getProducts.findIndex((product) => product.id === element.id );
+          // Check if the product is already in the array
+          const findIndex = getters.getProducts.findIndex((product) => product.id === element.id );
 
-        // Only add the product if it's not found
-        if (findIndex === -1) {
-          uniqueProducts.push(element);
-        }
+          // Only add the product if it's not found
+          if (findIndex === -1) {
+            uniqueProducts.push(element);
+          }
 
-      });
+        });
 
-      commit('addProducts', uniqueProducts);
+        commit('addProducts', uniqueProducts);
+        commit('addCategoryCache', categoryId);
 
-    })
-    .catch((error) => {
-      console.log('Error:', error);
-    })
+      })
+      .catch((error) => {
+        console.log('Error:', error);
+      })
+
+    }
 
   }
 
@@ -109,6 +145,27 @@ const mutations = {
   addProducts (state, products ) {
     state.all.push(...products);
   },
+
+  // Add the cache entry with the categoryId
+  addCategoryCache(state, categoryId) {
+
+    // Check if the category is already in the array
+    const findIndex = state.cache.category.findIndex((cacheCategory) => cacheCategory.id === categoryId);
+
+    // Update the state cache entry
+    if (findIndex === -1) {
+      // Entry not found
+      state.cache.category.push({
+        id: categoryId,
+        date: Date.now(),
+      });
+    }
+    else {
+      // Entry found
+      state.cache.category[findIndex].date = Date.now();
+    }
+
+  }
 
 }
 
