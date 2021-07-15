@@ -34,6 +34,8 @@ export class Product {
   price = {
     regular: null,
     sale: null,
+    current: null,
+    currentFloat: null,
   };
 
   error = null;
@@ -82,9 +84,8 @@ export class Product {
      // Price
      this.price.regular = data.regular_price || null;
      this.price.sale = data.sale_price || null;
-
-
-
+     this.price.current = data.price || null;
+     this.price.currentFloat = parseFloat(data.price) || null;
 
   }
 
@@ -130,6 +131,7 @@ export function responseAdapter(response) {
     thc_range,
     cbd_value,
     cbd_range,
+    price: response.price,
     regular_price: response.regular_price,
     sale_price: response.sale_price,
     species,
