@@ -107,7 +107,7 @@
                     CBD
                   </dt>
                   <dd class="text-sm ">
-                    {{ product.cannabis.thc_value }}
+                    {{ product.cannabis.cbd_value }}
                   </dd>
                 </div>
 
