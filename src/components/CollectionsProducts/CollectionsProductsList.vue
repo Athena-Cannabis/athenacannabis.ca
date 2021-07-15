@@ -98,7 +98,27 @@ const sortingValues = {
   alphaDown: {
     description: 'Alphabetically: Z - A',
     comparisonFn: (a,b) => { return b.title.localeCompare(a.title); },
-  }
+  },
+  // Alphabetical from Z-A
+  thcDown: {
+    description: 'THC: Low to High',
+    comparisonFn: (a,b) => { return a.cannabis.thc_value - b.cannabis.thc_value; },
+  },
+  // Alphabetical from Z-A
+  thcUp: {
+    description: 'THC: High to Low',
+    comparisonFn: (a,b) => { return b.cannabis.thc_value - a.cannabis.thc_value; },
+  },
+  // Alphabetical from Z-A
+  cbdDown: {
+    description: 'CBD: Low to High',
+    comparisonFn: (a,b) => { console.log(a.cannabis.cbd_value, b.cannabis.cbd_value); return a.cannabis.cbd_value - b.cannabis.cbd_value; },
+  },
+  // Alphabetical from Z-A
+  cbdUp: {
+    description: 'CBD: High to Low',
+    comparisonFn: (a,b) => { return b.cannabis.cbd_value - a.cannabis.cbd_value; },
+  },
 }
 
 
