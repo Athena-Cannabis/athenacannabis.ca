@@ -12,7 +12,6 @@
       </select>
 
       <select v-model="sortBy">
-        <option disabled value="">Please select one</option>
         <option
           v-for="(item) in sortOptions"
           v-bind:key="item.key"
@@ -21,6 +20,16 @@
         </option>
       </select>
       <span>Selected: {{ sortBy }}</span>
+
+      <select v-model="sortBy">
+         <option
+          v-for="(item, key) in sortingValues"
+          v-bind:key="key"
+          :value="key">
+          {{item.description}}
+        </option>
+      </select>
+
   </aside>
   <section>
 
@@ -68,22 +77,71 @@ import { computed, ref } from 'vue';
 import { useStore } from 'vuex';
 import CollectionsProductsListItem from './CollectionsProductsListItem.vue';
 
+
+const sortingValues = {
+  // Price from Low to High
+  priceUp: {
+    description: 'Price: Low to High',
+    comparisonFn: (a,b) => { return a.price.currentFloat - b.price.currentFloat; },
+  },
+  // Price from High to Low
+  priceDown: {
+    description: 'Price: High to Low',
+    comparisonFn: (a,b) => { return b.price.currentFloat - a.price.currentFloat; },
+  },
+  // Alphabetical from A-Z
+  alphaUp: {
+    description: 'Alphabetically: A - Z',
+    comparisonFn: (a,b) => { return a.title.localeCompare(b.title); },
+  },
+  // Alphabetical from Z-A
+  alphaDown: {
+    description: 'Alphabetically: Z - A',
+    comparisonFn: (a,b) => { return b.title.localeCompare(a.title); },
+  }
+}
+
+
 const sortOptions = [
   {
-    description: 'A',
-    key: 'a',
+    key: 'pUp',
+    description: 'Price: Low to High',
+    comparisonFn: (a,b) => { a.title.localeCompare(b.title);},
   },
   {
-    description: 'B',
-    key: 'b'
+    key: 'pDown',
+    description: 'Price: High to Low',
+    comparisonFn: (a,b) => { a.title.localeCompare(b.title);},
   },
   {
-    description: 'C',
-    key: 'c'
+    key: 'az',
+    description: 'Alphabetically: A - Z',
+    comparisonFn: (a,b) => { a.title.localeCompare(b.title);},
   },
   {
-    description: 'D',
-    key: 'd'
+    key: 'za',
+    description: 'Alphabetically: Z - A',
+    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
+  },
+  {
+    key: 'thcUp',
+    description: 'THC %: Low to High',
+    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
+  },
+  {
+    key: 'thcDown',
+    description: 'THC %: High to Low',
+    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
+  },
+  {
+    key: 'cbdUp',
+    description: 'CBD %: Low to High',
+    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
+  },
+  {
+    description: 'CBD %: High to Low',
+    key: 'cbdDown',
+    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
   },
 ];
 
@@ -97,7 +155,7 @@ export default {
   },
   setup(props) {
 
-    const sortBy = ref('A');
+    const sortBy = ref('alphaUp');
 
     // Fetch Products
     // Get list of product ids to display
@@ -111,33 +169,7 @@ export default {
       // Copy the items from vuex
       var sortedProds = products.value;
 
-      switch(sortBy.value) {
-        case sortOptions[0].key:
-          // code block
-          console.log('Sort By', sortBy.value);
-          break;
-        case sortOptions[1].key:
-          console.log('Sort By', sortBy.value);
-           sortedProds.sort((a,b) => {
-            return a.title.localeCompare(b.title);
-          });
-          // code block
-          break;
-        case sortOptions[2].key:
-          console.log('Sort By', sortBy.value);
-           sortedProds.sort((a,b) => {
-            return b.title.localeCompare(a.title);
-          });
-          // code block
-          break;
-        case sortOptions[3].key:
-          console.log('Sort By', sortBy.value);
-          // code block
-          break;
-        default:
-          // code block
-          console.log('Sort By', sortBy.value);
-      }
+      sortedProds.sort(sortingValues[sortBy.value].comparisonFn);
 
       return sortedProds;
     });
@@ -149,6 +181,7 @@ export default {
       products,
       sortedProducts,
       sortOptions,
+      sortingValues,
     }
 
   },
