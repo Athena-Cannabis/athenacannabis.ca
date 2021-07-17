@@ -87,36 +87,36 @@
                 class="
                   pt-5
                   mb-5
-                  flex flex-row flex-nowrap justify-between items-center
+                  flex flex-row justify-between items-center
                   text-center
                   ">
 
                 <!-- THC Value -->
-                <div class="p-3 bg-brand-blue-100 rounded-2xl text-gray-600 flex-grow">
+                <div class="py-1 px-2 bg-gray-100 rounded-2xl text-gray-600 flex-grow flex items-center justify-center">
                   <dt class="text-xs font-bold">
                     THC
                   </dt>
-                  <dd class="text-sm ">
+                  <dd class="pl-2 text-xs ">
                     {{ product.cannabis.thc_value }}
                   </dd>
                 </div>
 
                 <!-- CBD Value -->
-                <div class="p-3 bg-brand-blue-100 rounded-2xl text-gray-600 mx-4 flex-grow">
+                <div class="py-1 px-2 bg-gray-100 rounded-2xl text-gray-600 mx-1 flex-grow flex items-center justify-center">
                   <dt class="text-xs font-bold">
                     CBD
                   </dt>
-                  <dd class="text-sm ">
+                  <dd class="pl-2 text-xs">
                     {{ product.cannabis.cbd_value }}
                   </dd>
                 </div>
 
                 <!-- Weight -->
-                <div class="p-3 bg-brand-blue-100 rounded-2xl text-gray-600 flex-grow">
+                <div class="py-1 px-2 bg-gray-100 rounded-2xl text-gray-600 flex-grow flex items-center justify-center">
                   <dt class="text-xs font-bold">
                     Weight
                   </dt>
-                  <dd class="text-sm ">
+                  <dd class="pl-2 text-xs">
                     {{ product.cannabis.weight }}
                   </dd>
                 </div>
