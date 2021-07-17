@@ -1,36 +1,41 @@
 <template>
+  <!-- Sorting options -->
   <aside>
-    <p>Sort: </p>
 
-     <label for="cars">Choose a car:</label>
+    <div
+      class="
+        my-10
+        flex flex-row justify-end
+      ">
 
-      <select name="cars" id="cars">
-        <option value="volvo">Volvo</option>
-        <option value="saab">Saab</option>
-        <option value="mercedes">Mercedes</option>
-        <option value="audi">Audi</option>
-      </select>
+      <div class="p-5 bg-gray-100 rounded-md">
+        <h2 class="sr-only">Sorting options:</h2>
 
-      <select v-model="sortBy">
-        <option
-          v-for="(item) in sortOptions"
-          v-bind:key="item.key"
-          :value="item.key">
-          {{item.description}}
-        </option>
-      </select>
-      <span>Selected: {{ sortBy }}</span>
+       <label id="sortby-label" class="block text-sm font-medium text-gray-700">
+        Sort by
+      </label>
 
-      <select v-model="sortBy">
-         <option
-          v-for="(item, key) in sortingValues"
-          v-bind:key="key"
-          :value="key">
-          {{item.description}}
-        </option>
-      </select>
+        <select
+          class="
+            mt-2
+            border border-gray-400 rounded-xl
+            text-sm
+          "
+          v-model="sortBy">
+          <option
+            v-for="(item, key) in sortingValues"
+            v-bind:key="key"
+            :value="key">
+            {{item.description}}
+          </option>
+        </select>
+
+      </div>
+
+    </div>
 
   </aside>
+  <!-- Product list -->
   <section>
 
     <h2 class="sr-only">List of products</h2>
@@ -49,7 +54,7 @@
         <h2 class="sr-only">Products</h2>
 
           <ul
-          class="
+            class="
             list-none
             grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-4
             gap-x-0
@@ -79,16 +84,7 @@ import CollectionsProductsListItem from './CollectionsProductsListItem.vue';
 
 
 const sortingValues = {
-  // Price from Low to High
-  priceUp: {
-    description: 'Price: Low to High',
-    comparisonFn: (a,b) => { return a.price.currentFloat - b.price.currentFloat; },
-  },
-  // Price from High to Low
-  priceDown: {
-    description: 'Price: High to Low',
-    comparisonFn: (a,b) => { return b.price.currentFloat - a.price.currentFloat; },
-  },
+
   // Alphabetical from A-Z
   alphaUp: {
     description: 'Alphabetically: A - Z',
@@ -99,12 +95,22 @@ const sortingValues = {
     description: 'Alphabetically: Z - A',
     comparisonFn: (a,b) => { return b.title.localeCompare(a.title); },
   },
-  // Alphabetical from Z-A
+  // Price from Low to High
+  priceUp: {
+    description: 'Price: Low to High',
+    comparisonFn: (a,b) => { return a.price.currentFloat - b.price.currentFloat; },
+  },
+  // Price from High to Low
+  priceDown: {
+    description: 'Price: High to Low',
+    comparisonFn: (a,b) => { return b.price.currentFloat - a.price.currentFloat; },
+  },
+  // THC from High to low
   thcDown: {
     description: 'THC: Low to High',
     comparisonFn: (a,b) => { return a.cannabis.thc_value - b.cannabis.thc_value; },
   },
-  // Alphabetical from Z-A
+  // THC from Low to High
   thcUp: {
     description: 'THC: High to Low',
     comparisonFn: (a,b) => { return b.cannabis.thc_value - a.cannabis.thc_value; },
@@ -112,7 +118,7 @@ const sortingValues = {
   // Alphabetical from Z-A
   cbdDown: {
     description: 'CBD: Low to High',
-    comparisonFn: (a,b) => { console.log(a.cannabis.cbd_value, b.cannabis.cbd_value); return a.cannabis.cbd_value - b.cannabis.cbd_value; },
+    comparisonFn: (a,b) => { return a.cannabis.cbd_value - b.cannabis.cbd_value; },
   },
   // Alphabetical from Z-A
   cbdUp: {
@@ -120,50 +126,6 @@ const sortingValues = {
     comparisonFn: (a,b) => { return b.cannabis.cbd_value - a.cannabis.cbd_value; },
   },
 }
-
-
-const sortOptions = [
-  {
-    key: 'pUp',
-    description: 'Price: Low to High',
-    comparisonFn: (a,b) => { a.title.localeCompare(b.title);},
-  },
-  {
-    key: 'pDown',
-    description: 'Price: High to Low',
-    comparisonFn: (a,b) => { a.title.localeCompare(b.title);},
-  },
-  {
-    key: 'az',
-    description: 'Alphabetically: A - Z',
-    comparisonFn: (a,b) => { a.title.localeCompare(b.title);},
-  },
-  {
-    key: 'za',
-    description: 'Alphabetically: Z - A',
-    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
-  },
-  {
-    key: 'thcUp',
-    description: 'THC %: Low to High',
-    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
-  },
-  {
-    key: 'thcDown',
-    description: 'THC %: High to Low',
-    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
-  },
-  {
-    key: 'cbdUp',
-    description: 'CBD %: Low to High',
-    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
-  },
-  {
-    description: 'CBD %: High to Low',
-    key: 'cbdDown',
-    comparisonFn: (a,b) => { b.title.localeCompare(a.title);},
-  },
-];
 
 
 export default {
@@ -175,22 +137,28 @@ export default {
   },
   setup(props) {
 
+    // Default is set to Alphabetical Up
     const sortBy = ref('alphaUp');
 
-    // Fetch Products
-    // Get list of product ids to display
+    // Use the Vuex Store
     const store = useStore()
 
-    //const products = computed(() => store.getters['products/getProductsByCategoryId'], props.category.id);
+    // Grab the products for the category
+    // TODO: Component currently is category based - this may have to change in the future
     const products = computed(() => store.getters['product/getProductsByCategoryId'](props.category.id));
 
+    // Computed property that is the list of sorted products
+    // which are sorted in order based on the sortBy ref
     const sortedProducts = computed(() => {
 
-      // Copy the items from vuex
+      // Copy the products so we have a local array
       var sortedProds = products.value;
 
+      // Apply the appropriate sorting algorith
+      // TODO: Test if the sortBy.value is valid
       sortedProds.sort(sortingValues[sortBy.value].comparisonFn);
 
+      // Return the sorted list
       return sortedProds;
     });
 
@@ -200,12 +168,10 @@ export default {
       sortBy,
       products,
       sortedProducts,
-      sortOptions,
       sortingValues,
     }
 
   },
 }
-
 
 </script>
