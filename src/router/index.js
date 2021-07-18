@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 
 // const Contact = () => import('../views/Contact.vue');
+const Cart = () => import('../views/Cart.vue');
 const Collections = () => import('../views/Collections.vue');
 const CollectionsProducts = () => import('../views/CollectionsProducts.vue');
 const HowToShop = () => import('../views/HowToShop.vue');
@@ -23,6 +24,11 @@ export const router = createRouter({
       component: Contact,
     },
     */
+    {
+      path: '/cart',
+      name: 'cart',
+      component: Cart,
+    },
     {
       path: '/how-to-shop',
       name: 'how-to-shop',

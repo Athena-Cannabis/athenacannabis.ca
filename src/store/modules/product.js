@@ -74,6 +74,18 @@ const getters = {
 
   },
 
+
+  // Validate a Product ID
+  getLoadedStatusOfProductId: (state, getters) => (id) => {
+    // Get products by categories
+    var findIndex = getters.getProducts.findIndex((element) => {
+      element.id === id;
+    });
+
+    return findIndex;
+  }
+
+
   // Find a category with a matching slug value
   // getCategoryBySlug: (state, getters) => (slug) => {
   //  return getters.getCategories.find(category => category.slug === slug) || null;

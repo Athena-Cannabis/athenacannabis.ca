@@ -196,7 +196,9 @@ export default {
 
     // Fetch Products
     // Get list of product ids to display
-    // const store = useStore()
+
+    // Access the vuex store
+    const store = useStore()
 
     //const products = computed(() => store.getters['products/getProductsByCategoryId'], props.category.id);
     //const products = computed(() => store.getters['product/getProductsByCategoryId'](props.category.id));
@@ -204,7 +206,16 @@ export default {
     //store.dispatch('product/fetchProductsByCategoryId', props.category.id );
 
     function handleAddToCart(e) {
-      console.log('Add to cart', e);
+
+      console.log('Product id: ', props.product.id);
+
+      var payload = {
+        productId: props.product.id,
+        quantity: 1,
+      }
+
+      store.dispatch('cart/addToCart', payload );
+
 
       // Remove the focus ring that the browser puts on it after a button click
       e.target.blur();

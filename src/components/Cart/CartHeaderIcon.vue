@@ -7,7 +7,7 @@
       <h3 class="sr-only">Shopping cart informaiton</h3>
 
       <router-link
-        to="/"
+        :to="{ name: 'cart'}"
         class="relative flex">
 
         <p class="sr-only">Shopping cart</p>
@@ -18,7 +18,7 @@
           <div class="mb-10 p-1 bg-red-400 rounded-full text-xs">
             <p>
               <span class="sr-only">Number of products in cart:</span>
-              {{ cartProductCount }}
+              {{ cartItemsCount }}
             </p>
           </div>
         </div>
@@ -31,17 +31,18 @@
 </template>
 
 <script>
-import { ref } from 'vue';
+import { computed } from 'vue';
+import { useStore } from 'vuex';
 
 export default {
   setup() {
 
-    // Default is set to Alphabetical Up
-    const cartProductCount = ref(0);
-
+    // Go into the vuex store and grab the cart count to show on the icon
+    const store = useStore();
+    const cartItemsCount = computed(() => store.getters['cart/getCartItemsCount']);
 
     return {
-      cartProductCount,
+      cartItemsCount,
     }
   },
 }
