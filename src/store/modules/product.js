@@ -76,13 +76,26 @@ const getters = {
 
 
   // Validate a Product ID
+  // Check the parameter provided and then try to find the
+  // product in the vuex store
   getLoadedStatusOfProductId: (state, getters) => (id) => {
-    // Get products by categories
-    var findIndex = getters.getProducts.findIndex((element) => {
-      element.id === id;
-    });
 
-    return findIndex;
+    // initialise found value to false
+    var found = false;
+
+    // Check if the param is undefined
+    if (id) {
+
+      var record = getters.getProducts.find((element) => {
+        return element.id === id;
+      });
+
+      // If the record is found the return return value
+      found = record ? true : false;
+
+    }
+
+    return found;
   }
 
 

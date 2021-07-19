@@ -74,10 +74,12 @@ const actions = {
   addToCart({ state, commit, rootGetters }, payload) {
 
     // Check that payload.productId is a valid product ID from the product store
-    var validProductId = rootGetters['product/getLoadedStatusOfProductId'](payload.id);
+    var validProductId = rootGetters['product/getLoadedStatusOfProductId'](payload.productId);
 
     // Check that payload.quantity is a number
     var validProductQuantity = !isNaN(payload.quantity);
+
+    console.log('Add to cart:' , validProductId, validProductQuantity);
 
     // Payload is valid
     if ( validProductId && validProductQuantity) {
@@ -85,29 +87,18 @@ const actions = {
       // Check that there is sufficient product stock for the item
 
       // Add the cart item (product and quantity) to the cart
+      // Item not in the cart
+      var cartItem = new CartItem({
+        productId: payload.productId,
+        quantity: payload.quantity,
+      });
 
-      // Is the cart item already in the cart?
-      var findIndex = state.cart.findIndex((element) => element.productId === payload.id );
-
-      if (findIndex >= 0) {
-        // Item in the cart, now we need to know the new quanity
-
-      }
-      else {
-        // Item not in the cart
-        var cartItem = new CartItem({
-          productId: payload.productId,
-          quantity: payload.quantity,
-        });
-
-        commit('addCartItemToCart', cartItem);
-
-      }
+      commit('addItemToCart', cartItem);
 
     }
     else {
       // Throw error that the component can catch
-
+      console.log('Could not add to cart')
     }
 
   },
@@ -126,8 +117,19 @@ const actions = {
 const mutations = {
 
   // Add a CartItem to the cart
-  addCartItemToCart (state,  cartItem ) {
-    state.cart.unshift(cartItem);
+  addItemToCart (state,  cartItem ) {
+
+    // Is the item in the cart already
+    const record = state.cart.find(element => element.productId === cartItem.productId);
+
+    if (!record) {
+      // Add item to the cart
+      state.cart.unshift(cartItem);
+    } else {
+      // Increment the quantity value
+      record.quantity++;
+    }
+
   },
 
 }
