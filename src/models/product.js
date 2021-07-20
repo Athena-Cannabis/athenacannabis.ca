@@ -7,6 +7,7 @@ export class Product {
 
   title = '';
   slug = '';
+  sku = '';
 
   brand = '';
   description = '';
@@ -48,6 +49,7 @@ export class Product {
     // Assign the title and slug text
     this.title = data.title || '';
     this.slug = data.slug || '';
+    this.sku = data.sku || '';
 
     // Brand
     this.brand = data.brand || '';
@@ -119,6 +121,7 @@ export function responseAdapter(response) {
     id: response.id,
     title: response.name,
     slug: response.slug,
+    sku: response.sku,
     description: response.description,
     shortDescription: response.short_description,
     purchasable: response.purchasable,
