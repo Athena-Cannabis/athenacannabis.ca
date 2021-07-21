@@ -74,6 +74,18 @@ const getters = {
 
   },
 
+  // Get all products - no sorting applied
+  getProductByProductId: (state, getters) => (id) => {
+
+    var product = null;
+
+    // Get product by matching the id
+    product = getters.getProducts.find((element) => element.id === id);
+
+    return product ? product : null;
+
+  },
+
 
   // Validate a Product ID
   // Check the parameter provided and then try to find the
