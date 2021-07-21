@@ -21,6 +21,18 @@ const getters = {
     return state.cart;
   },
 
+  // Get all cart items - no sorting applied
+  getCartItemByProductId: (state, getters) => (productId) => {
+
+    var cartItem = null;
+
+    // Get product by matching the id
+    cartItem = getters.getCartItems.find((element) => element.productId === productId);
+
+    return cartItem ? cartItem : null;
+
+  },
+
   // Get all cart items
   // Walk through the array of cart items and grab the quantity of each cart item
   getCartItemsCount(state) {
@@ -36,6 +48,38 @@ const getters = {
     }
 
     return itemsCount;
+  },
+
+  // Get the cart item total
+  // We take the current price of the product and
+  // multiply it by the quantity in the cart
+  getCartItemTotalByProductId: (state, getters, rootState, rootGetters) => (productId) => {
+
+    var total = null;
+
+    // Get the current price of the product
+    var product = rootGetters['product/getProductByProductId'](productId);
+
+    // Check if the product is valid
+    if (product) {
+
+      // Get the cart quantity
+      var cartItem = getters.getCartItemByProductId(productId);
+
+      // Check if cartItem is defined
+      if (cartItem) {
+
+        // Check if quanity is actually a number before we try to multiply it
+        if (!isNaN(cartItem.quantity)) {
+          total = product.price.currentFloat * cartItem.quantity;
+        }
+
+      }
+
+    }
+
+    return total;
+
   },
 
   // Get the Subtotal
@@ -104,8 +148,9 @@ const actions = {
   },
 
   // Remove a line item from the vuex cart
-  removeFromCart({ state, commit }, payload) {
+  deleteFromCart({ state, commit }, id) {
 
+    commit('deleteItemFromCart', id);
 
   },
 
@@ -117,7 +162,7 @@ const actions = {
 const mutations = {
 
   // Add a CartItem to the cart
-  addItemToCart (state,  cartItem ) {
+  addItemToCart (state, cartItem ) {
 
     // Is the item in the cart already
     const record = state.cart.find(element => element.productId === cartItem.productId);
@@ -131,6 +176,20 @@ const mutations = {
     }
 
   },
+
+  // Remove a CartItem from the cart
+  deleteItemFromCart (state, productId) {
+
+    // Find the cartItem object in the state using the productId
+    var cartItemIndex = state.cart.findIndex((cartItem) => cartItem.productId === productId);
+
+    // If the product ID is found remove it from the array
+    if (cartItemIndex !== -1) {
+      state.cart.splice(cartItemIndex, 1);
+    }
+
+  }
+
 
 }
 

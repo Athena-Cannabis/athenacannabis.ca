@@ -20,18 +20,50 @@
         <!-- Content box -->
         <div class="pt-0 mb-28">
 
-        <h2>List of cart items</h2>
+          <!-- Flex Wrapper -->
+          <div class="flex flex-col lg:flex-row flex-nowrap">
 
-        <ul>
+            <!-- Cart Contents -->
+            <div class="w-full lg:w-3/4">
 
-          <li
-            v-for="cartItem in cartItems"
-            v-bind:key="cartItem.productId"
-            >
-            {{ cartItem }}
-          </li>
+              <div class="bg-white">
 
-        </ul>
+                <section>
+
+                  <h2 class="text-5xl font-semibold">
+                    Your cart
+                    <span class="pl-3 text-2xl text-gray-400">
+                      {{ cartItemsCount }} item(s)
+                    </span>
+                  </h2>
+
+                  <cart-list/>
+
+                </section>
+
+              </div>
+
+            </div>
+
+            <!-- Order Summary -->
+            <div class="w-full lg:w-1/4 lg:ml-5">
+
+              <div class="p-5 bg-gray-300">
+
+                <section>
+
+                  <h2 class="text-xl font-medium">Order Summary</h2>
+
+
+
+                </section>
+
+              </div>
+
+
+            </div>
+
+          </div>
 
         </div>
 
@@ -46,19 +78,23 @@
 import { computed } from 'vue';
 import { useStore } from 'vuex';
 import ContentPageHeading from '../components/Content/PageHeading.vue';
+import CartList from '../components/Cart/CartList.vue';
 
 export default {
   components: {
+    CartList,
     ContentPageHeading,
   },
   setup() {
 
-     const store = useStore();
+    const store = useStore();
 
-     const cartItems = computed(() => store.getters['cart/getCartItems']);
+    const cartItems = computed(() => store.getters['cart/getCartItems']);
+    const cartItemsCount = computed(() => store.getters['cart/getCartItemsCount']);
 
      return {
        cartItems,
+       cartItemsCount,
      }
 
   },
