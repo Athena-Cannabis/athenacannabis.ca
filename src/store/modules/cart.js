@@ -55,6 +55,8 @@ const getters = {
   // multiply it by the quantity in the cart
   getCartItemTotalByProductId: (state, getters, rootState, rootGetters) => (productId) => {
 
+    console.log('product id', productId );
+
     var total = null;
 
     // Get the current price of the product
