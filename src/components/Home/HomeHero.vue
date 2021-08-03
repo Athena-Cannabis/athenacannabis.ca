@@ -17,8 +17,8 @@
               <p class="text-5xl sm:text-6xl lg:text-7xl xl:text-8xl
                         font-medium md:text-brand-blue-800 bg-white">
 
-                <span class="sm:block md:inline font-bold">We are closed </span>
-                <span class="sm:block md:inline text-brand-blue-600">for the long weekend</span>
+                <span class="sm:block md:inline font-bold">Now open </span>
+                <span class="sm:block md:inline text-brand-blue-600">for in-store shopping</span>
               </p>
 
               <!--
@@ -39,17 +39,11 @@
               -->
 
               <p class="md:w-full pt-5 text-3xl md:text-5xl text-gray-500 text-left tracking-normal bg-white">
-                Athena will be closed on Monday to give the team a much deserved break.
-              </p>
-
-              <!--
-              <p class="md:w-full pt-5 text-3xl md:text-5xl text-gray-500 text-left tracking-normal bg-white">
                 Shop online, pickup in under 25 minutes also available
               </p>
-              -->
 
               <p class="sr-only md:w-full lg:w-3/4 mt-5 text-2xl md:text-5xl text-gray-500 text-center md:text-left tracking-normal">
-                It's not quite the grand opening we had in mind, but due to the latest lockdown we've had to change our plans.
+                Our doors are open, but we're operating at limited capacity due to Stage 3 restrictions.
               </p>
               <div class="mt-10 flex flex-col md:flex-row">
 
@@ -63,7 +57,7 @@
                     rounded-lg text-white bg-brand-blue-800 hover:bg-brand-blue-900
                     focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500
                     transition-all duration-150 ease-in-out">
-                    <span class="pr-4">Closed today</span>
+                    <span class="pr-4">Shop online</span>
                     <svg class="h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" x="0px" y="0px"><title>shopping, paper, bag, cart</title><g data-name="Shopping Bag"><path d="M50.051,10.64a1,1,0,0,0-1-.9H17.921a1.008,1.008,0,0,0-.99.83l-6.79,39.52a1.017,1.017,0,0,0,.88,1.17l28.7,3h.11a.892.892,0,0,0,.22-.03.743.743,0,0,0,.27-.1l5.99-3.38,6.35,1.42a1,1,0,0,0,.88-.22,1.017,1.017,0,0,0,.33-.85ZM38.921,52.16l-26.63-2.78,6.47-37.64h23.77ZM24.937,23.787a5.359,5.359,0,0,1-1.284-4.227l.616-4.71a1,1,0,0,1,1.983.259l-.617,4.71a3.356,3.356,0,1,0,6.659.835l.693-5.793a1,1,0,0,1,1.986.237l-.693,5.793a5.356,5.356,0,0,1-9.343,2.9Z"></path></g></svg>
                 </a>
 
