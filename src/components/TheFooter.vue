@@ -47,14 +47,7 @@
 
               <dl class="mt-4 text-gray-400 text-xl">
                 <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
-                  <dt class="col-span-2">Monday - Wednesday</dt>
-                  <dd class="col-span-3 text-right md:text-left">
-                    <span class="whitespace-nowrap">10:00 AM - 9:00 PM</span>
-                  </dd>
-                </div>
-
-                <div class="pt-2 sm:pt-4 grid grid-cols-5 gap-4">
-                  <dt class="col-span-2">Thursday - Saturday</dt>
+                  <dt class="col-span-2">Monday - Saturday</dt>
                   <dd class="col-span-3 text-right md:text-left">
                     <span class="whitespace-nowrap">10:00 AM - 10:00 PM</span>
                   </dd>
@@ -63,7 +56,7 @@
                 <div class="pt-2 sm:pt-4 grid grid-cols-5 gap-4">
                   <dt class="col-span-2">Sunday</dt>
                   <dd class="col-span-3 text-right md:text-left">
-                    <span class="whitespace-nowrap">11:00 AM - 8:00 PM</span>
+                    <span class="whitespace-nowrap">11:00 AM - 9:00 PM</span>
                   </dd>
                 </div>
               </dl>
