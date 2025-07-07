@@ -13,9 +13,8 @@
           <div class="w-full md:w-3/5 lg:w-2/5 pt-10 md:pt-0 md:pr-20 order-2 md:order-none">
 
             <h2 class="text-3xl sm:text-2xl lg:text-4xl xl:text-5xl text-gray-800 font-semibold">
-              Now open for in-store shopping
+              We're here to help
             </h2>
-
              <!-- Text section -->
             <div class="text-left max-w-prose">
 
