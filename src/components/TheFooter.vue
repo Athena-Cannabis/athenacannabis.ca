@@ -56,7 +56,7 @@
                 <div class="pt-2 sm:pt-4 grid grid-cols-5 gap-4">
                   <dt class="col-span-2">Sunday</dt>
                   <dd class="col-span-3 text-right md:text-left">
-                    <span class="whitespace-nowrap">11:00 AM - 9:00 PM</span>
+                    <span class="whitespace-nowrap">10:00 AM - 9:00 PM</span>
                   </dd>
                 </div>
               </dl>
