@@ -1,20 +1,21 @@
-/*! @import */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@plugin "@tailwindcss/forms";
 
+@theme {
 
-@layer components {
-
-
-
+  /* Brand Colors */
+  --color-brand-blue-50: #F4F9FF;
+  --color-brand-blue-100: #EEF4FC;
+  --color-brand-blue-200: #D9E2EF;
+  --color-brand-blue-300: #C0CDDF;
+  --color-brand-blue-400: #A1B2CC;
+  --color-brand-blue-500: #7E94B4;
+  --color-brand-blue-600: #5C7598;
+  --color-brand-blue-700: #3C516F;
+  --color-brand-blue-800: #273B59;
+  --color-brand-blue-900: #122541;
 }
 
-
-@layer base {
-
-  .body {
-    @apply antialiased
-  }
-
+@utility container {
+  @apply mx-auto;
 }

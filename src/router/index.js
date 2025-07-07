@@ -1,7 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 
-const Contact = () => import('../views/Contact.vue');
+// const Contact = () => import('../views/Contact.vue');
 const HowToShop = () => import('../views/HowToShop.vue');
 const NotFound = () => import('../views/NotFound.vue');
 

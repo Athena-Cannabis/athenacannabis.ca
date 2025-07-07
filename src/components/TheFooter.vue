@@ -134,12 +134,12 @@
 
           <div class="pt-16">
             <div
-              class="flex flex-row justify-end sm:justify-between items-center"
+              class="flex flex-col sm:flex-row justify-end sm:justify-between sm:items-center"
             >
               <h3 class="sr-only">Additional Site Footer Information</h3>
 
               <!-- Copyright Notice -->
-              <div class="hidden sm:flex justify-center space-x-6">
+              <div class="mt-12 flex sm:justify-center space-x-6 order-last sm:order-first">
                 <p class="text-gray-500 text-xs">
                   &copy; {{ currentYear }} Athena Cannabis, Inc. All rights
                   reserved.
@@ -147,11 +147,11 @@
               </div>
 
               <!-- Logo -->
-              <div>
+              <div class="flex flex-row gap-10 items-center justify-between sm:justify-start">
                 <router-link to="/" class="">
                   <span class="sr-only">Athena Cannabis Home Page</span>
                   <svg
-                    class="h-14 sm:h-14 text-white fill-current"
+                    class="h-18 sm:h-18 text-white fill-current"
                     viewBox="0 0 720 252"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
@@ -206,6 +206,12 @@
                     />
                   </svg>
                 </router-link>
+                <div>
+                  <img
+                    class="h-18 sm:h-18"
+                    src="/images/retail-seal/retail-seal.png"
+                    alt="Ontario Government Retail Seal for Athena Cannabis" />
+                </div>
               </div>
             </div>
           </div>
