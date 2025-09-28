@@ -8,11 +8,11 @@
         <div class="flex flex-col">
           <h2 class="sr-only">Athena Cannabis Site Footer</h2>
 
-          <div class="grid grid-cols-5 gap-5">
+          <div class="grid grid-cols-5 gap-5 gap-y-16">
             <!-- Store Address -->
             <div class="col-span-5 md:col-span-2 lg:col-span-1 pt-10 sm:pt-0">
               <h3 class="text-gray-300 font-bold uppercase">
-                <span class="sr-only">Store</span> address<span class="sr-only"
+                <span class="sr-only">Store</span> Address<span class="sr-only"
                   >:</span
                 >
               </h3>
@@ -64,7 +64,7 @@
 
             <!-- Store Socials -->
             <div
-              class="col-span-5 md:col-span-1 lg:col-span-2 order-first md:order-last"
+              class="col-span-5 md:col-span-1 lg:col-span-2 order-first md:order-none"
             >
               <h3 class="sr-only">Social Media</h3>
 
@@ -129,6 +129,40 @@
                   </svg>
                 </a>
               </div>
+            </div>
+
+            <!-- Regulatory Information -->
+            <div class="col-span-5 lg:col-span-3">
+              <h3 class="text-gray-300 font-bold uppercase">
+                <span class="sr-only">Regulatory Information:</span> Licensed Cannabis Retailer
+              </h3>
+
+              <p class="mt-4 max-w-lg text-gray-400 text-xl">
+                Licensed by the Alcohol and Gaming Commission of Ontario
+                (<a
+                  rel="external noreferrer noopener"
+                  href="https://www.agco.ca/"
+                  class="text-gray-400 font-medium underline hover:text-gray-100 transition-all ease-in-out duration-150"
+                  ><abbr>AGCO</abbr></a
+                >).
+              </p>
+
+              <dl class="mt-4 text-gray-400 text-xl">
+                <div class="pt-2 sm:pt-0 grid grid-cols-5 gap-4">
+                  <dt class="col-span-2">License Number</dt>
+                  <dd class="col-span-3 text-right md:text-left">
+                    <span class="whitespace-nowrap">CRSA1187152</span>
+                  </dd>
+                </div>
+
+                <div class="pt-2 sm:pt-4 grid grid-cols-5 gap-4">
+                  <dt class="col-span-2">CROL Holder</dt>
+                  <dd class="col-span-3 text-right md:text-left">
+                    <span class="whitespace-nowrap">Athena Cannabis Corp.</span>
+                  </dd>
+                </div>
+              </dl>
+
             </div>
           </div>
 
